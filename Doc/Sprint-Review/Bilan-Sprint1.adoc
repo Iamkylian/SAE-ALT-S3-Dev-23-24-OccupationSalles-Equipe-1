@@ -16,42 +16,73 @@
 |1.0 | {date} | Groupe 1 : Kylian, Mathéo, Yann, Lylian | Développement d'une application
 |=== 
 
-== Présentation de l'Application
+== Description
 
-=== Objectif de l'application
+* Sprint dates: DD/MM at HHam, to DD/MM at HHpm (Y working days)
+* Sprint review: DD/MM at HHpm
+* Sprint demo: DD/MM at HHam
+* Daily stand-up: HH:MMam
+* Scrum master: @scrummaster
+
+== Objectifs
+
+* Objectif 1 -> OK
+* Objectif 2 -> OK
+
+== Demo
+
+* (release)
+
+== Retours positifs et négatifs
+
+=== @Iamkylian
+
+* (+)
+* (+)
+* (-)
+* (-)
+
+=== @YannRouquie
+
+* (+)
+* (+)
+* (-)
+* (-)
+
+=== @MatheoKatbie
+
+* (+)
+* (+)
+* (-)
+* (-)
+
+=== @Lylian
+
+* (+)
+* (+)
+* (-)
+* (-)
 
 
+== Sujets en progression pour le prochain sprint
 
-=== Rôle de l'application
+* 
+* 
 
+== Documentation
 
+== Tâches terminées
 
-== Installation
+* 
 
-=== Configuration requise
+== Tâches non achevées
 
-Avant d’installer l'application 
+* 
 
-Configuration *matérielle* :
+== Tâches achevées mais non planifiées
 
+* 
 
+== Tâches non achevées mais non planifiées
 
-Configuration *logicielle* :
-
-
-
-== Utilisation
-
-
-
-== Fonctionnement
-
-
-
-== Résultats produits avec jeux d'essai commentés
-
-
-
-== Conclusion
-
-En conclusion, l'application 
+*
