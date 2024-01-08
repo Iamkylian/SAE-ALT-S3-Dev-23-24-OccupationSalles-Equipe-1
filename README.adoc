@@ -12,5 +12,5 @@ Lors de cette SAE nous allons colllaborer en équipe de 3. Les membres de notre 
 [cols="1,2,2,5",options=header]
 |===
 | Date    | Nom         |  Lien                             | Retour
-| Sem.2  | CDC V1      |  https://github.com/IUT-Blagnac/sae2023-bank-1a2/blob/f6b3e94480954f7cffb70de65fd9dc58b08f9291/LV1/GPO/CDCU-V1.
+|  |       |  
 |===
