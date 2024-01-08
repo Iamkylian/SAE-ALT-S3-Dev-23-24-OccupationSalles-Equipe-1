@@ -1,8 +1,6 @@
-# SAE-ALT-BUT3B01
-
 ==== Présentation de l'équipe et rôles respectifs
 
-Lors de cette SAE nous allons colllaborer en équipe de 4. Les membres de notre équipe sont respectivement :
+Lors de cette SAE nous allons colllaborer en équipe de 3. Les membres de notre équipe sont respectivement :
 
 * Kylian GACHET (Etudiant 1)
 * Yann ROUQUIE (Etudiant 2)
