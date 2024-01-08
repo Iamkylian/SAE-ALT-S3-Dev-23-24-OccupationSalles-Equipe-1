@@ -1,0 +1,97 @@
+= Documentation Technique - Sujet "Occupation des salles" (Occupation)
+:toc:
+:toc-title: Sommaire
+//:toc: preamble
+:toclevels: 5
+:sectnums:
+:sectnumlevels: 5
+
+:Entreprise: Groupe 1
+:Equipe:  
+
+[cols="4"]
+|===
+|Version | Date | Équipe | Projet
+|1.0 | 8 Janvier 2024 | Groupe 1 : Kylian, Mathéo, Yann, Lylian | Développement d'une application
+|=== 
+
+
+== Présentation de l'Application
+
+=== Contexte
+
+
+
+=== Use Case global
+
+L'application de DailyBank est conçue pour être utilisée par différents acteurs au sein de la banque, chacun ayant des rôles spécifiques et des responsabilités définies. Voici les principaux utilisateurs de l'application et leurs rôles :
+
+
+
+===== ???
+
+* Rôle : 
+* Responsabilités :
+** ??
+** ??
+
+
+=== Diagramme de classe des données global
+
+
+Ce diagramme de classe des données représente la structure des classes et des relations entre elles dans le code développé. Voici une description détaillée des éléments particuliers présents dans le diagramme de classe :
+
+===== Description
+
+* Classe "??" :
+** Attributs : ??, ??, ??, ??, ??.
+Cette classe représente ??. Chaque ?? a ??, ??, ??, ?? et ??.
+
+
+===== Cardinalité
+
+* ?? - ?? :
+** Cardinalité : 0..1 à 1
+** Signification : Un ?? peut être associé à zéro ou une ??, tandis qu'?? doit avoir exactement un ??.
+
+
+Ces cardinalités indiquent les relations et les contraintes entre les différentes classes du système. Elles définissent combien d'instances d'une classe peuvent être liées à une ou plusieurs instances d'une autre classe.
+
+== Architecture
+
+=== Générale
+
+Pour plus de détail sur l'architecture général en termes de sous-systèmes pour l'application de gestion des comptes clients de la banque DailyBank, voici les éléments détaillés qui la compose :
+
+* *Base de données* :
+La base de données stocke toutes les informations relatives...
+
+
+=== Ressources externes
+
+===== Java/Python...??
+
+
+
+===== Base de données
+
+
+
+=== Structuration en packages de l’application
+
+===== Général
+
+[source]
+----
+├── application
+    │   ├── application.control
+    │   ├── application.tools
+    │   └── application.view
+    └── model
+        ├── model.data
+        └── model.orm
+            └── model.orm.exception
+├── ressource
+    ├── ressource.control
+        └── ressource.control.view
+----
