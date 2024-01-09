@@ -1,1 +1,2 @@
 python3 -m pip install paho-mqtt
+pip install pymysql
