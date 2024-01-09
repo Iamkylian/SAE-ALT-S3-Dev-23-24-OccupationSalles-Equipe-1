@@ -1,0 +1,3 @@
+PHPMYADMIN :
+user:USER
+password:PASS
