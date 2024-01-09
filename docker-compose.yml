@@ -15,8 +15,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: secret
       MYSQL_DATABASE: mydatabase
-      MYSQL_USER: myuser
-      MYSQL_PASSWORD: mypassword
+      MYSQL_USER: dbuser
+      MYSQL_PASSWORD: Azertyuiop1
     volumes:
       - mysql_data:/var/lib/mysql
 volumes:
