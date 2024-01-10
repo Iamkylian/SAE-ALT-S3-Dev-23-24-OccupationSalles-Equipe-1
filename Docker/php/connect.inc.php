@@ -1,11 +1,11 @@
 <?php
-$servername = "localhost";
+$servername = "db";
 $username = "root";
 $password = "ROOT_PASSWORD";
 $dbname = "capteursDB";
 
 // Créer une connexion
-$conn = new mysqli($servername, $username, $password, $dbname,9906);
+$conn = new mysqli($servername, $username, $password, $dbname,3306);
 
 // Vérifier la connexion
 if ($conn->connect_error) {
