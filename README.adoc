@@ -9,6 +9,9 @@ Lors de cette SAE nous allons colllaborer en équipe de 4. Les membres de notre 
 
 === Présentation du projet 
 
+image:https://img.shields.io/badge/Documentation?style=flat&labelColor=rgb&link=https%3A%2F%2Fgithub.com%2FIamkylian%2FSAE-ALT-BUT3B01%2Fblob%2Fmain%2FDoc%2FDocumentation-Utilisateur.adoc[Static Badge]
+
+
 ==== Livrables
 
 [cols="1,2,2,5",options=header]
