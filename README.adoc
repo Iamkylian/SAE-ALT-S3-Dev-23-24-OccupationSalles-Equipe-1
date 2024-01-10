@@ -2,10 +2,12 @@
 
 Lors de cette SAE nous allons colllaborer en équipe de 4. Les membres de notre équipe sont respectivement :
 
-* Kylian GACHET (Etudiant 1)
-* Yann ROUQUIE (Etudiant 2)
-* Mathéo KATBIE (Etudiant 3)
-* Lylian DERRAMOND (Etudiant 4)
+* Kylian GACHET
+* Yann ROUQUIE - SCRUM MASTER
+* Mathéo KATBIE - DEVELOPPEUR
+* Lylian DERRAMOND 
+
+==== Présentation du projet 
 
 ==== Livrables
 
