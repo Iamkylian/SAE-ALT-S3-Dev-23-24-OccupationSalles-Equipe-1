@@ -7,7 +7,7 @@ Lors de cette SAE nous allons colllaborer en équipe de 4. Les membres de notre 
 * Mathéo KATBIE - DEVELOPPEUR
 * Lylian DERRAMOND 
 
-==== Présentation du projet 
+=== Présentation du projet 
 
 ==== Livrables
 
