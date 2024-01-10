@@ -22,10 +22,10 @@ services:
       MYSQL_DATABASE: php-app
       MYSQL_USER: USER
       MYSQL_PASSWORD: PASS
-    volumes:
-      - /opt/mysql_data:/var/lib/mysql
     ports:
-      - "9906:3306"  
+      - "9906:3306"
+    volumes:
+      - "../BDD/db.sql:/docker-entrypoint-initdb.d/1.sql"
       
   phpmyadmin:
     image: phpmyadmin
@@ -37,6 +37,3 @@ services:
     restart: always
     ports:
       - 8081:80
-
-volumes:
-  mysql-data:
