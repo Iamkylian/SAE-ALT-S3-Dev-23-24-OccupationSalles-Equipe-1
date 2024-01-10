@@ -2,6 +2,7 @@ import paho.mqtt.client as mqtt
 import json
 import base64
 import pymysql
+import time 
 
 # connection to db
 connection = pymysql.connect(
@@ -12,19 +13,8 @@ connection = pymysql.connect(
     database="capteursDB")
 cursor = connection.cursor()
 
-query = "SELECT * FROM Donnes;"
-
-cursor.execute(query)
-rows = cursor.fetchall()
-
-for row in rows:
-    print(row)
-
 # config
 mqttServer = "chirpstack.iut-blagnac.fr"
-
-blue = "Ymx1ZQ=="
-orange = "b3Jhbmdl"
 
 print("Starting...")
 
@@ -36,7 +26,6 @@ def get_data(mqttc, obj, msg):
     
     insertDevice(data[1]['deviceName'],data[1]['room'],data[1]['floor'],data[1]['Building'])
     insertData(data[1]['deviceName'],data[0]['temperature'],data[0]['humidity'],data[0]['activity'],data[0]['co2'],data[0]['tvoc'],data[0]['illumination'])
-
     pass
 
 def insertDevice(deviceName,room,floor,building):
@@ -66,6 +55,14 @@ def insertData(deviceName, temperature,humidity,activity,co2,tvoc,illumination):
         deviceId = row[0]
         print(deviceId)
 
+    currentDate = time.strftime('%Y-%m-%d %H:%M:%S')
+
+    query = "INSERT INTO Donnes (idDevice,temperature,humidity,activity,co2,tvoc,illumination,time) VALUES (" + str(deviceId) + "," + str(temperature) + "," + str(humidity) + "," + str(activity) + "," + str(co2) + "," + str(tvoc) + "," + str(illumination) + ",'" + currentDate +"');"
+    print(query)
+
+    cursor.execute(query)
+    connection.commit()
+
 # creation du client
 mqttc = mqtt.Client()
 mqttc.connect(mqttServer, port=1883, keepalive=60)
@@ -80,3 +77,4 @@ print("Connected !")
 mqttc.loop_forever()
 
 connection.close()
+print("Closed !")
