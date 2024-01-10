@@ -7,12 +7,12 @@ import pymysql
 connection = pymysql.connect(
     host="localhost", 
     port=9906, 
-    user="USER", 
-    passwd="PASS", 
-    database="php-app")
+    user="root", 
+    passwd="ROOT_PASSWORD", 
+    database="donnesDB")
 cursor = connection.cursor()
 
-query = "SELECT * FROM test;"
+query = "SELECT * FROM Donnee;"
 
 cursor.execute(query)
 rows = cursor.fetchall()
@@ -32,8 +32,7 @@ print("Starting...")
 
 # callback appele lors de la reception d'un message
 def get_data(mqttc, obj, msg):
-    print(msg,obj,mqttc)
-    pass
+    print(msg.topic + str(msg.payload))
 
 # creation du client
 mqttc = mqtt.Client()
