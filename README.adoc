@@ -2,10 +2,10 @@
 
 Lors de cette SAE nous allons colllaborer en équipe de 4. Les membres de notre équipe sont respectivement :
 
-* Kylian GACHET
-* Yann ROUQUIE - SCRUM MASTER
+* Kylian GACHET - SCRUM MASTER
+* Yann ROUQUIE - PRODUCT OWNER
 * Mathéo KATBIE - DEVELOPPEUR
-* Lylian DERRAMOND 
+* Lylian DERRAMOND - DEVELOPPEUR
 
 === Présentation du projet 
 
