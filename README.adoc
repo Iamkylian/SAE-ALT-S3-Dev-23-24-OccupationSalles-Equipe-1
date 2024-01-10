@@ -1,4 +1,4 @@
-==== Présentation de l'équipe et rôles respectifs
+=== Présentation de l'équipe et rôles respectifs
 
 Lors de cette SAE nous allons colllaborer en équipe de 4. Les membres de notre équipe sont respectivement :
 
@@ -14,5 +14,5 @@ Lors de cette SAE nous allons colllaborer en équipe de 4. Les membres de notre 
 [cols="1,2,2,5",options=header]
 |===
 | Date    | Nom         |  Lien                             | Retour
-|  |       |  
+|  |   Backlog Produit    |  
 |===
