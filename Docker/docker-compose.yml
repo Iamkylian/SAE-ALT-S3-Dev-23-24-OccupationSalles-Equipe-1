@@ -37,6 +37,17 @@ services:
     restart: always
     ports:
       - 8081:80
+
+  python:
+    image: python:3.9  
+    volumes:
+      - ../Python/script.py:/app/script.py
+    working_dir: /app
+    command: >
+      sh -c "python3 -m pip install paho-mqtt
+      && pip install cryptography
+      && pip install pymysql 
+      && python -u script.py"
       
   grafana:
     image: grafana/grafana:9.1.7
