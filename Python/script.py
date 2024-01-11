@@ -6,8 +6,8 @@ import time
 
 # connection to db
 connection = pymysql.connect(
-    host="localhost", 
-    port=9906, 
+    host="db", 
+    port=3306, 
     user="root", 
     passwd="ROOT_PASSWORD", 
     database="capteursDB")
@@ -15,6 +15,8 @@ cursor = connection.cursor()
 
 # config
 mqttServer = "chirpstack.iut-blagnac.fr"
+
+print("\n \033[95m ---------------------------------- CONNECTED TO BROKER ---------------------------------- \033[0m \n")
 
 print("Starting...")
 
@@ -38,7 +40,7 @@ def get_batteryLevel(mqttc, obj, msg):
     pass
 
 def insertBatteryLevel(deviceName,level):
-    query = "SELECT COUNT(*) FROM Battery,Device WHERE Device.id = Battery.idDevice AND Device.deviceName = '" + deviceName + "';"
+    query = "SELECT COUNT(*) FROM Battery,Device WHERE Device.id = Battery.deviceId AND Device.deviceName = '" + deviceName + "';"
     cursor.execute(query)
     rows = cursor.fetchall()
 
@@ -47,12 +49,12 @@ def insertBatteryLevel(deviceName,level):
         #print(count)
 
     if count == 0:
-        query = "INSERT INTO Battery (idDevice,BatteryLevel) VALUES ((SELECT id FROM Device WHERE deviceName = '" + deviceName + "')," + str(level) + ");"
+        query = "INSERT INTO Battery (deviceId,batteryLevel) VALUES ((SELECT id FROM Device WHERE deviceName = '" + deviceName + "')," + str(level) + ");"
         cursor.execute(query)
         connection.commit()
         print("\033[94m BATTERY INSERTED \033[0m")
     else:
-        query = "UPDATE Battery SET BatteryLevel = " + str(level) + " WHERE idDevice = (SELECT id FROM Device WHERE deviceName = '" + deviceName + "');"
+        query = "UPDATE Battery SET batteryLevel = " + str(level) + " WHERE deviceId = (SELECT id FROM Device WHERE deviceName = '" + deviceName + "');"
         cursor.execute(query)
         connection.commit()
         print("\033[94m BATTERY UPDATED \033[0m")
