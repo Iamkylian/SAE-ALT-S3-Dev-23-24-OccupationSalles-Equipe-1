@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : db
--- Généré le : mer. 10 jan. 2024 à 09:45
+-- Généré le : jeu. 11 jan. 2024 à 09:02
 -- Version du serveur : 8.2.0
 -- Version de PHP : 8.2.14
 
@@ -59,7 +59,9 @@ INSERT INTO `Device` (`id`, `deviceName`, `room`, `floor`, `building`) VALUES
 (26, 'AM107-5', 'B202', 2, 'B'),
 (27, 'AM107-27', 'E004', 0, 'E'),
 (28, 'AM107-24', 'C006', 0, 'C'),
-(29, 'AM107-26', 'E003', 0, 'E');
+(29, 'AM107-26', 'E003', 0, 'E'),
+(30, 'AM107-41', 'E207', 2, 'E'),
+(31, 'AM107-32', 'E102', 1, 'E');
 
 -- --------------------------------------------------------
 
@@ -74,8 +76,21 @@ CREATE TABLE `Donnes` (
   `activity` int NOT NULL,
   `co2` int NOT NULL,
   `tvoc` int NOT NULL,
-  `illumination` int NOT NULL
+  `illumination` int NOT NULL,
+  `time` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+
+--
+-- Déchargement des données de la table `Donnes`
+--
+
+INSERT INTO `Donnes` (`idDevice`, `temperature`, `humidity`, `activity`, `co2`, `tvoc`, `illumination`, `time`) VALUES
+(24, 19, 41, 0, 1255, 283, 2, '2024-01-11 09:53:43'),
+(25, 17, 42, 245, 699, 346, 60, '2024-01-11 09:54:37'),
+(26, 20, 35, 0, 589, 78, 2, '2024-01-11 09:54:44'),
+(27, 17, 39, 0, 544, 315, 27, '2024-01-11 09:54:44'),
+(28, 18, 37, 38, 665, 125, 123, '2024-01-11 09:54:44'),
+(29, 17, 42, 266, 1109, 570, 67, '2024-01-11 09:55:14');
 
 --
 -- Index pour les tables déchargées
@@ -101,7 +116,7 @@ ALTER TABLE `Donnes`
 -- AUTO_INCREMENT pour la table `Device`
 --
 ALTER TABLE `Device`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- Contraintes pour les tables déchargées

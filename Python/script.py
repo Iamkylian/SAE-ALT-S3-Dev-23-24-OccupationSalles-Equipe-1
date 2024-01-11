@@ -2,7 +2,7 @@ import paho.mqtt.client as mqtt
 import json
 import base64
 import pymysql
-import time 
+import time
 
 # connection to db
 connection = pymysql.connect(
@@ -19,6 +19,12 @@ mqttServer = "chirpstack.iut-blagnac.fr"
 print("Starting...")
 
 # callback appele lors de la reception d'un message
+#def get_batterieLevel(mqttc, obj, msg):
+    #print(msg.topic + "\n\n")
+    #data = json.loads(msg.payload)
+    #print(data)
+    #pass
+
 def get_data(mqttc, obj, msg):
     print(msg.topic + "\n\n")
     data = json.loads(msg.payload)
@@ -65,16 +71,21 @@ def insertData(deviceName, temperature,humidity,activity,co2,tvoc,illumination):
 
 # creation du client
 mqttc = mqtt.Client()
+#mqttc2 = mqtt.Client()
 mqttc.connect(mqttServer, port=1883, keepalive=60)
+#mqttc2.connect(mqttServer, port=1883, keepalive=60)
 
 mqttc.on_message = get_data
+#mqttc2.on_message = get_batterieLevel
 
 # soucription au device
 #mqttc.subscribe("application/"+appID+"/device/+/event/up", 0)
 mqttc.subscribe("AM107/by-deviceName/+/data",0)
+#mqttc2.subscribe("application/1/device/+/event/up",0)
 print("Connected !")
 
 mqttc.loop_forever()
+#mqttc2.loop_forever()
 
 connection.close()
 print("Closed !")

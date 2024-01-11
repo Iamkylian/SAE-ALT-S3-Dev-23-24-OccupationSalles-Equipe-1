@@ -27,11 +27,6 @@
 L'application de DailyBank est conçue pour être utilisée par différents acteurs au sein de la banque, chacun ayant des rôles spécifiques et des responsabilités définies. Voici les principaux utilisateurs de l'application et leurs rôles :
 
 
-=== User Story
-
-
-
-
 ===== ???
 
 * Rôle : 
