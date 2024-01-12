@@ -77,6 +77,14 @@ Le dépot Github est séparé en plusieurs dossiers, chacun ayant un rôle bien 
 === Issues
 
 image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues[Issues, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/26"]
+image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues[Issues, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/25"]
+image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues[Issues, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/24"]
+image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues[Issues, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/23"]
+image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues[Issues, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/22"]
+image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues[Issues, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/21"]
+image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues[Issues, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/20"]
+image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues[Issues, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/19"]
+image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues[Issues, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/18"]
 
 == Livrables
 
