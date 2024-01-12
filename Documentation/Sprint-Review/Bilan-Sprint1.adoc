@@ -20,9 +20,9 @@
 * Sprint dates: 08/01 à 9h30, jusqu'au 12/01 à 17h
 * Sprint review: 12/01 à 9h30
 * Sprint demo: 12/01 à 10h
-* Scrum master: Kylian GACHET
-* Product Owner:Yann Rouquié
-* Developpeur : Mathéo Katbie / Lylian Derramond
+* Scrum master: Kylian Gachet
+* Product Owner: Yann Rouquié
+* Développeur : Mathéo Katbie / Lylian Derramond
 
 
 == Objectifs
