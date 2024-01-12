@@ -1,0 +1,24 @@
+svg {
+}
+g {
+  fill: rgba(36, 161, 219, 0.404);
+  stroke: rgb(0, 0, 0);
+
+  /* stroke:rgb(0, 0, 0);
+    fill: rgb(248, 183, 43); */
+
+  fill-opacity: 1;
+  stroke-width: 1px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-opacity: 1;
+
+  transition: fill 1.2s, stroke 1s;
+}
+g.changeColor:hover {
+  stroke: rgb(56, 0, 102);
+  fill: rgb(247, 156, 239);
+
+  /* stroke:rgb(255, 193, 183);
+    fill: rgb(233, 8, 0); */
+}

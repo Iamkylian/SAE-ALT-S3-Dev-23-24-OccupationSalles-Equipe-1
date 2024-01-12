@@ -1,0 +1,14 @@
+@startuml
+
+actor utilisateur as u 
+actor administrateur as a
+
+usecase "Visualiser informations salles" as infoSalles
+usecase "Visualiser informations des capteurs" as infoCapteurs
+
+u->infoSalles
+u->infoCapteurs
+
+a--|>u
+
+@enduml

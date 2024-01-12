@@ -22,10 +22,10 @@ services:
       MYSQL_DATABASE: php-app
       MYSQL_USER: USER
       MYSQL_PASSWORD: PASS
-    volumes:
-      - /opt/mysql_data:/var/lib/mysql
     ports:
-      - "9906:3306"  
+      - "9906:3306"
+    volumes:
+      - "../BDD/db.sql:/docker-entrypoint-initdb.d/1.sql"
       
   phpmyadmin:
     image: phpmyadmin
@@ -38,5 +38,17 @@ services:
     ports:
       - 8081:80
 
-volumes:
-  mysql-data:
+  python:
+    image: python:3.9  
+    volumes:
+      - ../Python/battery.py:/app/battery.py
+      - ../Python/device.py:/app/device.py
+      - ./start.sh:/app/start.sh
+    working_dir: /app
+    command: /app/start.sh
+
+      
+  grafana:
+    image: grafana/grafana:9.1.7
+    ports:
+      - 8082:3000

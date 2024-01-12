@@ -1,0 +1,78 @@
+= Documentation Utilisateur - Sujet "Occupation des salles" (Occupation)
+:toc:
+:toc-title: Sommaire
+//:toc: preamble
+:toclevels: 5
+:sectnums:
+:sectnumlevels: 5
+
+:Entreprise: Groupe 1
+:Equipe:  
+
+[cols="4"]
+|===
+|Version | Date | Équipe | Projet
+|1.0 | 12 Janvier 2024 | Groupe 1 : Kylian, Mathéo, Yann, Lylian | Développement d'une application
+|=== 
+
+== Présentation et objectifs de l'Application
+
+Le projet de surveillance des salles du 1er étage du département d'informatique a pout objectif d'optimiser l'utilisation des espaces et à garantir le bien-être des occupants. Grâce à l'installation de capteurs AM107 dans chaque salle, notre objectif est de collecter des données telles que la présence, la luminosité et le niveau de CO2. 
+Pour exploiter au mieux ces informations, nous développons une interface web qui permet non seulement de visualiser en temps réel les conditions des salles, mais aussi de stocker ces données de manière sécurisée. En fournissant un historique complet et des outils de statistiques, notre application vise à offrir aux utilisateurs un aperçu détaillé de l'occupation des salles et à faciliter la prise de décision pour une gestion plus efficace de l'espace et des ressources.
+
+
+=== Rôle de l'application
+
+Cette application permetttra de voir l'occupation des données des salles du Batiment B en temps réel.
+
+=== Fonctionnalités principales de l'application
+
+1. Visualisation en Temps Réel +
+L'interface de l'application offre une visualisation en temps réel des données remontées par les capteurs. Vous pouvez observer instantanément la présence, la luminosité et le niveau de CO2 dans chaque salle du 1er étage.
+
+1. Historique des Données +
+L'application enregistre toutes les données collectées, permettant aux utilisateurs d'accéder à un historique complet. Cette fonctionnalité offre la possibilité de suivre l'évolution des conditions des salles au fil du temps.
+
+3. Stockage dans une Base de Données +
+Les informations collectées sont stockées de manière sécurisée dans une base de données, assurant la pérennité des données et facilitant les analyses futures.
+
+4. Statistiques et Rapports +
+L'application propose des fonctionnalités avancées pour générer des statistiques et des rapports basés sur les données enregistrées. Cela permet une analyse approfondie de l'occupation des salles.
+
+== Installation
+
+=== Configuration requise
+
+Avant d’installer l'application, veuillez vous assurer que votre ordinateur satisfait au minimum à la configuration système suivante :
+
+Configuration *matérielle* :
+
+* Processeur : Intel Core i3 ou équivalent
+* Mémoire RAM : 8 Go ou plus
+* Espace de stockage : 256 Go ou plus
+* Connexion réseau : Ethernet ou Wi-Fi
+
+Configuration *logicielle* :
+
+* Système d'exploitation : Windows 10/11, macOS, ou une distribution Linux récente comme Ubuntu
+* Java Development Kit (JDK) : Version 17
+* Environnement de développement intégré (IDE) : Visual Studio Code
+* Base de données : Oracle Database, MySQL, ou tout autre système de gestion de base de données relationnelle compatible avec Java
+* Bibliothèques/frameworks : Python 3.11.7
+
+== Utilisation
+
+
+
+== Fonctionnement
+
+
+
+== Résultats produits avec jeux d'essai commentés
+
+
+
+== Conclusion
+
+
+En conclusion, l'application 
