@@ -19,6 +19,7 @@ Lors de cette SAE nous allons colllaborer en équipe de 4 afin de réaliser ce p
 * https://github.com/Lyll01[Lylian DERRAMOND] - DEVELOPPEUR
 
 Enseignant(e) en lien avec le projet:: mailto:remi.boulle@univ-tlse2.fr[Remi Boulle]
+                                       mailto:esther.pendaries@univ-tlse2.fr[Esther Pendaries]
 
 == Présentation du projet
 
@@ -72,12 +73,10 @@ Le dépot Github est séparé en plusieurs dossiers, chacun ayant un rôle bien 
 - image:https://img.shields.io/badge/Documentation_Utilisateur-V1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/Documentation/Documentation-Utilisateur.adoc"]
 - image:https://img.shields.io/badge/Backlog_produit-RoomService-red.svg[link='https://github.com/Iamkylian/SAE-ALT-BUT3B01/blob/main/Documentation/Backlog_produit_1.pdf'] +
 - Tests unitaires et plans de test ?
-- Indicateurs de qualité du code (dette technique)
-- ... tout autre élément que vous jugerez utiles pour démontrer la qualité de votre application
 
 === Bilan Sprint Review
 
-- image:https://img.shields.io/badge/Bilan_Sprint_1_Review-red.svg[link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/blob/main/Documentation/Sprint-Review/Bilan-Sprint1.adoc"]
+- image:https://img.shields.io/badge/Bilan_Sprint_1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/blob/main/Documentation/Sprint-Review/Bilan-Sprint1.adoc"]
 
 === Issues
 
