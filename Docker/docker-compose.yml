@@ -41,13 +41,12 @@ services:
   python:
     image: python:3.9  
     volumes:
-      - ../Python/script.py:/app/script.py
+      - ../Python/battery.py:/app/battery.py
+      - ../Python/device.py:/app/device.py
+      - ./start.sh:/app/start.sh
     working_dir: /app
-    command: >
-      sh -c "python3 -m pip install paho-mqtt
-      && pip install cryptography
-      && pip install pymysql 
-      && python -u script.py"
+    command: /app/start.sh
+
       
   grafana:
     image: grafana/grafana:9.1.7
