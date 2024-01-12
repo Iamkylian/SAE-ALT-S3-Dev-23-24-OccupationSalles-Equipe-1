@@ -75,28 +75,31 @@ Le dépot Github est séparé en plusieurs dossiers, chacun ayant un rôle bien 
 - Indicateurs de qualité du code (dette technique)
 - ... tout autre élément que vous jugerez utiles pour démontrer la qualité de votre application
 
+=== Bilan Sprint Review
+
+- image:https://img.shields.io/badge/Bilan_Sprint_1_Review-green.svg[link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/blob/main/Documentation/Sprint-Review/Bilan-Sprint1.adoc"]
 
 === Issues
 
 image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issue_26[Issues #26, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/26"] +
-image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=#25[Issues #25, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/25"] +
-image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=#24[Issues #24, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/24"] +
-image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=#23[Issues #23, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/23"] +
-image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=#22[Issues #22, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/22"] +
-image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=#21[Issues #21, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/21"] +
-image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=#20[Issues #20, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/20"] +
-image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=#19[Issues #19, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/19"] +
-image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=#18[Issues #18, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/18"]
+image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issue_25[Issues #25, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/25"] +
+image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issue_24[Issues #24, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/24"] +
+image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issue_23[Issues #23, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/23"] +
+image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issue_22[Issues #22, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/22"] +
+image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issue_21[Issues #21, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/21"] +
+image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issue_20[Issues #20, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/20"] +
+image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issue_19[Issues #19, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/19"] +
+image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issue_18[Issues #18, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/18"]
 
 == Livrables
 
 [cols="1,2,2,5",options=header]
 |===
 | Date    | Nom               | Lien | Retour
-|  | Documentation Utilisateur   | lien |
-|  | Documentation Technique   | lien | 
-|  | Backlog Produit   | lien | 
-|  | Compte rendu Sprint 1 | lien | 
+|  | Documentation Utilisateur   | image:https://img.shields.io/badge/Documentation_Utilisateur-V1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/Documentation/Documentation-Utilisateur.adoc"] |
+|  | Documentation Technique   | image:https://img.shields.io/badge/Documentation_Technique-V1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/Documentation/Documentation-Technique.adoc"] | 
+|  | Backlog Produit   | image:https://img.shields.io/badge/Backlog_produit-RoomService-red.svg[link='https://github.com/Iamkylian/SAE-ALT-BUT3B01/blob/main/Documentation/Backlog_produit_1.pdf'] | 
+|  | Compte rendu Sprint 1 | image:https://img.shields.io/badge/Bilan_Sprint_1_Review-red.svg[link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/blob/main/Documentation/Sprint-Review/Bilan-Sprint1.adoc"] | 
 |  | Compte rendu Sprint 2   | A venir | 
 |  | Compte rendu Sprint 3   | A venir | 
 |===
