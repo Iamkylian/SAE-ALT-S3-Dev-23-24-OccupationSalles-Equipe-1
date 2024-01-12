@@ -26,10 +26,11 @@ def get_deviceData(mqttc, obj, msg):
     data = json.loads(msg.payload)
     #print(data)
     
-    if "floor" in data:
+    if 'floor' in data[1]:
         insertDevice(data[1]['deviceName'],data[1]['room'],data[1]['floor'],data[1]['Building'])
     else: 
-        insertDevice(data[1]['deviceName'],data[1]['room'],"Unknown",data[1]['Building'])
+        insertDevice(data[1]['deviceName'],data[1]['room'],-1,data[1]['Building'])
+        print("--- NO FLOOR ---")
 
     insertData(data[1]['deviceName'],data[0]['temperature'],data[0]['humidity'],data[0]['activity'],data[0]['co2'],data[0]['tvoc'],data[0]['illumination'])
     pass
