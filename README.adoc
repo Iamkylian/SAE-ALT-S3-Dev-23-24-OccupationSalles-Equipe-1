@@ -51,7 +51,7 @@ Afin de pouvoir utiliser l'application de maniére efficace et fonctionnels, il 
 
 - 6. Se rendre sur l'addresse  http://localhost:8000/ pour visualiser l'interface
 
-=== Localisation des documents
+=== Localisation des fichiers
 
 Le dépot Github est séparé en plusieurs dossiers, chacun ayant un rôle bien précis :
 
@@ -68,7 +68,7 @@ Utilisez pour cela les fonctionnalités de GitHub pour les https://docs.github.c
 De plus ce fichier `README.adoc` devra être à jour des informations suivantes :
 
 - Version courante : https://github.com/IUT-Blagnac/sae3-01-template/releases/tag/v0.1.2[v0.1.2]
-- Lien vers la doc technique
+- Documentation technique : image:https://img.shields.io/badge/DocumentationTechnique-Version%201.0-brightgreen.svg[Version: 1.0, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/Documentation/Documentation-Technique.adoc"]
 - Lien vers la doc utilisateur
 - Liste des (ou lien vers les) User Stories (ToDo/Ongoing/Done) et % restant
 - Tests unitaires et plans de test
