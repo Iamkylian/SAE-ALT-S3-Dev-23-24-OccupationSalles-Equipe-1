@@ -76,7 +76,7 @@ Le dépot Github est séparé en plusieurs dossiers, chacun ayant un rôle bien 
 
 === Issues
 
-image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues[Issues #26, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/26"] +
+image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues%#26[Issues #26, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/26"] +
 image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues[Issues #25, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/25"] +
 image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues[Issues #24, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/24"] +
 image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues[Issues #23, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/23"] +
