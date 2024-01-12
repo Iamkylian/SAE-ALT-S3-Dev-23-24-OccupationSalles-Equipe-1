@@ -68,12 +68,15 @@ Le dépot Github est séparé en plusieurs dossiers, chacun ayant un rôle bien 
 == Gestion de projet & Qualité
 
 - Version courante : https://github.com/IUT-Blagnac/sae3-01-template/releases/tag/v0.1.2[v0.1.2]
-- image:https://img.shields.io/badge/V1-red?style=flat&label=Documentation%20Technique[Static Badge, Link=="https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/Documentation/Documentation-Technique.adoc"]
+- image:https://img.shields.io/badge/V1-red?style=flat&label=Documentation%20Technique&link=https%3A%2F%2Fgithub.com%2FIamkylian%2FSAE-ALT-BUT3B01%2Ftree%2Fmain%2FDocumentation%2FDocumentation-Technique.adoc[Static Badge]
 - image:https://img.shields.io/badge/Documentation%Utilisateur-Version%201.0-brightgreen.svg[Version: 1.0, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/Documentation/Documentation-Utilisateur.adoc"]
-- Liste des (ou lien vers les) User Stories (ToDo/Ongoing/Done) et % restant
 - Tests unitaires et plans de test ?
 - Indicateurs de qualité du code (dette technique)
 - ... tout autre élément que vous jugerez utiles pour démontrer la qualité de votre application
+
+=== Issues
+
+image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues[Issues, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/26"]
 
 == Livrables
 
