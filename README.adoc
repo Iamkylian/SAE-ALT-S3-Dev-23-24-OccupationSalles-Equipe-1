@@ -24,7 +24,7 @@ Enseignant(e) en lien avec le projet:: mailto:remi.boulle@univ-tlse2.fr[Remi Bou
 
 == Réalisations 
 
-TIP: Mettez ici toutes les informations nécessaire à l'utilisation de votre dépôt (comment on installe votre application, où sont les docs, etc.)
+=== Installation de l'application
 
 Afin de pouvoir utiliser l'application de maniére efficace et fonctionnels, il est nécessaire de suivre les étapes suivantes :
 
@@ -49,8 +49,16 @@ Afin de pouvoir utiliser l'application de maniére efficace et fonctionnels, il 
 
     $ docker-compose up -d
 
-- 6. Se rendre sur l'addresse  `http://localhost:8000/` pour visualiser l'interface
+- 6. Se rendre sur l'addresse  http://localhost:8000/ pour visualiser l'interface
 
+=== Localisation des documents
+
+Le dépot Github est séparé en plusieurs dossiers, chacun ayant un rôle bien précis :
+
+- https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/BDD[/BDD] : contient les fichiers de intéragissant avec la base de données SQL
+- /Docker : contient les fichiers nécessaires à la configuration et au fonctionnement de l'application
+- /Documentation : contient les documents relatifs à l'application
+- /Python : contient les fichiers sources de l'application
 
 == Gestion de projet & Qualité
 
