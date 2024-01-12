@@ -56,9 +56,9 @@ Afin de pouvoir utiliser l'application de maniére efficace et fonctionnels, il 
 Le dépot Github est séparé en plusieurs dossiers, chacun ayant un rôle bien précis :
 
 - https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/BDD[/BDD] : contient les fichiers de intéragissant avec la base de données SQL
-- /Docker : contient les fichiers nécessaires à la configuration et au fonctionnement de l'application
-- /Documentation : contient les documents relatifs à l'application
-- /Python : contient les fichiers sources de l'application
+- https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/Documentation[/Docker] : contient les fichiers nécessaires à la configuration et au fonctionnement de l'application
+- https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/Documentation[/Documentation] : contient les documents relatifs à l'application
+- https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/Python[/Python] : contient les fichiers sources de l'application
 
 == Gestion de projet & Qualité
 
