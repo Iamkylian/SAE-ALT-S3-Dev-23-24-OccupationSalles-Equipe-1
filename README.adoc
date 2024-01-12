@@ -1,15 +1,53 @@
-=== Présentation de l'équipe et rôles respectifs
+= SAE 3.01 2023-2024
+:toc:
+:toc-title: Sommaire
+//:toc: preamble
+:toclevels: 5
+:sectnums:
+:sectnumlevels: 5
 
-Lors de cette SAE nous allons colllaborer en équipe de 4. Les membres de notre équipe sont respectivement :
+:Entreprise: Groupe 1
+:Equipe:  
 
-* Kylian GACHET - SCRUM MASTER
-* Yann ROUQUIE - PRODUCT OWNER
-* Mathéo KATBIE - DEVELOPPEUR
-* Lylian DERRAMOND - DEVELOPPEUR
 
-=== Présentation du projet 
 
-==== Livrables
+== Présentation de l'équipe et rôles respectifs
+
+Lors de cette SAE nous allons colllaborer en équipe de 4 afin de réaliser ce projet. Les membres de notre équipe sont respectivement :
+
+* https://github.com/Iamkylian[Kylian GACHET] - SCRUM MASTER
+* https://github.com/YannRouquie[Yann ROUQUIE] - PRODUCT OWNER
+* https://github.com/MatheoKatbie[Mathéo KATBIE] - DEVELOPPEUR
+* https://github.com/Lyll01[Lylian DERRAMOND] - DEVELOPPEUR
+
+Enseignant(e) en lien avec le projet:: mailto:remi.boulle@univ-tlse2.fr[Remi Boulle]
+
+== Réalisations 
+
+TIP: Mettez ici toutes les informations nécessaire à l'utilisation de votre dépôt (comment on installe votre application, où sont les docs, etc.)
+
+Afin de pouvoir utiliser l'application de maniére efficace et fonctionnels, il est nécessaire de suivre les étapes suivantes :
+
+- 1. 
+
+== Gestion de projet & Qualité
+
+Chaque sprint (semaine) vous devrez livrer une nouvelle version de votre application (release).
+Utilisez pour cela les fonctionnalités de GitHub pour les https://docs.github.com/en/repositories/releasing-projects-on-github[Releases].
+
+De plus ce fichier `README.adoc` devra être à jour des informations suivantes :
+
+- Version courante : https://github.com/IUT-Blagnac/sae3-01-template/releases/tag/v0.1.2[v0.1.2]
+- Lien vers la doc technique
+- Lien vers la doc utilisateur
+- Liste des (ou lien vers les) User Stories (ToDo/Ongoing/Done) et % restant
+- Tests unitaires et plans de test
+- Indicateurs de qualité du code (dette technique)
+- ... tout autre élément que vous jugerez utiles pour démontrer la qualité de votre application
+
+== Présentation du projet 
+
+=== Livrables
 
 [cols="1,2,2,5",options=header]
 |===
