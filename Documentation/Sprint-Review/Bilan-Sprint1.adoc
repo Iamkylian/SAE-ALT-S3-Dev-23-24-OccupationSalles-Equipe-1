@@ -5,7 +5,6 @@
 :toclevels: 5
 :sectnums:
 :sectnumlevels: 5
-:date: {sys:date}
 
 :Entreprise: Groupe 1
 :Equipe:  
@@ -13,7 +12,7 @@
 [cols="4"]
 |===
 |Version | Date | Équipe | Projet
-|1.0 | {sys:date} | Groupe 1 : Kylian, Mathéo, Yann, Lylian | Développement d'une application
+|1.0 | 12 Janvier 2024 | Groupe 1 : Kylian, Mathéo, Yann, Lylian | Développement d'une application
 |=== 
 
 == Description
