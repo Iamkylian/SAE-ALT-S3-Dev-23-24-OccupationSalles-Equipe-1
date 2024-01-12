@@ -24,7 +24,7 @@ Enseignant(e) en lien avec le projet:: mailto:remi.boulle@univ-tlse2.fr[Remi Bou
 
 === Contexte
 
-Dans le cadre de notre SAE, nous avons pour mission de réaliser une application web permettant de visualiser les informations transmises par des capteurs situés dans les salles du Batiment B de l'IUT de Blagnac./
+Dans le cadre de notre SAE, nous avons pour mission de réaliser une application web permettant de visualiser les informations transmises par des capteurs situés dans les salles du Batiment B de l'IUT de Blagnac. +
 Cette application permettra également de visualiser les informations relatives aux salles (température, humidité, luminosité, etc...) en temps réel ainsi que l'historique des données transmise par les capteurs, toutes ces informations seront seraccessible via un rendu graphique pour permettre une meilleur visualisation et analyse dans le cadre d'une maintenance efficace.
 
 == Réalisations 
