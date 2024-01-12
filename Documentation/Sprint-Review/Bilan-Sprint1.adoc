@@ -18,51 +18,28 @@
 
 == Description
 
-* Sprint dates: DD/MM at HHam, to DD/MM at HHpm (Y working days)
-* Sprint review: DD/MM at HHpm
-* Sprint demo: DD/MM at HHam
-* Daily stand-up: HH:MMam
-* Scrum master: @scrummaster
+* Sprint dates: 08/01 at 9h30, to 12/01 at 17h
+* Sprint review: 12/01 at 9h30
+* Sprint demo: 12/01 at 10h
+* Scrum master: https://github.com/Iamkylian[Kylian GACHET]
 
 == Objectifs
 
-* Objectif 1 -> OK
-* Objectif 2 -> OK
+* Organiser et planfier le Github entre le Scrum Master et le Product Owner -> OK
+* Définir les tâches à réaliser dans les Issues et créer les taches en lien avec le Backlog -> OK
+* Créer le corps de la documentation technique et utilisateur -> OK
+* Produire les bases de l'interface, la connexion à la bases de données et récupérer les flux MQTT à ingérer dans la BD -> OK
 
 == Demo
 
 * (release)
 
-== Retours positifs et négatifs
+== FeedBack de l'equipe
 
-=== @Iamkylian
-
-* (+)
-* (+)
-* (-)
-* (-)
-
-=== @YannRouquie
-
-* (+)
-* (+)
-* (-)
-* (-)
-
-=== @MatheoKatbie
-
-* (+)
-* (+)
-* (-)
-* (-)
-
-=== @Lylian
-
-* (+)
-* (+)
-* (-)
-* (-)
-
+Bonne organisations au sein de l'equipe, le travail est correctement répartit et les taches sont bien définies.
+Le travail est bien avancé pour le sprint N°2 et les objectifs sont atteints.
+Au niveau des documentation il manque encore quelques détails à ajouter mais le corps est bien présent.
+Le backlog nous parait bien défini avec les details necessaires a sa compréhension.
 
 == Sujets en progression pour le prochain sprint
 
