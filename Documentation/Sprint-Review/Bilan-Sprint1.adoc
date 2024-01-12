@@ -34,7 +34,7 @@
 
 == Demo
 
-* https://github.com/Iamkylian/SAE-ALT-BUT3B01/releases/tag/V1[Release RoomService V1]
+* image:https://img.shields.io/badge/Release_RoomService-v1.0-red.svg[link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/releases/tag/V1"]
 
 == FeedBack de l'équipe
 
