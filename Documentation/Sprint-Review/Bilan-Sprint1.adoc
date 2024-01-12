@@ -32,7 +32,7 @@
 
 == Demo
 
-* (release)
+* https://github.com/Iamkylian/SAE-ALT-BUT3B01/releases/tag/V1[Release RoomService V1]
 
 == FeedBack de l'equipe
 
@@ -43,14 +43,15 @@ Le backlog nous parait bien défini avec les details necessaires a sa compréhen
 
 == Sujets en progression pour le prochain sprint
 
-* 
-* 
-
-== Documentation
+* Redaction de la documentation utilisateur et technique
+* Perfectionnement et amélioration de l'interface graphique
+* Ajout de fonctionnalités dans l'interface graphique
 
 == Tâches terminées
 
-* 
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_#18[Issues #18, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/18"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_#19[Issues #18, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/19"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_#20[Issues #18, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/20"] +
 
 == Tâches non achevées
 
