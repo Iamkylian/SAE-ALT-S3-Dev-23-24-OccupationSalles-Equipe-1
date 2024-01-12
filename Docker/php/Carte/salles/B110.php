@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../css/header.css" rel="stylesheet">
-    <title>Document</title>
+    <link href="../../Css/header.css" rel="stylesheet">
+    <link href="../../Css/svg.css" rel="stylesheet">    <title>Document</title>
 </head>
 <body>
     <?php
-        include("../connect.inc.php");
+        include("../../connect.inc.php");
     ?>
 
     <header id="head">
