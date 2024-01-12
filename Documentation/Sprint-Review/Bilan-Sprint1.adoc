@@ -5,7 +5,7 @@
 :toclevels: 5
 :sectnums:
 :sectnumlevels: 5
-:date: {date}
+:date: {sys:date}
 
 :Entreprise: Groupe 1
 :Equipe:  
@@ -13,7 +13,7 @@
 [cols="4"]
 |===
 |Version | Date | Équipe | Projet
-|1.0 | {date} | Groupe 1 : Kylian, Mathéo, Yann, Lylian | Développement d'une application
+|1.0 | {sys:date} | Groupe 1 : Kylian, Mathéo, Yann, Lylian | Développement d'une application
 |=== 
 
 == Description
@@ -49,18 +49,15 @@ Le backlog nous parait bien défini avec les details necessaires a sa compréhen
 
 == Tâches terminées
 
-* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_#18[Issues #18, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/18"] +
-* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_#19[Issues #18, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/19"] +
-* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_#20[Issues #18, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/20"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_18[Issues #18, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/18"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_19[Issues #18, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/19"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_20[Issues #18, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/20"] +
 
 == Tâches non achevées
 
-* 
-
-== Tâches achevées mais non planifiées
-
-* 
-
-== Tâches non achevées mais non planifiées
-
-*
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_23[Issues #23, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/23"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_22[Issues #22, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/22"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_21[Issues #21, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/21"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_26[Issues #26, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/26"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_25[Issues #25, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/25"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_24[Issues #24, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/24"] +

@@ -77,7 +77,7 @@ Le dépot Github est séparé en plusieurs dossiers, chacun ayant un rôle bien 
 
 === Bilan Sprint Review
 
-- image:https://img.shields.io/badge/Bilan_Sprint_1_Review-green.svg[link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/blob/main/Documentation/Sprint-Review/Bilan-Sprint1.adoc"]
+- image:https://img.shields.io/badge/Bilan_Sprint_1_Review-red.svg[link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/blob/main/Documentation/Sprint-Review/Bilan-Sprint1.adoc"]
 
 === Issues
 
