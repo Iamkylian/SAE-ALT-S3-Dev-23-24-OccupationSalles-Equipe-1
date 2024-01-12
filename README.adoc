@@ -28,12 +28,28 @@ TIP: Mettez ici toutes les informations nécessaire à l'utilisation de votre d�
 
 Afin de pouvoir utiliser l'application de maniére efficace et fonctionnels, il est nécessaire de suivre les étapes suivantes :
 
-- 1. Installer Docker Desktop et le lancer
-- 2. Cloner le répository et se placer sur la branche main
-- 3. Récupérer le projet localement avec un git pull
+- 1. Installer https://www.docker.com/products/docker-desktop/[Docker Desktop] et le lancer
+- 2. Cloner le répository
+
+    $ git clone [lien du repository]
+
+- 3. Si ce n'est pas le cas, se placer sur la branche main
+
+    $ git checkout main
+
+- 3. Récupérer le projet localement
+
+    $ git pull
+
 - 4. Ouvrir un terminal dans le dossier /Docker du projet
-- 5. Exécuter la commande docker-compose up -d
-- 6. Se rendre sur l'addresse  http://localhost:8000/ pour visualiser l'interface.
+
+    $ cd ./Docker/ 
+
+- 5. Exécuter la commande :
+
+    $ docker-compose up -d
+
+- 6. Se rendre sur l'addresse  `http://localhost:8000/` pour visualiser l'interface
 
 
 == Gestion de projet & Qualité
