@@ -17,10 +17,13 @@
 
 == Description
 
-* Sprint dates: 08/01 at 9h30, to 12/01 at 17h
-* Sprint review: 12/01 at 9h30
-* Sprint demo: 12/01 at 10h
-* Scrum master: https://github.com/Iamkylian[Kylian GACHET]
+* Sprint dates: 08/01 à 9h30, jusqu'au 12/01 à 17h
+* Sprint review: 12/01 à 9h30
+* Sprint demo: 12/01 à 10h
+* Scrum master: Kylian GACHET
+* Product Owner:Yann Rouquié
+* Developpeur : Mathéo Katbie / Lylian Derramond
+
 
 == Objectifs
 
@@ -33,7 +36,7 @@
 
 * https://github.com/Iamkylian/SAE-ALT-BUT3B01/releases/tag/V1[Release RoomService V1]
 
-== FeedBack de l'equipe
+== FeedBack de l'équipe
 
 Bonne organisations au sein de l'equipe, le travail est correctement répartit et les taches sont bien définies.
 Le travail est bien avancé pour le sprint N°2 et les objectifs sont atteints.
@@ -43,20 +46,25 @@ Le backlog nous parait bien défini avec les details necessaires a sa compréhen
 == Sujets en progression pour le prochain sprint
 
 * Redaction de la documentation utilisateur et technique
-* Perfectionnement et amélioration de l'interface graphique
-* Ajout de fonctionnalités dans l'interface graphique
+* Amélioration graphique de l'interface web
+* Ajout de fonctionnalités dans l'interface web
 
-== Tâches terminées
+
+== Tâches réalisées
 
 * image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_18[Issues #18, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/18"] +
 * image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_19[Issues #18, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/19"] +
 * image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_20[Issues #18, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/20"] +
 
-== Tâches non achevées
+== Tâches en cours
 
 * image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_23[Issues #23, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/23"] +
 * image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_22[Issues #22, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/22"] +
 * image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_21[Issues #21, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/21"] +
 * image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_26[Issues #26, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/26"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_27[Issues #27, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/27"] +
+
+== Tâches non achevées
+
 * image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_25[Issues #25, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/25"] +
 * image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_24[Issues #24, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/24"] +
