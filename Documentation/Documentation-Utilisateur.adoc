@@ -27,20 +27,16 @@ Cette application permetttra de voir l'occupation des données des salles du Bat
 
 === Fonctionnalités principales de l'application
 
-1. Visualisation en Temps Réel
-2. 
+1. Visualisation en Temps Réel +
 L'interface de l'application offre une visualisation en temps réel des données remontées par les capteurs. Vous pouvez observer instantanément la présence, la luminosité et le niveau de CO2 dans chaque salle du 1er étage.
 
-1. Historique des Données
-
+1. Historique des Données +
 L'application enregistre toutes les données collectées, permettant aux utilisateurs d'accéder à un historique complet. Cette fonctionnalité offre la possibilité de suivre l'évolution des conditions des salles au fil du temps.
 
-3. Stockage dans une Base de Données
-
+3. Stockage dans une Base de Données +
 Les informations collectées sont stockées de manière sécurisée dans une base de données, assurant la pérennité des données et facilitant les analyses futures.
 
-4. Statistiques et Rapports
-
+4. Statistiques et Rapports +
 L'application propose des fonctionnalités avancées pour générer des statistiques et des rapports basés sur les données enregistrées. Cela permet une analyse approfondie de l'occupation des salles.
 
 == Installation
