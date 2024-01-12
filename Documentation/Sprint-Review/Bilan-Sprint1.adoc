@@ -17,20 +17,20 @@
 
 == Description
 
-* Sprint dates: 08/01 à 9h30, jusqu'au 12/01 à 17h
-* Sprint review: 12/01 à 9h30
-* Sprint demo: 12/01 à 10h
-* Scrum master: Kylian Gachet
+* Sprint dates : 08/01 à 11h05, jusqu'au 12/01 à 17h
+* Sprint review : 12/01 à 9h30
+* Sprint demo : 12/01 à 10h
+* Scrum master : Kylian Gachet
 * Product Owner: Yann Rouquié
 * Développeur : Mathéo Katbie / Lylian Derramond
 
 
 == Objectifs
 
-* Organiser et planfier le Github entre le Scrum Master et le Product Owner -> OK
+* Organiser et planifier le Github entre le Scrum Master et le Product Owner -> OK
 * Définir les tâches à réaliser dans les Issues et créer les taches en lien avec le Backlog -> OK
 * Créer le corps de la documentation technique et utilisateur -> OK
-* Produire les bases de l'interface, la connexion à la bases de données et récupérer les flux MQTT à ingérer dans la BD -> OK
+* Produire les bases de l'interface, la connexion à la base de données et récupérer les flux MQTT à ingérer dans la BD -> OK
 
 == Demo
 
@@ -38,14 +38,14 @@
 
 == FeedBack de l'équipe
 
-Bonne organisations au sein de l'equipe, le travail est correctement répartit et les taches sont bien définies.
+Une bonne organisation au sein de l'équipe, le travail est correctement réparti et les taches sont bien définies.
 Le travail est bien avancé pour le sprint N°2 et les objectifs sont atteints.
-Au niveau des documentation il manque encore quelques détails à ajouter mais le corps est bien présent.
-Le backlog nous parait bien défini avec les details necessaires a sa compréhension.
+Au niveau des documentations, il manque encore quelques détails à ajouter, mais le corps est bien présent.
+Le Backlog nous parait bien défini avec les détails nécessaires à sa compréhension.
 
 == Sujets en progression pour le prochain sprint
 
-* Redaction de la documentation utilisateur et technique
+* Rédaction de la documentation utilisateur et technique
 * Amélioration graphique de l'interface web
 * Ajout de fonctionnalités dans l'interface web
 

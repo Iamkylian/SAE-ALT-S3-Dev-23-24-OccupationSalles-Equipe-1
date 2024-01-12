@@ -18,24 +18,24 @@ Lors de cette SAE nous allons colllaborer en équipe de 4 afin de réaliser ce p
 * https://github.com/MatheoKatbie[Mathéo KATBIE] - DEVELOPPEUR
 * https://github.com/Lyll01[Lylian DERRAMOND] - DEVELOPPEUR
 
-Enseignant(e) en lien avec le projet:: mailto:remi.boulle@univ-tlse2.fr[Remi Boulle]
+Enseignant(e) en lien avec le projet:: mailto:remi.boulle@univ-tlse2.fr[Remi Boulle] +
                                        mailto:esther.pendaries@univ-tlse2.fr[Esther Pendaries]
 
 == Présentation du projet
 
 === Contexte
 
-Dans le cadre de notre SAE, nous avons pour mission de réaliser une application web permettant de visualiser les informations transmises par des capteurs situés dans les salles du Batiment B de l'IUT de Blagnac. +
-Cette application permettra également de visualiser les informations relatives aux salles (température, humidité, luminosité, etc...) en temps réel ainsi que l'historique des données transmise par les capteurs, toutes ces informations seront seraccessible via un rendu graphique pour permettre une meilleur visualisation et analyse dans le cadre d'une maintenance efficace.
+Dans le cadre de notre SAE, nous avons pour mission de réaliser une application web permettant de visualiser les informations transmises par des capteurs situés dans les salles du Bâtiment B de l'IUT de Blagnac. +
+Cette application, RoomService, permettra également de visualiser les informations relatives aux salles (température, humidité, luminosité, etc...) en temps réel ainsi que l'historique des données transmises par les capteurs, toutes ces informations seront sera accessible via un rendu graphique pour permettre une meilleure visualisation et analyse dans le cadre d'une maintenance efficace.
 
 == Réalisations 
 
 === Installation de l'application
 
-Afin de pouvoir utiliser l'application de maniére efficace et fonctionnels, il est nécessaire de suivre les étapes suivantes :
+Afin de pouvoir utiliser l'application de manière efficace et fonctionnelle, il est nécessaire de suivre les étapes suivantes :
 
 - 1. Installer https://www.docker.com/products/docker-desktop/[Docker Desktop] et le lancer
-- 2. Cloner le répository
+- 2. Cloner le repository
 
     $ git clone [lien du repository]
 
