@@ -61,44 +61,32 @@ Afin de pouvoir utiliser l'application de manière efficace et fonctionnelle, il
 
 Le dépot Github est séparé en plusieurs dossiers, chacun ayant un rôle bien précis :
 
-- https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/BDD[/BDD] : contient les fichiers de intéragissant avec la base de données SQL
-- https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/Documentation[/Docker] : contient les fichiers nécessaires à la configuration et au fonctionnement de l'application
-- https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/Documentation[/Documentation] : contient les documents relatifs à l'application
-- https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/Python[/Python] : contient les fichiers sources de l'application
+- https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/BDD[/BDD] : contient les fichiers de intéragissant avec la base de données SQL
+- https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Documentation[/Docker] : contient les fichiers nécessaires à la configuration et au fonctionnement de l'application
+- https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Documentation[/Documentation] : contient les documents relatifs à l'application
+- https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Python[/Python] : contient les fichiers sources de l'application
 
 == Gestion de projet & Qualité
 
-- Version courante de l'application : image:https://img.shields.io/badge/RoomService-v1.0-red.svg[link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/releases/tag/V1"]
-- image:https://img.shields.io/badge/Documentation_Technique-V1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/Documentation/Documentation-Technique.adoc"]
-- image:https://img.shields.io/badge/Documentation_Utilisateur-V1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/Documentation/Documentation-Utilisateur.adoc"]
-- image:https://img.shields.io/badge/Backlog_produit-RoomService-red.svg[link='https://github.com/Iamkylian/SAE-ALT-BUT3B01/blob/main/Documentation/Backlog_produit_1.pdf'] +
+- Version courante de l'application : image:https://img.shields.io/badge/RoomService-v1.0-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/releases/tag/V1"]
+- image:https://img.shields.io/badge/Documentation_Technique-V1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Documentation/Documentation-Technique.adoc"]
+- image:https://img.shields.io/badge/Documentation_Utilisateur-V1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Documentation/Documentation-Utilisateur.adoc"]
+- image:https://img.shields.io/badge/Backlog_produit-RoomService-red.svg[link='https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/blob/main/Documentation/Backlog%20produit.pdf'] +
 - Tests unitaires et plans de test ?
 
 === Bilan Sprint Review
 
-- image:https://img.shields.io/badge/Bilan_Sprint_1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/blob/main/Documentation/Sprint-Review/Bilan-Sprint1.adoc"]
-
-=== Issues
-
-image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issue_26[Issues #26, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/26"] +
-image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issue_25[Issues #25, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/25"] +
-image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issue_24[Issues #24, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/24"] +
-image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issue_23[Issues #23, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/23"] +
-image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issue_22[Issues #22, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/22"] +
-image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issue_21[Issues #21, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/21"] +
-image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issue_20[Issues #20, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/20"] +
-image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issue_19[Issues #19, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/19"] +
-image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issue_18[Issues #18, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/18"]
+- image:https://img.shields.io/badge/Bilan_Sprint_1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/blob/main/Documentation/Sprint-Review/Bilan-Sprint1.adoc"]
 
 == Livrables
 
 [cols="1,2,2,5",options=header]
 |===
 | Date    | Nom               | Lien | Retour
-| 12 Janvier 2024  | Documentation Utilisateur   | image:https://img.shields.io/badge/Documentation_Utilisateur-V1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/Documentation/Documentation-Utilisateur.adoc"] |
-| 12 Janvier 2024  | Documentation Technique   | image:https://img.shields.io/badge/Documentation_Technique-V1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/Documentation/Documentation-Technique.adoc"] | 
-| 12 Janvier 2024  | Backlog Produit   | image:https://img.shields.io/badge/Backlog_produit-RoomService-red.svg[link='https://github.com/Iamkylian/SAE-ALT-BUT3B01/blob/main/Documentation/Backlog_produit_1.pdf'] | 
-| 12 Janvier 2024  | Compte rendu Sprint 1 | image:https://img.shields.io/badge/Bilan_Sprint_1_Review-red.svg[link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/blob/main/Documentation/Sprint-Review/Bilan-Sprint1.adoc"] | 
+| 12 Janvier 2024  | Documentation Utilisateur   | image:https://img.shields.io/badge/Documentation_Utilisateur-V1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Documentation/Documentation-Utilisateur.adoc"] |
+| 12 Janvier 2024  | Documentation Technique   | image:https://img.shields.io/badge/Documentation_Technique-V1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Documentation/Documentation-Technique.adoc"] | 
+| 12 Janvier 2024  | Backlog Produit   | image:https://img.shields.io/badge/Backlog_produit-RoomService-red.svg[link='https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/blob/main/Documentation/Backlog_produit_1.pdf'] | 
+| 12 Janvier 2024  | Compte rendu Sprint 1 | image:https://img.shields.io/badge/Bilan_Sprint_1_Review-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/blob/main/Documentation/Sprint-Review/Bilan-Sprint1.adoc"] | 
 |  | Compte rendu Sprint 2   | A venir | 
 |  | Compte rendu Sprint 3   | A venir | 
 |===
