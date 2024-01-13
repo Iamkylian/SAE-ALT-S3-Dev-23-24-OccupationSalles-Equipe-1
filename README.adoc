@@ -72,7 +72,7 @@ Le dépot Github est séparé en plusieurs dossiers, chacun ayant un rôle bien 
 - image:https://img.shields.io/badge/Documentation_Technique-V1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Documentation/Documentation-Technique.adoc"]
 - image:https://img.shields.io/badge/Documentation_Utilisateur-V1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Documentation/Documentation-Utilisateur.adoc"]
 - image:https://img.shields.io/badge/Backlog_produit-RoomService-red.svg[link='https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/blob/main/Documentation/Backlog%20produit.pdf'] +
-- - image:https://img.shields.io/badge/Tests_Unitaires-RoomService-red.svg[link=''] +
+- image:https://img.shields.io/badge/Tests_Unitaires-RoomService-red.svg[link=''] +
 
 === Bilan Sprint Review
 
