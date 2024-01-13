@@ -68,3 +68,7 @@ Le Backlog nous parait bien défini avec les détails nécessaires à sa compré
 
 * image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1?style=flat&label=Issues_25[Issues #25, link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/issues/25"] +
 * image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1?style=flat&label=Issues_24[Issues #24, link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/issues/24"] +
+
+== Remarque(s) indicative(s) du Scrum Master
+
+* Le Srum Master - https://github.com/Iamkylian[Kylian GACHET] - a été absent du 09/01/2024 à partir de 12h jusqu'au 11/01/2024 à 8h.
