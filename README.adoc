@@ -1,25 +1,106 @@
-=== Présentation de l'équipe et rôles respectifs
+= SAE 3.01 2023-2024 - RoomService
+:toc:
+:toc-title: Sommaire
+//:toc: preamble
+:toclevels: 5
+:sectnums:
+:sectnumlevels: 5
 
-Lors de cette SAE nous allons colllaborer en équipe de 4. Les membres de notre équipe sont respectivement :
+:Entreprise: Groupe 1
+:Equipe:  
 
-* Kylian GACHET - SCRUM MASTER
-* Yann ROUQUIE - PRODUCT OWNER
-* Mathéo KATBIE - DEVELOPPEUR
-* Lylian DERRAMOND - DEVELOPPEUR
+== Présentation de l'équipe et rôles respectifs
 
-=== Présentation du projet 
+Lors de cette SAE nous allons colllaborer en équipe de 4 afin de réaliser ce projet. Les membres de notre équipe sont respectivement :
 
-==== Livrables
+* https://github.com/Iamkylian[Kylian GACHET] - SCRUM MASTER
+* https://github.com/YannRouquie[Yann ROUQUIE] - PRODUCT OWNER
+* https://github.com/MatheoKatbie[Mathéo KATBIE] - DEVELOPPEUR
+* https://github.com/Lyll01[Lylian DERRAMOND] - DEVELOPPEUR
+
+Enseignant(e) en lien avec le projet:: mailto:remi.boulle@univ-tlse2.fr[Remi Boulle] +
+                                       mailto:esther.pendaries@univ-tlse2.fr[Esther Pendaries]
+
+== Présentation du projet
+
+=== Contexte
+
+Dans le cadre de notre SAE, nous avons pour mission de réaliser une application web permettant de visualiser les informations transmises par des capteurs situés dans les salles du Bâtiment B de l'IUT de Blagnac. +
+Cette application, RoomService, permettra également de visualiser les informations relatives aux salles (température, humidité, luminosité, etc...) en temps réel ainsi que l'historique des données transmises par les capteurs, toutes ces informations seront sera accessible via un rendu graphique pour permettre une meilleure visualisation et analyse dans le cadre d'une maintenance efficace.
+
+== Réalisations 
+
+=== Installation de l'application
+
+Afin de pouvoir utiliser l'application de manière efficace et fonctionnelle, il est nécessaire de suivre les étapes suivantes :
+
+- 1. Installer https://www.docker.com/products/docker-desktop/[Docker Desktop] et le lancer
+- 2. Cloner le repository
+
+    $ git clone [lien du repository]
+
+- 3. Si ce n'est pas le cas, se placer sur la branche main
+
+    $ git checkout main
+
+- 3. Récupérer le projet localement
+
+    $ git pull
+
+- 4. Ouvrir un terminal dans le dossier /Docker du projet
+
+    $ cd ./Docker/ 
+
+- 5. Exécuter la commande :
+
+    $ docker-compose up -d
+
+- 6. Se rendre sur l'addresse  http://localhost:8000/ pour visualiser l'interface
+
+=== Localisation des fichiers
+
+Le dépot Github est séparé en plusieurs dossiers, chacun ayant un rôle bien précis :
+
+- https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/BDD[/BDD] : contient les fichiers de intéragissant avec la base de données SQL
+- https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/Documentation[/Docker] : contient les fichiers nécessaires à la configuration et au fonctionnement de l'application
+- https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/Documentation[/Documentation] : contient les documents relatifs à l'application
+- https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/Python[/Python] : contient les fichiers sources de l'application
+
+== Gestion de projet & Qualité
+
+- Version courante de l'application : image:https://img.shields.io/badge/RoomService-v1.0-red.svg[link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/releases/tag/V1"]
+- image:https://img.shields.io/badge/Documentation_Technique-V1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/Documentation/Documentation-Technique.adoc"]
+- image:https://img.shields.io/badge/Documentation_Utilisateur-V1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/Documentation/Documentation-Utilisateur.adoc"]
+- image:https://img.shields.io/badge/Backlog_produit-RoomService-red.svg[link='https://github.com/Iamkylian/SAE-ALT-BUT3B01/blob/main/Documentation/Backlog_produit_1.pdf'] +
+- Tests unitaires et plans de test ?
+
+=== Bilan Sprint Review
+
+- image:https://img.shields.io/badge/Bilan_Sprint_1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/blob/main/Documentation/Sprint-Review/Bilan-Sprint1.adoc"]
+
+=== Issues
+
+image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issue_26[Issues #26, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/26"] +
+image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issue_25[Issues #25, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/25"] +
+image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issue_24[Issues #24, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/24"] +
+image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issue_23[Issues #23, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/23"] +
+image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issue_22[Issues #22, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/22"] +
+image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issue_21[Issues #21, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/21"] +
+image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issue_20[Issues #20, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/20"] +
+image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issue_19[Issues #19, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/19"] +
+image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issue_18[Issues #18, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/18"]
+
+== Livrables
 
 [cols="1,2,2,5",options=header]
 |===
 | Date    | Nom               | Lien | Retour
-|  | Documentation Utilisateur   | lien |
-|  | Documentation Technique   | lien | 
-|  | Backlog Produit   | lien | 
-|  | Compte rendu Sprint 1 | lien | 
-|  | Compte rendu Sprint 2   | lien | 
-|  | Compte rendu Sprint 3   | lien | 
+| 12 Janvier 2024  | Documentation Utilisateur   | image:https://img.shields.io/badge/Documentation_Utilisateur-V1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/Documentation/Documentation-Utilisateur.adoc"] |
+| 12 Janvier 2024  | Documentation Technique   | image:https://img.shields.io/badge/Documentation_Technique-V1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/Documentation/Documentation-Technique.adoc"] | 
+| 12 Janvier 2024  | Backlog Produit   | image:https://img.shields.io/badge/Backlog_produit-RoomService-red.svg[link='https://github.com/Iamkylian/SAE-ALT-BUT3B01/blob/main/Documentation/Backlog_produit_1.pdf'] | 
+| 12 Janvier 2024  | Compte rendu Sprint 1 | image:https://img.shields.io/badge/Bilan_Sprint_1_Review-red.svg[link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/blob/main/Documentation/Sprint-Review/Bilan-Sprint1.adoc"] | 
+|  | Compte rendu Sprint 2   | A venir | 
+|  | Compte rendu Sprint 3   | A venir | 
 |===
 
 

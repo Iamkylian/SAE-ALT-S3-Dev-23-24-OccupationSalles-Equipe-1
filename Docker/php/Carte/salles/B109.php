@@ -66,7 +66,7 @@
 <body>
 
     <?php
-        include("../connect.inc.php");
+        include("../../connect.inc.php");
     ?>
 
     <header id="head">

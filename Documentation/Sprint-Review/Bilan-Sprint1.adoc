@@ -1,0 +1,70 @@
+= Bilan du Sprint 1 - Sujet "Occupation des salles" (Occupation)
+:toc:
+:toc-title: Sommaire
+//:toc: preamble
+:toclevels: 5
+:sectnums:
+:sectnumlevels: 5
+
+:Entreprise: Groupe 1
+:Equipe:  
+
+[cols="4"]
+|===
+|Version | Date | Équipe | Projet
+|1.0 | 12 Janvier 2024 | Groupe 1 : Kylian, Mathéo, Yann, Lylian | Développement d'une application
+|=== 
+
+== Description
+
+* Sprint dates : 08/01 à 11h05, jusqu'au 12/01 à 17h
+* Sprint review : 12/01 à 9h30
+* Sprint demo : 12/01 à 10h
+* Scrum master : Kylian Gachet
+* Product Owner: Yann Rouquié
+* Développeur : Mathéo Katbie / Lylian Derramond
+
+
+== Objectifs
+
+* Organiser et planifier le Github entre le Scrum Master et le Product Owner -> OK
+* Définir les tâches à réaliser dans les Issues et créer les taches en lien avec le Backlog -> OK
+* Créer le corps de la documentation technique et utilisateur -> OK
+* Produire les bases de l'interface, la connexion à la base de données et récupérer les flux MQTT à ingérer dans la BD -> OK
+
+== Demo
+
+* image:https://img.shields.io/badge/Release_RoomService-v1.0-red.svg[link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/releases/tag/V1"]
+
+== FeedBack de l'équipe
+
+Une bonne organisation au sein de l'équipe, le travail est correctement réparti et les taches sont bien définies.
+Le travail est bien avancé pour le sprint N°2 et les objectifs sont atteints.
+Au niveau des documentations, il manque encore quelques détails à ajouter, mais le corps est bien présent.
+Le Backlog nous parait bien défini avec les détails nécessaires à sa compréhension.
+
+== Sujets en progression pour le prochain sprint
+
+* Rédaction de la documentation utilisateur et technique
+* Amélioration graphique de l'interface web
+* Ajout de fonctionnalités dans l'interface web
+
+
+== Tâches réalisées
+
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_18[Issues #18, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/18"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_19[Issues #18, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/19"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_20[Issues #18, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/20"] +
+
+== Tâches en cours
+
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_23[Issues #23, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/23"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_22[Issues #22, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/22"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_21[Issues #21, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/21"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_26[Issues #26, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/26"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_27[Issues #27, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/27"] +
+
+== Tâches non achevées
+
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_25[Issues #25, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/25"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Issues_24[Issues #24, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/24"] +

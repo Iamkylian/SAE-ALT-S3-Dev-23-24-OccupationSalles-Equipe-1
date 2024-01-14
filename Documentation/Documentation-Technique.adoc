@@ -12,7 +12,7 @@
 [cols="4"]
 |===
 |Version | Date | Équipe | Projet
-|1.0 | 8 Janvier 2024 | Groupe 1 : Kylian, Mathéo, Yann, Lylian | Développement d'une application
+|1.0 | 12 Janvier 2024 | Groupe 1 : Kylian, Mathéo, Yann, Lylian | Développement d'une application
 |=== 
 
 
