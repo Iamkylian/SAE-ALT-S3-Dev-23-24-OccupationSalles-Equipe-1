@@ -4,8 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@<version>/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@<version>/examples/jsm/"
+      }
+    }
+  </script>
+  <script src="
+    https://cdn.jsdelivr.net/npm/three-orbitcontrols@2.110.3/OrbitControls.min.js
+"></script>
+<script src="
+    https://cdn.jsdelivr.net/npm/three-gltf-loader@1.111.0/index.min.js
+"></script>
 <body>
-    <script type="module" src="app.js"></script>
+    <div class="navbar">
+        <div class="nav-circle">
+          <div class="nav-expand">
+            <button>Carte</button>
+            <button>Maintenance</button>
+            <button>Statistique</button>
+          </div>
+        </div>
+      </div>
+    <main>
+        <div id="container3D"></div>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
