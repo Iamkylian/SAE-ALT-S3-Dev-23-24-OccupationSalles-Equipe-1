@@ -65,6 +65,7 @@ Le dépot Github est séparé en plusieurs dossiers, chacun ayant un rôle bien 
 - https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Documentation[/Docker] : contient les fichiers nécessaires à la configuration et au fonctionnement de l'application
 - https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Documentation[/Documentation] : contient les documents relatifs à l'application
 - https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Python[/Python] : contient les fichiers sources de l'application
+- https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Test[/Test] : contient les fichiers de tests unitaires et/ou plans de test de l'application
 
 == Gestion de projet & Qualité
 
@@ -72,7 +73,7 @@ Le dépot Github est séparé en plusieurs dossiers, chacun ayant un rôle bien 
 - image:https://img.shields.io/badge/Documentation_Technique-V1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Documentation/Documentation-Technique.adoc"]
 - image:https://img.shields.io/badge/Documentation_Utilisateur-V1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Documentation/Documentation-Utilisateur.adoc"]
 - image:https://img.shields.io/badge/Backlog_produit-RoomService-red.svg[link='https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/blob/main/Documentation/Backlog%20produit.pdf'] +
-- image:https://img.shields.io/badge/Tests_Unitaires-RoomService-red.svg[link=''] +
+- image:https://img.shields.io/badge/Tests_Unitaires-RoomService-red.svg[link='https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/blob/main/Test/Test.adoc'] +
 
 === Bilan Sprint Review
 
