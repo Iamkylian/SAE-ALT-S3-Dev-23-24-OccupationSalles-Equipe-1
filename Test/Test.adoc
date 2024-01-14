@@ -1,1 +1,46 @@
-= Init Test
+= Script de Test MQTT
+
+== Introduction
+
+Ce document fournit une vue d'ensemble des scripts MQTT utilisés pour insérer des données dans une base de données MySQL et des cas de test correspondants. Les scripts s'abonnent à des sujets MQTT, traitent les messages entrants et insèrent les données pertinentes dans une base de données.
+
+== Data Script
+
+=== Vue d'ensemble du script
+
+Le script (`Test-Device.py`) s'abonne au sujet MQTT "AM107/by-deviceName/+/data". Il traite les messages de données de l'appareil, extrait des informations telles que la température, l'humidité et les détails de la pièce, et insère les données dans la base de données MySQL.
+
+=== Cas de test
+
+.Cas de test 1 : Insertion réussie
+-- Simuler un message MQTT avec les données de l'appareil.
+-- Résultat attendu : Le script devrait insérer les informations sur l'appareil et les données du capteur dans la base de données. Vérifier les messages de succès dans la sortie.
+
+.Cas de test 2 : Dispositif déjà inséré
+-- Simuler un message MQTT pour un appareil qui existe déjà dans la base de données.
+-- Résultat attendu : Le script doit imprimer un message indiquant que l'appareil est déjà inséré sans essayer de l'insérer à nouveau.
+
+== Battery Level Script
+
+=== Vue d'ensemble du script
+
+Le script (`Test-Battery.py`) s'abonne au sujet MQTT "application/1/device/+/event/status". Il traite les messages de niveau de batterie, extrait le nom de l'appareil et le niveau de batterie, et insère ou met à jour les informations de niveau de batterie dans la base de données MySQL.
+=== Cas de test
+
+.Cas de test 1 : Insertion réussie
+-- Simuler un message MQTT contenant des informations sur le niveau de la batterie d'un nouvel appareil.
+-- Résultat attendu : Le script doit insérer l'appareil et le niveau de batterie dans la base de données. Vérifier les messages de succès dans la sortie.
+
+.Cas de test 2 : Mise à jour du niveau de batterie
+-- Simulez un message MQTT contenant des informations sur le niveau de batterie d'un appareil existant.
+-- Résultat attendu : Le script doit mettre à jour le niveau de batterie de l'appareil existant dans la base de données. Vérifier les messages de succès dans la sortie.
+
+== Conclusion
+
+Les scripts fournis démontrent l'intégration du traitement des messages MQTT avec les interactions de la base de données MySQL. L'exécution des cas de test décrits ci-dessus permettra de valider la fonctionnalité des scripts dans la gestion de divers scénarios.
+
+== Notes
+
+- Assurez-vous que la base de données est accessible et correctement configurée.
+- Confirmez que le Broker MQTT est en cours d'exécution et accessible.
+- Examinez les messages de sortie pour détecter les indications de réussite ou d'échec pendant l'exécution du test.

@@ -43,6 +43,8 @@ services:
     volumes:
       - ../Python/battery.py:/app/battery.py
       - ../Python/device.py:/app/device.py
+      - ../Test/Test-Battery.py:/app/Test-Battery.py
+      - ../Test/Test-Device.py:/app/Test-Device.py
       - ./start.sh:/app/start.sh
     working_dir: /app
     command: /app/start.sh
