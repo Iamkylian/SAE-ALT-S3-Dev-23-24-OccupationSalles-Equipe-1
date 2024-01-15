@@ -31,6 +31,11 @@ let objToRender = 'rez-de-chausse';
 //Instantiate a loader for the .gltf file
 const loader = new GLTFLoader();
 
+// Add new directional light 
+const directionalLight = new THREE.DirectionalLight( 0xffffff, 0.5 );
+directionalLight.intensity = 10;
+scene.add( directionalLight );
+
 //Load the file
 loader.load(
   `models/${objToRender}.gltf`,
@@ -50,10 +55,7 @@ loader.load(
   }
 );
 
-
-
 loadModelsFromDirectory('../models/salles/',loader,scene);
-
 
 //Instantiate a new renderer and set its size
 const renderer = new THREE.WebGLRenderer({ alpha: true }); //Alpha: true allows for the transparent background

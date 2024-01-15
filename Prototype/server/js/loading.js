@@ -1,5 +1,4 @@
-import * as THREE from "https://cdn.skypack.dev/three@0.129.0/build/three.module.js";
-import cannonEs from 'https://cdn.jsdelivr.net/npm/cannon-es@0.20.0/+esm'
+import { MeshBVH } from 'https://cdn.jsdelivr.net/npm/three-mesh-bvh@0.7.0/+esm'
 
 export function loadModelsFromDirectory(directory,loader,scene) {
     // Assuming the directory structure is models/salle/fileName.gltf
@@ -35,6 +34,8 @@ export function loadModelsFromDirectory(directory,loader,scene) {
           const loadedObject = gltf.scene;
           console.log(loadedObject.children[0]);
           scene.add(loadedObject);
+
+          loadedObject.boundsTree = new MeshBVH(loadedObject);
         },
         function (xhr) {
           // While it is loading, log the progress
