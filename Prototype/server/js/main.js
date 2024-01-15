@@ -5,6 +5,10 @@ import { OrbitControls } from "https://cdn.skypack.dev/three@0.129.0/examples/js
 // To allow for importing the .gltf file
 import { GLTFLoader } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js";
 
+import { loadModelsFromDirectory } from "./loading.js";
+import { raycastMouse } from "./raycast.js";
+
+const white = new THREE.Color("rgb(255, 255, 255)");
 
 //Create a Three.JS Scene
 const scene = new THREE.Scene();
@@ -33,6 +37,7 @@ loader.load(
   function (gltf) {
     //If the file is loaded, add it to the scene
     object = gltf.scene;
+    object.children[0].material.color = white;
     scene.add(object);
   },
   function (xhr) {
@@ -44,6 +49,11 @@ loader.load(
     console.error(error);
   }
 );
+
+
+
+loadModelsFromDirectory('../models/salles/',loader,scene);
+
 
 //Instantiate a new renderer and set its size
 const renderer = new THREE.WebGLRenderer({ alpha: true }); //Alpha: true allows for the transparent background
@@ -89,6 +99,8 @@ document.onmousemove = (e) => {
   mouseX = e.clientX;
   mouseY = e.clientY;
 }
+
+raycastMouse(scene,camera);
 
 //Start the 3D rendering
 animate();
