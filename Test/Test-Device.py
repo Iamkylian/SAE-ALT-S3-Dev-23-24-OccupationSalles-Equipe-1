@@ -1,6 +1,11 @@
 import unittest
 from unittest.mock import patch, MagicMock
-from Python.device import get_deviceData, insertDevice, insertData
+
+import sys
+
+sys.path.append('../Python/')
+
+from device import get_deviceData, insertDevice, insertData
 
 class TestDeviceDataScript(unittest.TestCase):
 

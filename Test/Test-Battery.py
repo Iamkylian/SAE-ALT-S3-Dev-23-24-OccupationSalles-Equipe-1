@@ -1,6 +1,10 @@
 import unittest
 from unittest.mock import patch, MagicMock
-from Python.battery import get_batteryLevel, insertBatteryLevel
+import sys
+
+sys.path.append('../Python/')
+
+from battery import get_batteryLevel, insertBatteryLevel
 
 class TestBatteryLevelScript(unittest.TestCase):
 
@@ -18,7 +22,7 @@ class TestBatteryLevelScript(unittest.TestCase):
 
         get_batteryLevel(mqtt_client_instance, None, mock_msg)
 
-        db_cursor_instance.execute.assert_called()  
+        db_cursor_instance.execute.assert_called()
 
 if __name__ == '__main__':
     unittest.main()
