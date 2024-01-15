@@ -78,7 +78,13 @@ Le dépot Github est séparé en plusieurs dossiers, chacun ayant un rôle bien 
 
 === Bilan Sprint Review
 
+==== Sprint 1
+
 - image:https://img.shields.io/badge/Bilan_Sprint_1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/blob/main/Documentation/Sprint-Review/Bilan-Sprint1.adoc"]
+
+==== Sprint 2
+
+==== Sprint 3
 
 == Livrables
 
@@ -93,10 +99,4 @@ Le dépot Github est séparé en plusieurs dossiers, chacun ayant un rôle bien 
 |  | Compte rendu Sprint 2   | A venir | 
 |  | Compte rendu Sprint 3   | A venir | 
 |===
-
-== Sprint 1
-
-== Sprint 2
-
-== Sprint 3
 
