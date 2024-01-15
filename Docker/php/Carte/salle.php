@@ -11,12 +11,26 @@
 <body>
 
     <?php
-        include("../../connect.inc.php");
+        include("../connect.inc.php");
     ?>
 
     <header id="head">
         <?php
-            echo "<h1>" . pathinfo($_SERVER["SCRIPT_FILENAME"], PATHINFO_FILENAME) . "</h1>";
+            $vsalle = $_GET['salle'];
+
+            echo "<h1>". $vsalle ."</h1>";
+
+            ini_set('display_errors', 1);
+
+            $query = $conn->prepare("SELECT deviceName FROM Device where room = $vsalle");
+            $query->execute();
+    
+            $result = $query->get_result();
+    
+            foreach($result as $row){
+                echo $row['deviceName'] . '<br><br>';
+            }
+
         ?>
     </header>
 
