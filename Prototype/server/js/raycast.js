@@ -14,8 +14,8 @@ export function raycastMouse(scene,camera){
         raycaster.setFromCamera(mouse, camera);
 
         // Check for intersections
-        var intersects = raycaster.intersectObjects(scene.children);
-        console.log(raycaster);
+        var intersects = raycaster.intersectObjects(scene.children[0]);
+        console.log(intersects);
 
         if (intersects.length > 0) {
             console.log("Mouse intersects with object:", intersects[0].object);

@@ -1,6 +1,5 @@
 import * as THREE from "https://cdn.skypack.dev/three@0.129.0/build/three.module.js";
-
-const color3 = new THREE.Color("rgb(255, 0, 0)");
+import cannonEs from 'https://cdn.jsdelivr.net/npm/cannon-es@0.20.0/+esm'
 
 export function loadModelsFromDirectory(directory,loader,scene) {
     // Assuming the directory structure is models/salle/fileName.gltf
