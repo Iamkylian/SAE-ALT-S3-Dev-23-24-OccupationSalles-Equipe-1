@@ -78,7 +78,13 @@ Le dépot Github est séparé en plusieurs dossiers, chacun ayant un rôle bien 
 
 === Bilan Sprint Review
 
+==== Sprint 1
+
 - image:https://img.shields.io/badge/Bilan_Sprint_1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/blob/main/Documentation/Sprint-Review/Bilan-Sprint1.adoc"]
+
+==== Sprint 2
+
+==== Sprint 3
 
 == Livrables
 
@@ -88,10 +94,9 @@ Le dépot Github est séparé en plusieurs dossiers, chacun ayant un rôle bien 
 | 12 Janvier 2024  | Documentation Utilisateur   | image:https://img.shields.io/badge/Documentation_Utilisateur-V1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Documentation/Documentation-Utilisateur.adoc"] |
 | 12 Janvier 2024  | Documentation Technique   | image:https://img.shields.io/badge/Documentation_Technique-V1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Documentation/Documentation-Technique.adoc"] | 
 | 12 Janvier 2024  | Backlog Produit   | image:https://img.shields.io/badge/Backlog_produit-RoomService-red.svg[link='https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/blob/main/Documentation/Backlog_produit_1.pdf'] | 
-| 12 Janvier 2024  | Tests   | image:https://img.shields.io/badge/Tests_Unitaires-RoomService-red.svg[link='https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/blob/main/Test/Test.adoc'] | 
+| 12 Janvier 2024  | Tests   | image:https://img.shields.io/badge/Tests_Unitaires-RoomService-red.svg[link='https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/blob/main/Test/'] | 
 | 12 Janvier 2024  | Compte rendu Sprint 1 | image:https://img.shields.io/badge/Bilan_Sprint_1_Review-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/blob/main/Documentation/Sprint-Review/Bilan-Sprint1.adoc"] | 
 |  | Compte rendu Sprint 2   | A venir | 
 |  | Compte rendu Sprint 3   | A venir | 
 |===
-
 
