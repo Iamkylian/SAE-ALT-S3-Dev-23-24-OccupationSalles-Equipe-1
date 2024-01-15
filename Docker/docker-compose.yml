@@ -43,11 +43,12 @@ services:
     volumes:
       - ../Python/battery.py:/app/battery.py
       - ../Python/device.py:/app/device.py
-      - ./start.sh:/app/start.sh
+      - ../Test/Test-Battery.py:/app/Test-Battery.py
+      - ../Test/Test-Device.py:/app/Test-Device.py
+      - ./start.sh:/app/start.sh 
     working_dir: /app
-    command: /app/start.sh
+    command: /app/start.sh 
 
-      
   grafana:
     image: grafana/grafana:9.1.7
     ports:
