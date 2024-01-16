@@ -5,8 +5,8 @@ import { OrbitControls } from "https://cdn.skypack.dev/three@0.129.0/examples/js
 // To allow for importing the .gltf file
 import { GLTFLoader } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js";
 
-import { loadModelsFromDirectory } from "./loading.js";
 import { raycastMouse } from "./raycast.js";
+import { loadModelsFromDirectory } from "./loading.js";
 
 const white = new THREE.Color("rgb(255, 255, 255)");
 
@@ -55,8 +55,6 @@ loader.load(
   }
 );
 
-loadModelsFromDirectory('../models/salles/',loader,scene);
-
 //Instantiate a new renderer and set its size
 const renderer = new THREE.WebGLRenderer({ alpha: true }); //Alpha: true allows for the transparent background
 renderer.setSize(window.innerWidth, window.innerHeight);
@@ -65,7 +63,8 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.getElementById("container3D").appendChild(renderer.domElement);
 
 //Set how far the camera will be from the 3D model
-camera.position.z = objToRender === "rez-de-chausse" ? 3 : 500;
+camera.position.z = objToRender === "rez-de-chausse" ? 2 : 500;
+camera.position.y = 1;
 
 //Add lights to the scene, so we can actually see the 3D model
 const topLight = new THREE.DirectionalLight(0xffffff, 1); // (color, intensity)
@@ -73,7 +72,7 @@ topLight.position.set(500, 500, 500) //top-left-ish
 topLight.castShadow = true;
 scene.add(topLight);
 
-const ambientLight = new THREE.AmbientLight(0x333333, objToRender === "rez-de-chausse" ? 5 : 1);
+const ambientLight = new THREE.AmbientLight(0x333333, objToRender === "rez-de-chausse" ? 3 : 2);
 scene.add(ambientLight);
 
 //This adds controls to the camera, so we can rotate / zoom it with the mouse
@@ -81,10 +80,18 @@ if (objToRender === "rez-de-chausse") {
   controls = new OrbitControls(camera, renderer.domElement);
 }
 
+loadModelsFromDirectory('../models/salles/',loader,scene);
+
 //Render the scene
 function animate() {
   requestAnimationFrame(animate);
-  //Here we could add some code to update the scene, adding some automatic movement
+
+  // Update the controls (if used)
+  if (controls) {
+    controls.update();
+  }
+
+  // Here we could add some code to update the scene, adding some automatic movement
 
   renderer.render(scene, camera);
 }
@@ -95,7 +102,6 @@ window.addEventListener("resize", function () {
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 });
-
 //add mouse position listener, so we can make the eye move
 document.onmousemove = (e) => {
   mouseX = e.clientX;

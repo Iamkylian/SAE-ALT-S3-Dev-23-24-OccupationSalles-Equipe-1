@@ -1,4 +1,7 @@
 import { MeshBVH } from 'https://cdn.jsdelivr.net/npm/three-mesh-bvh@0.7.0/+esm'
+import * as THREE from "https://cdn.skypack.dev/three@0.129.0/build/three.module.js";
+
+const collisionBoxes = [];
 
 export function loadModelsFromDirectory(directory,loader,scene) {
     // Assuming the directory structure is models/salle/fileName.gltf
@@ -32,10 +35,22 @@ export function loadModelsFromDirectory(directory,loader,scene) {
         function (gltf) {
           // If the file is loaded, add it to the scene
           const loadedObject = gltf.scene;
+
+          loadedObject.traverse((child) => {
+            if (child instanceof THREE.Mesh) {
+              // Create a bounding box for each mesh
+              const boundingBox = new THREE.Box3().setFromObject(child);
+
+              // Optionally, create a visible representation of the bounding box
+              const boxHelper = new THREE.Box3Helper(boundingBox, 0xffff00);
+              collisionBoxes.push({boxHelper,loadedObject});
+
+              loadedObject.children[0].visible = false;
+              scene.add(boxHelper);
+            }
+          });
           console.log(loadedObject.children[0]);
           scene.add(loadedObject);
-
-          loadedObject.boundsTree = new MeshBVH(loadedObject);
         },
         function (xhr) {
           // While it is loading, log the progress
@@ -47,4 +62,8 @@ export function loadModelsFromDirectory(directory,loader,scene) {
         }
       );
     });
+  }
+
+  export function returnCollisionBox(){
+    return collisionBoxes;
   }
