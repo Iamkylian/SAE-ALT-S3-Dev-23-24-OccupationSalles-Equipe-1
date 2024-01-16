@@ -61,7 +61,20 @@ export function loadModelsFromDirectory(directory,loader,scene) {
           console.error(`Error loading ${fileName}:`, error);
         }
       );
+      });
+
+  };
+
+  // Function to perform raycasting against Cannon.js bodies
+  function raycastCannonBodies(raycaster, objects) {
+    const intersects = [];
+    objects.forEach(({ loadedObject, body }) => {
+      const result = raycaster.intersectObject(loadedObject, true);
+      if (result.length > 0) {
+        intersects.push({ object: body, ...result[0] });
+      }
     });
+    return intersects;
   }
 
   export function returnCollisionBox(){
