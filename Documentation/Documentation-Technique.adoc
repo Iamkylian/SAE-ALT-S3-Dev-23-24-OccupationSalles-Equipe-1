@@ -12,11 +12,13 @@
 [cols="4"]
 |===
 |Version | Date | Équipe | Projet
-|1.0 | 8 Janvier 2024 | Groupe 1 : Kylian, Mathéo, Yann, Lylian | Développement d'une application
+|2.0 | 8 Janvier 2024 | Groupe 1 : Kylian, Mathéo, Yann, Lylian | Développement d'une application
 |=== 
 
 
 == Présentation de l'Application
+
+
 
 === Contexte
 
@@ -24,7 +26,9 @@
 
 === Use Case global
 
-L'application de DailyBank est conçue pour être utilisée par différents acteurs au sein de la banque, chacun ayant des rôles spécifiques et des responsabilités définies. Voici les principaux utilisateurs de l'application et leurs rôles :
+L'application RoomService permet aux utilisateurs d'avoir en temps réel différentes informations des salles du premier étage du département informatique de l'IUT de blagnac.
+Ces informations récupéré via les capteurs présent dans les salles sont : le taux de CO2, l'occupation des salles, la température et l'humidité.
+
 
 
 ===== ???
