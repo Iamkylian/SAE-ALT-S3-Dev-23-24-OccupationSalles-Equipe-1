@@ -32,10 +32,12 @@ Ces informations récupéré via les capteurs présent dans les salles sont : le
 .Diagramme de Cas d'Utilisation généraux de l'application
 image::Images/Use-Case/UseCaseGénéraux.png[]
 
-* Rôle : 
+* Rôle : L'utilisateur est une personne de l'IUT de Blagnac qui souhaite avoir des informations sur les salles du premier étage du département informatique.
 * Responsabilités :
-
-
+** L'utilisateur doit pouvoir avoir accès aux informations des salles du premier étage du département informatique en temps réel.
+** L'utilisateur doit pouvoir avoir accès à l'historique des informations des salles du premier étage du département informatique.
+** L'utilisateur doit pouvoir avoir accès aux statistiques des informations des salles du premier étage du département informatique.
+** L'utilisateur doit pouvoir avoir accès aux rapports des informations des salles du premier étage du département informatique.
 
 
 === Diagramme de classe des données global
