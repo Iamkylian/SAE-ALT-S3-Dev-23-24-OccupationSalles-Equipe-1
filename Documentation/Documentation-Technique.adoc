@@ -123,7 +123,8 @@ Battery : Cette table stocke les informations relatives à la batterie des capte
 ├── Test
 ----
 
-=== Fonctionnalité de roomService
+
+=== Fonctionnalitées de roomService
 
 ==== `*_Utilisateur - Visualiser les données transmises par les capteurs en temps réel_*`
 
