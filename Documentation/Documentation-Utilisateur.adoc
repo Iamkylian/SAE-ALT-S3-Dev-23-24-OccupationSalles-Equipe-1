@@ -55,7 +55,6 @@ Configuration *matérielle* :
 Configuration *logicielle* :
 
 * Système d'exploitation : Windows 10/11, macOS, ou une distribution Linux récente comme Ubuntu
-* Java Development Kit (JDK) : Version 17
 * Environnement de développement intégré (IDE) : Visual Studio Code
 * Base de données : Oracle Database, MySQL, ou tout autre système de gestion de base de données relationnelle compatible avec Java
 * Bibliothèques/frameworks : Python 3.11.7
