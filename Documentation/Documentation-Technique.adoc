@@ -32,19 +32,10 @@ Ces informations récupéré via les capteurs présent dans les salles sont : le
 .Diagramme de Cas d'Utilisation généraux de l'application
 image::Images/Use-Case/UseCaseGénéraux.png[]
 
-
-
-==== Use Case 1 : Visualisation des données en temps réel
-
-==== Use Case 2 : Visualisation de l'historique des données
-
-==== Use Case 3 : Visualisation des statistiques
-
-
 * Rôle : 
 * Responsabilités :
-** ??
-** ??
+
+
 
 
 === Diagramme de classe des données global
