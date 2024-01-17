@@ -9,7 +9,7 @@
 
     $room = htmlentities($_POST['room']);
 
-    $query = "SELECT Donnes.temperature, Donnes.humidity, Donnes.activity, Donnes.co2, Donnes.illumination,Donnes.time FROM Device,Donnes WHERE Device.room = '$room' AND Donnes.idDevice = Device.id ORDER BY time DESC;";
+    $query = "SELECT Donnes.temperature, Donnes.humidity, Donnes.activity, Donnes.co2,Donnes.tvoc, Donnes.illumination,Donnes.time FROM Device,Donnes WHERE Device.room = '$room' AND Donnes.idDevice = Device.id ORDER BY time DESC;";
 
     $result = $conn->query($query);
 
@@ -18,6 +18,9 @@
     } else {
         $row = $result->fetch_assoc();
         
-        echo $row['co2'];
+        foreach($row as $data)
+        {
+            echo $data . " ";
+        }
     }
 ?>
