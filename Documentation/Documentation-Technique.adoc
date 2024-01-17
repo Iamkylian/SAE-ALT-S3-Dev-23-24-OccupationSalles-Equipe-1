@@ -12,11 +12,13 @@
 [cols="4"]
 |===
 |Version | Date | Équipe | Projet
-|1.0 | 12 Janvier 2024 | Groupe 1 : Kylian, Mathéo, Yann, Lylian | Développement d'une application
+|2.0 | 8 Janvier 2024 | Groupe 1 : Kylian, Mathéo, Yann, Lylian | Développement d'une application
 |=== 
 
 
 == Présentation de l'Application
+
+
 
 === Contexte
 
@@ -24,10 +26,9 @@
 
 === Use Case global
 
-L'application de DailyBank est conçue pour être utilisée par différents acteurs au sein de la banque, chacun ayant des rôles spécifiques et des responsabilités définies. Voici les principaux utilisateurs de l'application et leurs rôles :
+L'application RoomService permet aux utilisateurs d'avoir en temps réel différentes informations des salles du premier étage du département informatique de l'IUT de blagnac.
+Ces informations récupéré via les capteurs présent dans les salles sont : le taux de CO2, l'occupation des salles, la température et l'humidité.
 
-
-===== ???
 
 * Rôle : 
 * Responsabilités :
@@ -63,14 +64,43 @@ Ces cardinalités indiquent les relations et les contraintes entre les différen
 Pour plus de détail sur l'architecture général en termes de sous-systèmes pour l'application de gestion des comptes clients de la banque DailyBank, voici les éléments détaillés qui la compose :
 
 * *Base de données* :
-La base de données stocke toutes les informations relatives...
+La base de données stocke toutes les informations relatives aux capteurs pésents dans les salles du département informatique de l'IUT de Blagnac. Elle est composée de 2 :
+** *Table* :
+Device : Cette table stocke les informations relatives aux capteurs présents dans les salles du département informatique de l'IUT de Blagnac. Elle est composée de 5 attributs :
+*** *building* : Ce champ stocke le nom du bâtiment dans lequel se trouve le capteur.
+*** *deviceName* : Ce champ stocke le nom du capteur.
+*** *floor* : Ce champ stocke l'étage dans lequel se trouve le capteur.
+*** *id* : Ce champ stocke l'identifiant du capteur.
+*** *room* : Ce champ stocke le nom de la salle dans laquelle se trouve le capteur.
+
+** *Table* :
+Donnees : Cette table stocke les informations relatives aux données récupérées par les capteurs présents dans les salles du département informatique de l'IUT de Blagnac. Elle est composée de 9 attributs :
+*** *co2* : Ce champ stocke le taux de CO2 récupéré par le capteur.
+*** *activity* : Ce champ stocke l'occupation de la salle récupérée par le capteur.
+*** *humidity* : Ce champ stocke l'humidité récupérée par le capteur.
+*** *idDevice* : Ce champ stocke l'identifiant du capteur.
+*** *illumination* : Ce champ stocke l'illumination récupérée par le capteur.
+*** *temperature* : Ce champ stocke la température récupérée par le capteur.
+*** *time* : Ce champ stocke la date et l'heure de la récupération des données par le capteur.
+*** *tvoc* : Ce champ stocke le taux de particule fine récupéré par le capteur.
+
+** *Table* :
+Battery : Cette table stocke les informations relatives à la batterie des capteurs présents dans les salles du département informatique de l'IUT de Blagnac. Elle est composée de 2 attributs :
+*** *deviceId* : Ce champ stocke l'identifiant du capteur.
+*** *batteryLevel* : Ce champ stocke le niveau de batterie du capteur.
+
 
 
 === Ressources externes
 
-===== Java/Python...??
+===== Python
+* Version 3.*
 
+===== Docker
+* v24.0.7
+** Afin que les utilisateurs puissent utiliser cette application de visualisation de l'état des capteurs et des salles, il est nécessaire de s'assurer que leurs postes de travail disposent de la version de ``Docker Desktop v24.0.7``.. Cela garantira que l'environnement d'exécution Python requis est correctement installé sur leur machine, permettant ainsi de lancer et d'exécuter l'application de manière optimale.
 
+===== Grafana
 
 ===== Base de données
 

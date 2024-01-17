@@ -62,9 +62,38 @@ Configuration *logicielle* :
 
 == Utilisation
 
+L'application de surveillance des salles fonctionne de manière intuitive et offre plusieurs fonctionnalités permettant une gestion optimale des espaces. Voici les principales étapes pour utiliser l'application :
 
+=== Connexion à l'Interface Web 
 
-== Fonctionnement
+Lancez l'application en accédant à l'interface web via un navigateur compatible (Google Chrome, Mozilla Firefox, etc.).
+Entrez vos identifiants de connexion (le cas échéant) pour accéder à l'espace réservé aux utilisateurs autorisés.
+
+=== Visualisation en Temps Réel 
+
+La page d'accueil affiche en temps réel les informations provenant des capteurs AM107 installés dans chaque salle du 1er étage du bâtiment B.
+La présence, la luminosité et le niveau de CO2 de chaque salle sont présentés de manière claire et intuitive.
+
+=== Statistiques de Chaque Salle 
+
+Naviguez vers la section "Statistiques" pour obtenir des données détaillées sur chaque salle.
+Vous pouvez sélectionner une salle spécifique pour visualiser son taux d'occupation moyen sur une période définie.
+
+=== Historique des Données de la Salle 
+
+Accédez à la fonction "Historique" pour consulter l'évolution des conditions de chaque salle au fil du temps.
+Choisissez une période précise pour afficher les données historiques, ce qui facilite l'analyse des tendances et des variations.
+
+=== Niveau de Batterie des Capteurs 
+
+Consultez la section dédiée au "Niveau de Batterie" pour obtenir des informations sur l'état de charge de chaque capteur AM107 dans chaque salle.
+Une indication claire du niveau de batterie vous permet de planifier efficacement la maintenance des capteurs.
+
+=== Alertes et Notifications (le cas échéant) 
+
+En cas de situations particulières, telles que des niveaux de CO2 élevés ou une batterie faible, l'application peut générer des alertes et des notifications pour informer rapidement les responsables.
+
+== Fonctionnement de l'Application
 
 
 

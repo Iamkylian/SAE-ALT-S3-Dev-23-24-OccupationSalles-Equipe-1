@@ -5,11 +5,20 @@ import { OrbitControls } from "https://cdn.skypack.dev/three@0.129.0/examples/js
 // To allow for importing the .gltf file
 import { GLTFLoader } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js";
 
+import { raycastMouse } from "./raycast.js";
+import { loadModelsFromDirectory } from "./loading.js";
+
+const white = new THREE.Color("rgb(255, 255, 255)");
 
 //Create a Three.JS Scene
 const scene = new THREE.Scene();
 //create a new camera with positions and angles
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera(
+  75,
+  window.innerWidth / window.innerHeight,
+  0.1,
+  1000
+);
 
 //Keep track of the mouse position, so we can make the eye move
 let mouseX = window.innerWidth / 2;
@@ -22,10 +31,15 @@ let object;
 let controls;
 
 //Set which object to render
-let objToRender = 'rez-de-chausse';
+let objToRender = "rez-de-chausse";
 
 //Instantiate a loader for the .gltf file
 const loader = new GLTFLoader();
+
+// Add new directional light
+const directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
+directionalLight.intensity = 10;
+scene.add(directionalLight);
 
 //Load the file
 loader.load(
@@ -33,11 +47,12 @@ loader.load(
   function (gltf) {
     //If the file is loaded, add it to the scene
     object = gltf.scene;
+    object.children[0].material.color = white;
     scene.add(object);
   },
   function (xhr) {
     //While it is loading, log the progress
-    console.log((xhr.loaded / xhr.total * 100) + '% loaded');
+    console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
   },
   function (error) {
     //If there is an error, log it
@@ -53,15 +68,16 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.getElementById("container3D").appendChild(renderer.domElement);
 
 //Set how far the camera will be from the 3D model
-camera.position.z = objToRender === "rez-de-chausse" ? 3 : 500;
+camera.position.z = objToRender === "rez-de-chausse" ? 2 : 500;
+camera.position.y = 1;
 
 //Add lights to the scene, so we can actually see the 3D model
 const topLight = new THREE.DirectionalLight(0xffffff, 1); // (color, intensity)
-topLight.position.set(500, 500, 500) //top-left-ish
+topLight.position.set(500, 500, 500); //top-left-ish
 topLight.castShadow = true;
 scene.add(topLight);
 
-const ambientLight = new THREE.AmbientLight(0x333333, objToRender === "rez-de-chausse" ? 5 : 1);
+const ambientLight = new THREE.AmbientLight(0x333333, objToRender === "rez-de-chausse" ? 3 : 2);
 scene.add(ambientLight);
 
 //This adds controls to the camera, so we can rotate / zoom it with the mouse
@@ -69,10 +85,18 @@ if (objToRender === "rez-de-chausse") {
   controls = new OrbitControls(camera, renderer.domElement);
 }
 
+loadModelsFromDirectory('../models/salles/',loader,scene);
+
 //Render the scene
 function animate() {
   requestAnimationFrame(animate);
-  //Here we could add some code to update the scene, adding some automatic movement
+
+  // Update the controls (if used)
+  if (controls) {
+    controls.update();
+  }
+
+  // Here we could add some code to update the scene, adding some automatic movement
 
   renderer.render(scene, camera);
 }
@@ -83,12 +107,13 @@ window.addEventListener("resize", function () {
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 });
-
 //add mouse position listener, so we can make the eye move
 document.onmousemove = (e) => {
   mouseX = e.clientX;
   mouseY = e.clientY;
-}
+};
+
+raycastMouse(scene, camera);
 
 //Start the 3D rendering
 animate();
