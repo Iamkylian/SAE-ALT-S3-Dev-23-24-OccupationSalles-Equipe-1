@@ -62,7 +62,7 @@ Configuration *logicielle* :
 
 == Utilisation
 
-=== Fonctionnement de l'Application
+== Fonctionnement de l'Application
 
 L'application de surveillance des salles fonctionne de manière intuitive et offre plusieurs fonctionnalités permettant une gestion optimale des espaces. Voici les principales étapes pour utiliser l'application :
 
