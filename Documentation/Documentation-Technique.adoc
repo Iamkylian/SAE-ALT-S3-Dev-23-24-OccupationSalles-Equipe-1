@@ -84,6 +84,10 @@ Donnees : Cette table stocke les informations relatives aux données récupéré
 *** *time* : Ce champ stocke la date et l'heure de la récupération des données par le capteur.
 *** *tvoc* : Ce champ stocke le taux de particule fine récupéré par le capteur.
 
+** *Table* :
+Battery : Cette table stocke les informations relatives à la batterie des capteurs présents dans les salles du département informatique de l'IUT de Blagnac. Elle est composée de 2 attributs :
+*** *deviceId* : Ce champ stocke l'identifiant du capteur.
+*** *batteryLevel* : Ce champ stocke le niveau de batterie du capteur.
 
 
 
