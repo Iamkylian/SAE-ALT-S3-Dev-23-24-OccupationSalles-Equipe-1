@@ -91,15 +91,6 @@ Choisissez une période précise pour afficher les données historiques, ce qui 
 Consultez la section dédiée au "Niveau de Batterie" pour obtenir des informations sur l'état de charge de chaque capteur AM107 dans chaque salle.
 Une indication claire du niveau de batterie vous permet de planifier efficacement la maintenance des capteurs.
 
-=== Génération de Rapports :
-
-Utilisez la fonctionnalité "Rapports" pour générer des rapports détaillés sur l'occupation des salles, y compris le taux d'occupation, les variations horaires, etc.
-Ces rapports facilitent la communication des données à d'autres parties prenantes et contribuent à la prise de décision.
-
-=== Navigation Intuitive :
-
-L'interface de l'application est conçue de manière à offrir une navigation intuitive, permettant aux utilisateurs de passer facilement d'une fonctionnalité à une autre.
-
 === Alertes et Notifications (le cas échéant) :
 
 En cas de situations particulières, telles que des niveaux de CO2 élevés ou une batterie faible, l'application peut générer des alertes et des notifications pour informer rapidement les responsables.
