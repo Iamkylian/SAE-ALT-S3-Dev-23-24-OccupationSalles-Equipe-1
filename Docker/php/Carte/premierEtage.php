@@ -9,124 +9,60 @@
 <body>
 
 <?php
-        include("../connect.inc.php");
+include("../connect.inc.php");
 
-        $query = $conn->prepare("SELECT room FROM Device");
-        $query->execute();
-        
-        $result = $query->get_result();
-        
-        $devices = array();
-        
-        // Parcourir les résultats et les stocker dans le tableau
-        while ($row = $result->fetch_assoc()) {
-            // Ajouter la valeur de la colonne "deviceName" au tableau
-            $devices[] = $row; // Store the entire row (associative array) in the $devices array
-        }
-        
-        foreach ($devices as $row) {
-            echo $row['room']. "<BR>";
-        }
+$query = $conn->prepare("SELECT room FROM Device");
+$query->execute();
 
-        //tableau contenant seulement le nom des salles.
-        $roomNames = array_column($devices, 'room');
+$result = $query->get_result();
 
-    ?>
+$devices = array();
+
+// Parcourir les résultats et les stocker dans le tableau
+while ($row = $result->fetch_assoc()) {
+    // Ajouter la valeur de la colonne "room" au tableau
+    $devices[] = $row;
+}
+
+// Tableau contenant seulement le nom des salles.
+$roomNames = array_column($devices, 'room');
+?>
 
 <style>
-        g {
-            fill:rgb(183, 232, 247);
-            stroke:rgb(0, 26, 255);
-            
-            /* stroke:rgb(0, 0, 0);
-            fill: rgb(248, 183, 43); */
-            
-            fill-opacity:1;
-            stroke-width:1px;
-            stroke-linecap:round;
-            stroke-linejoin:round;
-            stroke-opacity:1;
-            
-            transition: fill 1.2s, stroke 1s
-        }
+    g {
+        fill: rgb(183, 232, 247);
+        stroke: rgb(0, 26, 255);
+        fill-opacity: 1;
+        stroke-width: 1px;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-opacity: 1;
+        transition: fill 1.2s, stroke 1s;
+    }
 
-        .changeColor path {
-            fill-opacity: 1;
-            stroke-width: 1px;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-            stroke-opacity: 1;
-            transition: fill 0.5s, stroke 0.5s; /* Adjust the duration as needed */
-        }
+    .changeColor path {
+        fill-opacity: 1;
+        stroke-width: 1px;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-opacity: 1;
+        transition: fill 0.5s, stroke 0.5s; /* Adjust the duration as needed */
+    }
 
-        .changeColor:hover path {
-            fill: rgb(0, 240, 255); 
-            stroke: rgb(51, 102, 204); 
-        }
+    .changeColor:hover path {
+        fill: rgb(0, 240, 255);
+        stroke: rgb(51, 102, 204);
+    }
 
-        <?php
-            $roomId = 'B101';
-            $style = "fill:" . (in_array($roomId, $roomNames) ? 'rgb(106, 254, 0)' : 'red') . ';';
-            echo "#B101 { $style }"; 
+<?php
+// Iterate through room IDs and generate styles
+$roomIDs = ['B101', 'B102', 'B103', 'B104', 'B105', 'B106', 'B107', 'B108', 'B109', 'B110', 'B111', 'B112', 'B113', 'B114', 'B115', 'B116a', 'B116b'];
 
-        
-            $roomId = 'B102';
-            $style = "fill:" . (in_array($roomId, $roomNames) ? 'rgb(106, 254, 0)' : 'red') . ';';
-            echo "#B102 { $style }";
-
-            $roomId = 'B103';
-            $style = "fill:" . (in_array($roomId, $roomNames) ? 'rgb(106, 254, 0)' : 'red') . ';';
-            echo "#B103 { $style }";
-
-            $roomId = 'B104';
-            $style = "fill:" . (in_array($roomId, $roomNames) ? 'rgb(106, 254, 0)' : 'red') . ';';
-            echo "#B104 { $style }";
-
-            $roomId = 'B105';
-            $style = "fill:" . (in_array($roomId, $roomNames) ? 'rgb(106, 254, 0)' : 'red') . ';';
-            echo "#B105 { $style }";
-            
-            $roomId = 'B106';
-            $style = "fill:" . (in_array($roomId, $roomNames) ? 'rgb(106, 254, 0)' : 'red') . ';';
-            echo "#B106 { $style }";
-            
-            $roomId = 'B107';
-            $style = "fill:" . (in_array($roomId, $roomNames) ? 'rgb(106, 254, 0)' : 'red') . ';';
-            echo "#B107 { $style }";
-            
-            $roomId = 'B108';
-            $style = "fill:" . (in_array($roomId, $roomNames) ? 'rgb(106, 254, 0)' : 'red') . ';';
-            echo "#B108 { $style }";
-            
-            $roomId = 'B109';
-            $style = "fill:" . (in_array($roomId, $roomNames) ? 'rgb(106, 254, 0)' : 'red') . ';';
-            echo "#B109 { $style }";
-
-            $roomId = 'B110';
-            $style = "fill:" . (in_array($roomId, $roomNames) ? 'rgb(106, 254, 0)' : 'red') . ';';
-            echo "#B109 { $style }";
-
-            $roomId = 'B111';
-            $style = "fill:" . (in_array($roomId, $roomNames) ? 'rgb(106, 254, 0)' : 'red') . ';';
-            echo "#B109 { $style }";
-
-            $roomId = 'B112';
-            $style = "fill:" . (in_array($roomId, $roomNames) ? 'rgb(106, 254, 0)' : 'red') . ';';
-            echo "#B109 { $style }";
-
-            $roomId = 'B113';
-            $style = "fill:" . (in_array($roomId, $roomNames) ? 'rgb(106, 254, 0)' : 'red') . ';';
-            echo "#B109 { $style }";
-
-            $roomId = 'B114';
-            $style = "fill:" . (in_array($roomId, $roomNames) ? 'rgb(106, 254, 0)' : 'red') . ';';
-            echo "#B109 { $style }";
-
-            $roomId = 'B116';
-            $style = "fill:" . (in_array($roomId, $roomNames) ? 'rgb(106, 254, 0)' : 'red') . ';';
-            echo "#B109 { $style }";
-        ?>
-        
+foreach ($roomIDs as $roomId) {
+    $style = "fill:" . (in_array(trim($roomId), $roomNames, true) ? 'rgb(106, 254, 0)' : 'red') . ';';
+    echo "#$roomId { $style }";
+}
+?>
 </style>
 
 <header id='head'>
