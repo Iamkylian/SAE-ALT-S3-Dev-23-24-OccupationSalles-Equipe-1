@@ -30,9 +30,6 @@ L'application RoomService permet aux utilisateurs d'avoir en temps réel différ
 Ces informations récupéré via les capteurs présent dans les salles sont : le taux de CO2, l'occupation des salles, la température et l'humidité.
 
 
-
-===== ???
-
 * Rôle : 
 * Responsabilités :
 ** ??
@@ -67,7 +64,27 @@ Ces cardinalités indiquent les relations et les contraintes entre les différen
 Pour plus de détail sur l'architecture général en termes de sous-systèmes pour l'application de gestion des comptes clients de la banque DailyBank, voici les éléments détaillés qui la compose :
 
 * *Base de données* :
-La base de données stocke toutes les informations relatives...
+La base de données stocke toutes les informations relatives aux capteurs pésents dans les salles du département informatique de l'IUT de Blagnac. Elle est composée de 2 :
+** *Table* :
+Device : Cette table stocke les informations relatives aux capteurs présents dans les salles du département informatique de l'IUT de Blagnac. Elle est composée de 5 attributs :
+*** *building* : Ce champ stocke le nom du bâtiment dans lequel se trouve le capteur.
+*** *deviceName* : Ce champ stocke le nom du capteur.
+*** *floor* : Ce champ stocke l'étage dans lequel se trouve le capteur.
+*** *id* : Ce champ stocke l'identifiant du capteur.
+*** *room* : Ce champ stocke le nom de la salle dans laquelle se trouve le capteur.
+
+** *Table* :
+Donnees : Cette table stocke les informations relatives aux données récupérées par les capteurs présents dans les salles du département informatique de l'IUT de Blagnac. Elle est composée de 9 attributs :
+*** *co2* : Ce champ stocke le taux de CO2 récupéré par le capteur.
+*** *activity* : Ce champ stocke l'occupation de la salle récupérée par le capteur.
+*** *humidity* : Ce champ stocke l'humidité récupérée par le capteur.
+*** *idDevice* : Ce champ stocke l'identifiant du capteur.
+*** *illumination* : Ce champ stocke l'illumination récupérée par le capteur.
+*** *temperature* : Ce champ stocke la température récupérée par le capteur.
+*** *time* : Ce champ stocke la date et l'heure de la récupération des données par le capteur.
+*** *tvoc* : Ce champ stocke le taux de particule fine récupéré par le capteur.
+
+
 
 
 === Ressources externes
