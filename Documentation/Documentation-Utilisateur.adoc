@@ -62,8 +62,6 @@ Configuration *logicielle* :
 
 == Utilisation
 
-== Fonctionnement de l'Application
-
 L'application de surveillance des salles fonctionne de manière intuitive et offre plusieurs fonctionnalités permettant une gestion optimale des espaces. Voici les principales étapes pour utiliser l'application :
 
 === Connexion à l'Interface Web :
@@ -94,6 +92,10 @@ Une indication claire du niveau de batterie vous permet de planifier efficacemen
 === Alertes et Notifications (le cas échéant) :
 
 En cas de situations particulières, telles que des niveaux de CO2 élevés ou une batterie faible, l'application peut générer des alertes et des notifications pour informer rapidement les responsables.
+
+== Fonctionnement de l'Application
+
+
 
 == Résultats produits avec jeux d'essai commentés
 
