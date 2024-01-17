@@ -30,7 +30,7 @@ L'application RoomService permet aux utilisateurs d'avoir en temps réel différ
 Ces informations récupéré via les capteurs présent dans les salles sont : le taux de CO2, l'occupation des salles, la température et l'humidité.
 
 .Diagramme de Cas d'Utilisation généraux de l'application
-image::UseCaseGlobal.png[]
+image:Images/Use-Case/UseCaseGénéraux.png[]
 
 
 
