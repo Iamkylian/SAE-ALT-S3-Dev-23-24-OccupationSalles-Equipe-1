@@ -1,4 +1,4 @@
-= SAE 3.01 2023-2024
+= SAE 3.01 2023-2024 - RoomService
 :toc:
 :toc-title: Sommaire
 //:toc: preamble
@@ -18,23 +18,24 @@ Lors de cette SAE nous allons colllaborer en équipe de 4 afin de réaliser ce p
 * https://github.com/MatheoKatbie[Mathéo KATBIE] - DEVELOPPEUR
 * https://github.com/Lyll01[Lylian DERRAMOND] - DEVELOPPEUR
 
-Enseignant(e) en lien avec le projet:: mailto:remi.boulle@univ-tlse2.fr[Remi Boulle]
+Enseignant(e) en lien avec le projet:: mailto:remi.boulle@univ-tlse2.fr[Remi Boulle] +
+                                       mailto:esther.pendaries@univ-tlse2.fr[Esther Pendaries]
 
 == Présentation du projet
 
 === Contexte
 
-Dans le cadre de notre SAE, nous avons pour mission de réaliser une application web permettant de visualiser les informations transmises par des capteurs situés dans les salles du Batiment B de l'IUT de Blagnac. +
-Cette application permettra également de visualiser les informations relatives aux salles (température, humidité, luminosité, etc...) en temps réel ainsi que l'historique des données transmise par les capteurs, toutes ces informations seront seraccessible via un rendu graphique pour permettre une meilleur visualisation et analyse dans le cadre d'une maintenance efficace.
+Dans le cadre de notre SAE, nous avons pour mission de réaliser une application web permettant de visualiser les informations transmises par des capteurs situés dans les salles du Bâtiment B de l'IUT de Blagnac. +
+Cette application, RoomService, permettra également de visualiser les informations relatives aux salles (température, humidité, luminosité, etc...) en temps réel ainsi que l'historique des données transmises par les capteurs, toutes ces informations seront sera accessible via un rendu graphique pour permettre une meilleure visualisation et analyse dans le cadre d'une maintenance efficace.
 
 == Réalisations 
 
 === Installation de l'application
 
-Afin de pouvoir utiliser l'application de maniére efficace et fonctionnels, il est nécessaire de suivre les étapes suivantes :
+Afin de pouvoir utiliser l'application de manière efficace et fonctionnelle, il est nécessaire de suivre les étapes suivantes :
 
 - 1. Installer https://www.docker.com/products/docker-desktop/[Docker Desktop] et le lancer
-- 2. Cloner le répository
+- 2. Cloner le repository
 
     $ git clone [lien du repository]
 
@@ -60,46 +61,42 @@ Afin de pouvoir utiliser l'application de maniére efficace et fonctionnels, il 
 
 Le dépot Github est séparé en plusieurs dossiers, chacun ayant un rôle bien précis :
 
-- https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/BDD[/BDD] : contient les fichiers de intéragissant avec la base de données SQL
-- https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/Documentation[/Docker] : contient les fichiers nécessaires à la configuration et au fonctionnement de l'application
-- https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/Documentation[/Documentation] : contient les documents relatifs à l'application
-- https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/Python[/Python] : contient les fichiers sources de l'application
+- https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/BDD[/BDD] : contient les fichiers de intéragissant avec la base de données SQL
+- https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Documentation[/Docker] : contient les fichiers nécessaires à la configuration et au fonctionnement de l'application
+- https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Documentation[/Documentation] : contient les documents relatifs à l'application
+- https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Python[/Python] : contient les fichiers sources de l'application
+- https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Test[/Test] : contient les fichiers de tests unitaires et/ou plans de test de l'application
+- https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Prototype[/Prototype] : contient les fichiers d'un prototype pour une nouvelle version de l'application
 
 == Gestion de projet & Qualité
 
-- Version courante : https://github.com/IUT-Blagnac/sae3-01-template/releases/tag/v0.1.2[v0.1.2]
-- image:https://img.shields.io/badge/V1-red?style=flat&label=Documentation%20Technique&link=https%3A%2F%2Fgithub.com%2FIamkylian%2FSAE-ALT-BUT3B01%2Ftree%2Fmain%2FDocumentation%2FDocumentation-Technique.adoc[Static Badge]
-- image:https://img.shields.io/badge/Documentation%Utilisateur-Version%201.0-brightgreen.svg[Version: 1.0, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/tree/main/Documentation/Documentation-Utilisateur.adoc"]
-- image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=Backlog_produit[Backlog produit, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/blob/main/Documentation/Backlog_produit_1.pdf"] +
-- Tests unitaires et plans de test ?
-- Indicateurs de qualité du code (dette technique)
-- ... tout autre élément que vous jugerez utiles pour démontrer la qualité de votre application
-- image:https://img.shields.io/badge/Télécharger_le_PDF-Documentation-red.svg[link='https://github.com/Iamkylian/SAE-ALT-BUT3B01/blob/main/Documentation/Backlog_produit_1.pdf']
+- Version courante de l'application : image:https://img.shields.io/badge/RoomService-v1.0-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/releases/tag/V1"]
+- image:https://img.shields.io/badge/Documentation_Technique-V1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Documentation/Documentation-Technique.adoc"]
+- image:https://img.shields.io/badge/Documentation_Utilisateur-V1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Documentation/Documentation-Utilisateur.adoc"]
+- image:https://img.shields.io/badge/Backlog_produit-RoomService-red.svg[link='https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/blob/main/Documentation/Backlog%20produit.pdf'] +
+- image:https://img.shields.io/badge/Tests_Unitaires-RoomService-red.svg[link='https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/blob/main/Test/Test.adoc'] +
 
+=== Bilan Sprint Review
 
-=== Issues
+==== Sprint 1
 
-image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=#26[Issues #26, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/26"] +
-image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=#25[Issues #25, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/25"] +
-image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=#24[Issues #24, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/24"] +
-image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=#23[Issues #23, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/23"] +
-image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=#22[Issues #22, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/22"] +
-image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=#21[Issues #21, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/21"] +
-image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=#20[Issues #20, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/20"] +
-image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=#19[Issues #19, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/19"] +
-image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-BUT3B01?style=flat&label=#18[Issues #18, link="https://github.com/Iamkylian/SAE-ALT-BUT3B01/issues/18"]
+- image:https://img.shields.io/badge/Bilan_Sprint_1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/blob/main/Documentation/Sprint-Review/Bilan-Sprint1.adoc"]
+
+==== Sprint 2
+
+==== Sprint 3
 
 == Livrables
 
 [cols="1,2,2,5",options=header]
 |===
 | Date    | Nom               | Lien | Retour
-|  | Documentation Utilisateur   | lien |
-|  | Documentation Technique   | lien | 
-|  | Backlog Produit   | lien | 
-|  | Compte rendu Sprint 1 | lien | 
+| 12 Janvier 2024  | Documentation Utilisateur   | image:https://img.shields.io/badge/Documentation_Utilisateur-V1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Documentation/Documentation-Utilisateur.adoc"] |
+| 12 Janvier 2024  | Documentation Technique   | image:https://img.shields.io/badge/Documentation_Technique-V1-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Documentation/Documentation-Technique.adoc"] | 
+| 12 Janvier 2024  | Backlog Produit   | image:https://img.shields.io/badge/Backlog_produit-RoomService-red.svg[link='https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/blob/main/Documentation/Backlog_produit_1.pdf'] | 
+| 12 Janvier 2024  | Tests   | image:https://img.shields.io/badge/Tests_Unitaires-RoomService-red.svg[link='https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/blob/main/Test/'] | 
+| 12 Janvier 2024  | Compte rendu Sprint 1 | image:https://img.shields.io/badge/Bilan_Sprint_1_Review-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/blob/main/Documentation/Sprint-Review/Bilan-Sprint1.adoc"] | 
 |  | Compte rendu Sprint 2   | A venir | 
 |  | Compte rendu Sprint 3   | A venir | 
 |===
-
 
