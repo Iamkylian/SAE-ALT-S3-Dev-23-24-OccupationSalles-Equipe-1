@@ -72,7 +72,7 @@ Ces cardinalités indiquent les relations et les contraintes entre les différen
 
 === Générale
 
-Pour plus de détail sur l'architecture général en termes de sous-systèmes pour l'application de gestion des comptes clients de la banque DailyBank, voici les éléments détaillés qui la compose :
+Pour plus de détail sur l'architecture général en termes de sous-systèmes pour l'application roomService, voici les éléments détaillés qui la compose :
 
 * *Base de données* :
 La base de données stocke toutes les informations relatives aux capteurs pésents dans les salles du département informatique de l'IUT de Blagnac. Elle est composée de 2 :
@@ -104,13 +104,20 @@ Battery : Cette table stocke les informations relatives à la batterie des capte
 
 === Ressources externes
 
-===== Java/Python...??
+===== Python
+* Version 3.*
+** Afin de pouvoir se connecter à au flux MQTT et pouvoir récupérer les données transmises par les capteurs.
 
+===== Docker
+* v24.0.7
+** Afin que les utilisateurs puissent utiliser cette application de visualisation de l'état des capteurs et des salles, il est nécessaire de s'assurer que leurs postes de travail disposent de la version de ``Docker Desktop v24.0.7``.. Cela garantira que l'environnement d'exécution Python requis est correctement installé sur leur machine, permettant ainsi de lancer et d'exécuter l'application de manière optimale.
+
+===== Grafana
 
 
 ===== Base de données
-
-
+* mySQL
+** Notre application posséde une base de données mySQL afin de stocker les données transmises par les capteurs allant des données captés par les capteurs telles que le taux de C2, d'humidité... jusqu'au donnée concernant l'état des capteurs telles que le niveau de batterie.
 
 === Structuration en packages de l’application
 
@@ -118,15 +125,9 @@ Battery : Cette table stocke les informations relatives à la batterie des capte
 
 [source]
 ----
-├── application
-    │   ├── application.control
-    │   ├── application.tools
-    │   └── application.view
-    └── model
-        ├── model.data
-        └── model.orm
-            └── model.orm.exception
-├── ressource
-    ├── ressource.control
-        └── ressource.control.view
+├── BDD
+├── Docker
+    └── Docker.php
+├── Python
+├── Test
 ----
