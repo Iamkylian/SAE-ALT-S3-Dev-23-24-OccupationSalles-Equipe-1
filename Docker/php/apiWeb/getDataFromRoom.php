@@ -17,9 +17,8 @@
         echo "1"; 
     } else {
         $row = $result->fetch_assoc();
-        
         foreach($row as $data)
-        {
+        {   
             echo $data . " ";
         }
     }
