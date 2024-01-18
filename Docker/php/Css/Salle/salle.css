@@ -1,0 +1,27 @@
+#image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f2f2f2;
+}
+
+#data-container {
+    flex: 5;
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    flex-direction: column;
+    background-color: #f2f2f2;
+}
+
+#image-container::after {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: #ccc;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
