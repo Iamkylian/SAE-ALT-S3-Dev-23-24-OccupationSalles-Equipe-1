@@ -69,6 +69,12 @@
         ?>
     </header>
 
+    <nav id="nav">
+        <ul>
+            <li><a href="premierEtage.php">Retour au premier étage</a></li>
+        </ul>
+    </nav>
+
     <div id="main" style="text-align: center;">
 
         <div id="image-container">
