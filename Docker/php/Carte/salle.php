@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../../Css/header.css" rel="stylesheet">
-    <link href="../../Css/svg.css" rel="stylesheet">
-    <link href="../../Css/Salle/salle.css" rel="stylesheet">
+    <link href="../Css/header.css" rel="stylesheet">
+    <link href="../Css/svg.css" rel="stylesheet">
+    <link href="../Css/Salle/salle.css" rel="stylesheet">
 
     <script>
         // Fonction pour actualiser la page après un certain délai
         function refreshPageAfterDelay(seconds) {
             var countdown = seconds;
-
+            
             // Met à jour le compteur toutes les secondes
             var countdownInterval = setInterval(function() {
                 document.getElementById('refreshTimer').innerHTML = countdown;
@@ -45,7 +45,8 @@
     include("../connect.inc.php");
     ?>
 
-    <header id="head">
+    <header>
+
         <?php
         include("../connect.inc.php");
 
@@ -69,13 +70,12 @@
         ?>
     </header>
 
-    <nav id="nav">
-        <ul>
-            <li><a href="premierEtage.php">Retour au premier étage</a></li>
-        </ul>
-    </nav>
-
-    <div id="main" style="text-align: center;">
+    <div id="main">
+        <nav id="nav">
+            <ul>
+                <li><a href="premierEtage.php">Retour au premier étage</a></li>
+            </ul>
+        </nav>
 
         <div id="image-container">
 
@@ -83,7 +83,8 @@
                 <p>Actualisation dans <span id="refreshTimer"></span> secondes</p>
             </div>
 
-            <svg class="salle_part" width="1200" height="800" viewBox="0 0 500 500">
+            <svg class="salle_part">
+                <!--------------------width="1200" height="800" viewBox="0 0 500 500"--------------------------------->
                 <?php
                 if ($vsalle == "B109") {
                     echo '<g id="b109" class="changeColor">

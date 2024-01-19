@@ -1,13 +1,4 @@
-body {
-    width: 100%;
-    font-family: 'Arial', sans-serif;
-}
-
-#head {
+header {
     display: flex;
     justify-content: center;
-}
-
-h1 {
-    color: brown;
 }

@@ -10,7 +10,6 @@
 #data-container {
     flex: 5;
     display: flex;
-    justify-content: center;
     align-items: left;
     flex-direction: column;
     background-color: #f2f2f2;

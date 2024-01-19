@@ -14,14 +14,13 @@ g.changeColor:hover {
     fill: rgb(247, 156, 239);
 }
 
-#main {
-    display: flex;
-    justify-content: left;
-    width: 80%;
-}
-
 section {
     display: flex;
     justify-content: space-between;   
     flex-wrap: wrap-reverse;
+}
+
+svg {
+    width: 1200;
+    height: 800;
 }
