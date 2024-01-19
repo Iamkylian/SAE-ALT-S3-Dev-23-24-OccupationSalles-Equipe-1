@@ -66,7 +66,7 @@ Le dépot Github est séparé en plusieurs dossiers, chacun ayant un rôle bien 
 - https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Documentation[/Documentation] : contient les documents relatifs à l'application
 - https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Python[/Python] : contient les fichiers sources de l'application
 - https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Test[/Test] : contient les fichiers de tests unitaires et/ou plans de test de l'application
-- https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Prototype[/Prototype] : contient les fichiers d'un prototype pour une nouvelle version de l'application
+- https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Prototype[/Prototype] : contient les fichiers d'un prototype pour une nouvelle version de l'application en 3D
 
 == Gestion de projet & Qualité
 
