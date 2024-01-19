@@ -1,0 +1,73 @@
+= Bilan du Sprint 2 - RoomService
+:toc:
+:toc-title: Sommaire
+//:toc: preamble
+:toclevels: 5
+:sectnums:
+:sectnumlevels: 5
+
+:Entreprise: Groupe 1
+:Equipe:  
+
+[cols="4"]
+|===
+|Version | Date | Équipe | Projet
+|120 | 19 Janvier 2024 | Groupe 1 : Kylian, Mathéo, Yann, Lylian | Développement d'une application
+|=== 
+
+== Description
+
+* Sprint dates : 15/01 à 8h, jusqu'au 19/01 à 17h
+* Sprint review : 19/01 à 9h30
+* Sprint demo : 19/01 à 12h30
+* Scrum master : Kylian Gachet
+* Product Owner: Yann Rouquié
+* Développeur : Mathéo Katbie / Lylian Derramond
+
+
+== Objectifs
+
+* Rédiger la documentation technique et utilisateur -> En cours
+* Afficher les informations d'une salle en temps réel -> OK
+* EN COMP
+
+== Demo
+
+* image:https://img.shields.io/badge/Release_RoomService-v2.0-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/releases/tag/V2"]
+
+== FeedBack de l'équipe
+
+Toujours une bonne organisation au sein de l'équipe, le travail est correctement réparti et les taches sont bien définies.
+Le travail est bien avancé pour le sprint N°3 et les objectifs principaux sont atteints.
+Au niveau des documentations, les informations principal concernant l'application de maniére général ont été ajouté il reste quelque détails concernant les fonctionnalité à ajouté mais le développement fini de celle-ci est néccessaire pour remplir ces informations.
+Le Backlog nous parait bien défini avec les détails nécessaires à sa compréhension.
+
+== Sujets en progression pour le prochain sprint
+
+* Rédaction de la documentation utilisateur et technique
+* Amélioration graphique de l'interface web
+* Ajout de fonctionnalités dans l'interface web
+
+
+== Tâches réalisées
+
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1?style=flat&label=Issues_18[Issues #18, link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/issues/18"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1?style=flat&label=Issues_19[Issues #18, link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/issues/19"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1?style=flat&label=Issues_20[Issues #18, link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/issues/20"] +
+
+== Tâches en cours
+
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1?style=flat&label=Issues_23[Issues #23, link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/issues/23"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1?style=flat&label=Issues_22[Issues #22, link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/issues/22"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1?style=flat&label=Issues_21[Issues #21, link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/issues/21"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1?style=flat&label=Issues_26[Issues #26, link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/issues/26"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1?style=flat&label=Issues_27[Issues #27, link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/issues/27"] +
+
+== Tâches non achevées
+
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1?style=flat&label=Issues_25[Issues #25, link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/issues/25"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1?style=flat&label=Issues_24[Issues #24, link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/issues/24"] +
+
+== Remarque(s) indicative(s) du Scrum Master
+
+* Le Développeur - https://github.com/Lyll01[Lylian DERRAMOND] - a été absent du 18/01/2024 à partir de 8h jusqu'au 19/01/2024 à 17h.
