@@ -27,7 +27,7 @@ Cette application permetttra de voir l'occupation des données des salles du Bat
 
 === Fonctionnalités principales de l'application
 
-1. Visualisation en Temps Réel +
+1. Visualisation en Temps Réel des donnéées récolté +
 L'interface de l'application offre une visualisation en temps réel des données remontées par les capteurs. Vous pouvez observer instantanément la présence, la luminosité et le niveau de CO2 dans chaque salle du 1er étage.
 
 1. Historique des Données +
@@ -49,16 +49,16 @@ Configuration *matérielle* :
 
 * Processeur : Intel Core i3 ou équivalent
 * Mémoire RAM : 8 Go ou plus
-* Espace de stockage : 256 Go ou plus
+* Espace de stockage : 128 Go ou plus
 * Connexion réseau : Ethernet ou Wi-Fi
 
 Configuration *logicielle* :
 
 * Système d'exploitation : Windows 10/11, macOS, ou une distribution Linux récente comme Ubuntu
-* Java Development Kit (JDK) : Version 17
 * Environnement de développement intégré (IDE) : Visual Studio Code
-* Base de données : Oracle Database, MySQL, ou tout autre système de gestion de base de données relationnelle compatible avec Java
-* Bibliothèques/frameworks : Python 3.11.7
+* Exécution : Docker (Docker-compose)
+* Base de données : MySQL
+* Langages : Python 3.11.7, PHP (Web), C# (3D)
 
 == Utilisation
 
@@ -94,6 +94,7 @@ Une indication claire du niveau de batterie vous permet de planifier efficacemen
 En cas de situations particulières, telles que des niveaux de CO2 élevés ou une batterie faible, l'application peut générer des alertes et des notifications pour informer rapidement les responsables.
 
 == Fonctionnement de l'Application
+
 
 
 

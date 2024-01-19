@@ -1,14 +1,4 @@
-body {
-    width: 100%;
-    font-family: 'Arial', sans-serif;
-}
-
-#head {
+header {
     display: flex;
     justify-content: center;
-    margin-bottom: 3% ; 
-}
-
-h1 {
-    color: brown;
 }
