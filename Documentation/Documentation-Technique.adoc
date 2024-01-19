@@ -66,7 +66,7 @@ Ces cardinalités indiquent les relations et les contraintes entre les différen
 === Générale
 Schéma représentant le fonctionnement de l'application : 
 
-image::Schéma-Application.png[]
+image::Images/Shema/Schéma-Application.png[]
 
 Pour plus de détail sur l'architecture général en termes de sous-systèmes pour l'application roomService, voici les éléments détaillés qui la compose :
 
