@@ -67,7 +67,7 @@ Le Backlog nous parait bien défini avec les détails nécessaires à sa compré
 
 == Tâches non achevées
 
-* Aucune tâche n'a été non-achevées
+* Aucune tâche non-achevées
 
 == Remarque(s) indicative(s) du Scrum Master
 
