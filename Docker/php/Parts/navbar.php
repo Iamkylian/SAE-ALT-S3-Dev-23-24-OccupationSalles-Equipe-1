@@ -17,9 +17,9 @@ function isCurrentPage($currentPage, $currentPath) {
 <header>
     <nav>
         <ul class="nav_links">
-            <li><a href="#">Carte</a></li>
-            <li><a href="#">Maintenance</a></li>
-            <li><a href="#">Statistiques</a></li>
+            <li><a href="../Carte/">Carte</a></li>
+            <li><a href="../Maintenance/">Maintenance</a></li>
+            <li><a href="../Statistiques/">Statistiques</a></li>
         </ul>
     </nav>
 </header>
