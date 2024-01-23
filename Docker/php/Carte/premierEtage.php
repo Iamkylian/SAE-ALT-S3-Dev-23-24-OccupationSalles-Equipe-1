@@ -31,7 +31,7 @@ $roomNames = array_column($devices, 'room');
 <style>
     g {
         fill: rgb(183, 232, 247);
-        stroke: rgb(0, 26, 255);
+        stroke: #edf0f1;
         fill-opacity: 1;
         stroke-width: 1px;
         stroke-linecap: round;
@@ -65,9 +65,10 @@ foreach ($roomIDs as $roomId) {
 ?>
 </style>
 
-<header id='head'>
-    <h1>Premier Etage</h1>
-</header>
+<?php include_once('../Parts/navbar.php') ?>
+
+<div class="container-fluid">
+
 
 <svg viewBox="0 0 877.99769 300">
         <g id="san" class="changeColor">
@@ -226,7 +227,7 @@ foreach ($roomIDs as $roomId) {
             </g>
         </a>
     </svg>
-
+</div>
     <?php
     ini_set('display_errors', 1);
     ?>
