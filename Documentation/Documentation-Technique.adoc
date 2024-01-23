@@ -116,7 +116,7 @@ Battery : Cette table stocke les informations relatives à la batterie des capte
 
 ===== Grafana
 * v9.1.7*
-Grafana, dans le contexte de l'application RoomService, est encapsulé dans un conteneur Docker pour faciliter sa gestion, son déploiement et sa portabilité. Ce service nous permet de visualiser les données transmises par les capteurs en temps réel, de consulter l'historique des données et de générer des rapports et des statistiques.
+** Grafana, dans le contexte de l'application RoomService, est encapsulé dans un conteneur Docker pour faciliter sa gestion, son déploiement et sa portabilité. Ce service nous permet de visualiser les données transmises par les capteurs en temps réel, de consulter l'historique des données et de générer des rapports et des statistiques.
 
 
 ===== Base de données
