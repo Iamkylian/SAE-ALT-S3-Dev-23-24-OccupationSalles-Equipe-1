@@ -130,7 +130,7 @@ Battery : Cette table stocke les informations relatives à la batterie des capte
 * *Partie de use case réalisé - scénarios éventuels* : 
 
 .Use Case : Visualisation des données transmises par les capteurs
-image::Images/Use-Case/visualiserInformationSalleEnTempsRéel.png[]
+image::Images/Use-Case/visualiserInformationSalleTempsRéel.png[]
 
 
 ==== `*_Utilisateur - Visualisation de l'état des capteurs en temps réel_*`
