@@ -3,9 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/header.css" rel="stylesheet">
-	<title>Document</title>
-    <?php include_once('../Parts/links.php') ?>
+	<title>Carte | Suivi des salles</title>
 </head>
 <body>
 <style>
@@ -36,9 +34,7 @@
         }
     </style>
 
-    <header id='head'>
-        <?php include_once('../Parts/navbar.php') ?>
-    </header>
+    <?php include_once('../Parts/navbar.php') ?>
         <svg viewBox="0 0 2141.3333 1064">
             <g id="rdc" class="changeColor">
                 <title>Rez de chaussé</title>
