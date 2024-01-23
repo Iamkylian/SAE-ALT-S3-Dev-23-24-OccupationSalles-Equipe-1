@@ -17,11 +17,17 @@
 
 
 == Présentation de l'Application
-
+L'application RoomService permet aux utilisateurs d'avoir en temps réel différentes informations des salles du premier étage du département informatique de l'IUT de blagnac.
+De plus, l'application RoomService permet aux utilisateurs de consulter l'historique des informations des salles du premier étage du département informatique de l'IUT de blagnac.
+Enfin, l'application RoomService permet aux utilisateurs de consulter les statistiques des informations des salles du premier étage du département informatique de l'IUT de blagnac.
 
 
 === Contexte
-
+Le contexte de l'application RoomService est le suivant :
+* L'application RoomService est développée par le groupe 1 de la promotion 2024 du département informatique de l'IUT de Blagnac.
+* L'application RoomService est développée pour les utilisateurs de l'IUT de Blagnac.
+* L'application RoomService est développée pour les utilisateurs de l'IUT de Blagnac qui souhaitent avoir en temps réel différentes informations des salles du premier étage du département informatique de l'IUT de blagnac.
+* L'application RoomService est développée pour les utilisateurs de l'IUT de Blagnac qui souhaitent consulter l'historique des informations des salles du premier étage du département informatique de l'IUT de blagnac.
 
 
 === Use Case global
