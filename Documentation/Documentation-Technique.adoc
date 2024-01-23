@@ -144,7 +144,7 @@ image::
 * *Partie de use case réalisé - scénarios éventuels* : 
 
 .Use Case : 
-image::Images/Use-Case/visualiserInformationCapteurEnTempsRéel.svg[]
+image::Images/Use-Case/visualiserInformationEtatCapteurTempsRéel.svg[]
 
 * *Partie du diagramme de classes données nécessaires : en lecture, en mise à jour* : 
 
@@ -158,7 +158,7 @@ image::
 * *Partie de use case réalisé - scénarios éventuels* : 
 
 .Use Case : 
-image::Images/Use-Case/visualiserInformationOccupationSalleTempsRéel.svg[]
+image::Images/Use-Case/visualiserOccupationSalleTempsReel.svg[]
 
 * *Partie du diagramme de classes données nécessaires : en lecture, en mise à jour* : 
 
