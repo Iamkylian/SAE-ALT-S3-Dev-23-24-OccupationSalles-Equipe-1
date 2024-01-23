@@ -1,62 +1,39 @@
-#image-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #f2f2f2;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@100&display=swap');
+
+
+.change_color{
+	width: 100px;
+	height: 100px;
 }
 
-#data-container {
-    flex: 5;
-    display: flex;
-    align-items: left;
-    flex-direction: column;
-    background-color: #f2f2f2;
-}
-
-#image-container::after {
-    content: '';
-    width: 1px;
-    height: 100%;
-    background-color: #ccc;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	margin-left: 3rem;
-	margin-top: 2rem;
-	width: 150px;
-	background-color: #f1f1f1;
-	position: fixed;
-	height: auto;
-	overflow: auto;
-	z-index: 50;
-	border-radius: 15%;
-	border: 1px solid #555;
+#room_name {
+	color:white;
 	text-align: center;
-	transition: .3s ease-in
+	font-family: "Montserrat",sans-serif;
+	font-weight: bold;
 }
 
-nav li a {
-	display: block;
-	color: #000;
-	padding: 8px 16px;
-	text-decoration: none;
-	font-family: poppins-regular, sans-serif
+#return_button {
+	font-size: 16px;
+	color: white;
+	padding-left: 2%;
 }
 
-nav li a:hover {
-	background-color: #dad8d8;
-	color: #ca0011
+#data_container{
+	color:white !important;
 }
 
-nav li:hover ::after {
-	content: "  <";
-	color: #ca0011
+#data{
+	color: black !important;
+	background-color: white !important;
+	font-family: "Montserrat",sans-serif;
+}
+
+#data p {
+	text-align: center;
+	align-items: center;
+}
+
+#data-row{
+	padding-left: 2%;
 }
