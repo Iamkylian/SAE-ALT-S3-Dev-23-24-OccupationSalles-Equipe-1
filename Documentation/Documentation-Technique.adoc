@@ -103,18 +103,20 @@ Battery : Cette table stocke les informations relatives à la batterie des capte
 *** *batteryLevel* : Ce champ stocke le niveau de batterie du capteur.
 
 
-
 === Ressources externes
 
 ===== Python
-* Version 3.*
-** Afin de pouvoir se connecter à au flux MQTT et pouvoir récupérer les données transmises par les capteurs.
+* Version 3.11.7*
+* ** Python, dans le contexte de l'application RoomService, est encapsulé dans un conteneur Docker pour faciliter sa gestion, son déploiement et sa portabilité. Il est utilisé afin de pouvoir se connecter à au flux MQTT et pouvoir récupérer les données transmises par les capteurs.
 
 ===== Docker
-* v24.0.7
-** Afin que les utilisateurs puissent utiliser cette application de visualisation de l'état des capteurs et des salles, il est nécessaire de s'assurer que leurs postes de travail disposent de la version de ``Docker Desktop v24.0.7``.. Cela garantira que l'environnement d'exécution Python requis est correctement installé sur leur machine, permettant ainsi de lancer et d'exécuter l'application de manière optimale.
+* v24.0.7*
+* ** Docker est utilisé pour encapsuler l'application RoomService dans un conteneur. Cela permet une gestion efficace des dépendances et des configurations, assurant la portabilité de l'application entre différents environnements. Le fichier Docker-compose fournit une configuration détaillée pour lancer l'application avec ses composants nécessaires.
+
 
 ===== Grafana
+* v9.1.7*
+Grafana, dans le contexte de l'application RoomService, est encapsulé dans un conteneur Docker pour faciliter sa gestion, son déploiement et sa portabilité. Ce service nous permet de visualiser les données transmises par les capteurs en temps réel, de consulter l'historique des données et de générer des rapports et des statistiques.
 
 
 ===== Base de données

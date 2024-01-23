@@ -94,11 +94,12 @@ Une indication claire du niveau de batterie vous permet de planifier efficacemen
 En cas de situations particulières, telles que des niveaux de CO2 élevés ou une batterie faible, l'application peut générer des alertes et des notifications pour informer rapidement les responsables.
 
 == Fonctionnement de l'Application
-
+Le fonctionnement de l'application est détaillé :
 
 
 
 == Résultats produits avec jeux d'essai commentés
+
 
 
 
