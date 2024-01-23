@@ -14,11 +14,11 @@ function isCurrentPage($currentPage, $currentPath) {
 
 <div class="navbar">
     <?php if (!isCurrentPage('Carte', $currentPath)) { ?>
-        <button class="nav-btn"><a href="Carte">Carte</a></button>
+        <button class="nav-btn"><a href="../Carte">Carte</a></button>
     <?php } ?>
     
     <?php if (!isCurrentPage('Maintenance', $currentPath)) { ?>
-        <button class="nav-btn"><a href="Maintenance/">Maintenance</a></button>
+        <button class="nav-btn"><a href="../Maintenance">Maintenance</a></button>
     <?php } ?>
     
     <?php if (!isCurrentPage('Statistique', $currentPath)) { ?>

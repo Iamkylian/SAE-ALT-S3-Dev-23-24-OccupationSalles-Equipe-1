@@ -29,6 +29,32 @@ $roomNames = array_column($devices, 'room');
 ?>
 
 <style>
+
+    #levels {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .battery-level {
+      width: 10px;
+      height: 20px;
+      border: 1px solid #000;
+      position: relative;
+      margin-left: 10px;
+    }
+
+    .battery-fill {
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    .black { background-color: #000; }
+    .red { background-color: #FF0000; }
+    .light-yellow { background-color: #FFFF00; }
+    .light-green { background-color: #00FF00; }
+    .green { background-color: #008000; }
+
     g {
         fill: rgb(183, 232, 247);
         stroke: rgb(0, 26, 255);
@@ -55,13 +81,12 @@ $roomNames = array_column($devices, 'room');
     }
 
 <?php
-// Iterate through room IDs and generate styles
-$roomIDs = ['B101', 'B102', 'B103', 'B104', 'B105', 'B106', 'B107', 'B108', 'B109', 'B110', 'B111', 'B112', 'B113', 'B114', 'B115', 'B116a', 'B116b'];
+    $roomIDs = ['B101', 'B102', 'B103', 'B104', 'B105', 'B106', 'B107', 'B108', 'B109', 'B110', 'B111', 'B112', 'B113', 'B114', 'B115', 'B116a', 'B116b'];
 
-foreach ($roomIDs as $roomId) {
-    $style = "fill:" . (in_array(trim($roomId), $roomNames, true) ? 'rgb(106, 254, 0)' : 'red') . ';';
-    echo "#$roomId { $style }";
-}
+    foreach ($roomIDs as $roomId) {
+        $style = "fill:" . (in_array(trim($roomId), $roomNames, true) ? 'rgb(106, 254, 0)' : 'rgb(60, 60, 60)') . ';';
+        echo "#$roomId { $style }";
+    }
 ?>
 </style>
 
@@ -226,6 +251,28 @@ foreach ($roomIDs as $roomId) {
             </g>
         </a>
     </svg>
+
+    <div id="title">
+            <h2>Occupation</h2>
+        </div>
+        <div id="levels">
+            <div class="battery-level">
+                <div class="battery-fill black" style="width: 100%;"></div>
+            </div>
+            <h2>No Data</h2>
+            <div class="battery-level">
+                <div class="battery-fill red" style="width: 100%;"></div>
+            </div>
+            <h2>Occupée</h2>
+            <!-- <div class="battery-level">
+                <div class="battery-fill light-yellow" style="width: 100%;"></div>
+            </div>
+            <h2>Libre</h2> -->
+            <div class="battery-level">
+                <div class="battery-fill green" style="width: 100%;"></div>
+            </div>
+            <h2>Libre</h2>
+        </div>
 
     <?php
     ini_set('display_errors', 1);
