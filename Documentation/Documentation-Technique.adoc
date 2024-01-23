@@ -90,7 +90,7 @@ Battery : Cette table stocke les informations relatives à la batterie des capte
 === Ressources externes
 
 ===== Python
-* Version 3.11.7*
+* Version 3.9*
 ** Python, dans le contexte de l'application RoomService, est encapsulé dans un conteneur Docker pour faciliter sa gestion, son déploiement et sa portabilité. Il est utilisé afin de pouvoir se connecter à au flux MQTT et pouvoir récupérer les données transmises par les capteurs.
 
 ===== Docker
