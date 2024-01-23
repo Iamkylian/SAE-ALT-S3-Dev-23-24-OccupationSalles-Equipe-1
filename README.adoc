@@ -71,8 +71,8 @@ Le dépot Github est séparé en plusieurs dossiers, chacun ayant un rôle bien 
 == Gestion de projet & Qualité
 
 - Version courante de l'application : image:https://img.shields.io/badge/RoomService-v1.0-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/releases/tag/V2"]
-- image:https://img.shields.io/badge/Documentation_Technique-V2-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Documentation/Documentation-Technique.adoc"]
-- image:https://img.shields.io/badge/Documentation_Utilisateur-V2-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Documentation/Documentation-Utilisateur.adoc"]
+- image:https://img.shields.io/badge/Documentation_Technique-V3-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Documentation/Documentation-Technique.adoc"]
+- image:https://img.shields.io/badge/Documentation_Utilisateur-V3-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/tree/main/Documentation/Documentation-Utilisateur.adoc"]
 - image:https://img.shields.io/badge/Backlog_produit-RoomService-red.svg[link='https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/blob/main/Documentation/Backlog-produit/Backlog%20produit.pdf'] +
 - image:https://img.shields.io/badge/Tests_Unitaires-RoomService-red.svg[link='https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/blob/main/Test/Test.adoc'] +
 - image:https://img.shields.io/badge/Cahier_de_tests-RoomService-red.svg[link='https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/blob/main/Documentation/Cahier-Tests.adoc'] +
@@ -98,7 +98,8 @@ https://docs.google.com/spreadsheets/d/e/2PACX-1vRtGk-4u-mv4RE4q76-qFY-Iy48o1Wzc
 
 ===== Retour
 
-
+Bonjour, je vous met le retour ici car j'ai des soucis de droit sur votre repository qui me demande de créer une branche.
+Release : Pensez à la commenter, j'ai un lien vers un comparatif mais exprimer clairement les fonctionnalités ok et celles non ok. Doc tech : Bien mais si vous n'avez pas de classes (prog non objet ?) inutile de laisser le paragraphe avec des ?? sinon indiquer le diagramme de classe correspondant à la BD dont vous donnez les champs juste après.Doc user :  Il manque qq copies écran de l'appli pour bien comprendre, il reste aussi des rubriques non implémentées le lien indique seulement V ... pas V2. Il faut un cahier de tests par les tests en python (je joue le rôle du client). Task : ok , il manque les backlog sprint avec les US à traiter dans le sprint. il me reste encore des US "orga".
 
 ==== Sprint 3
 
