@@ -46,28 +46,12 @@ image::Images/Use-Case/UseCaseGénéraux.png[]
 ** Consulter les rapports des informations des salles du premier étage du département informatique.
 
 
-=== Diagramme de classe des données global
+=== Diagramme de d'architecture de la base de données
 
+.Diagramme UML de la base de données de l'application
+image::/BDD/Diagramme_uml.png[]
 
-Ce diagramme de classe des données représente la structure des classes et des relations entre elles dans le code développé. Voici une description détaillée des éléments particuliers présents dans le diagramme de classe :
-
-===== Description
-
-* Classe "??" :
-** Attributs : ??, ??, ??, ??, ??.
-Cette classe représente ??. Chaque ?? a ??, ??, ??, ?? et ??.
-
-
-===== Cardinalité
-
-* ?? - ?? :
-** Cardinalité : 0..1 à 1
-** Signification : Un ?? peut être associé à zéro ou une ??, tandis qu'?? doit avoir exactement un ??.
-
-
-Ces cardinalités indiquent les relations et les contraintes entre les différentes classes du système. Elles définissent combien d'instances d'une classe peuvent être liées à une ou plusieurs instances d'une autre classe.
-
-== Architecture
+== Architecture de l'application
 
 === Générale
 Schéma représentant le fonctionnement de l'application : 
@@ -106,7 +90,7 @@ Battery : Cette table stocke les informations relatives à la batterie des capte
 === Ressources externes
 
 ===== Python
-* Version 3.11.7*
+* Version 3.9*
 ** Python, dans le contexte de l'application RoomService, est encapsulé dans un conteneur Docker pour faciliter sa gestion, son déploiement et sa portabilité. Il est utilisé afin de pouvoir se connecter à au flux MQTT et pouvoir récupérer les données transmises par les capteurs.
 
 ===== Docker
@@ -116,7 +100,7 @@ Battery : Cette table stocke les informations relatives à la batterie des capte
 
 ===== Grafana
 * v9.1.7*
-** Grafana, dans le contexte de l'application RoomService, est encapsulé dans un conteneur Docker pour faciliter sa gestion, son déploiement et sa portabilité. Ce service nous permet de visualiser les données transmises par les capteurs en temps réel, de consulter l'historique des données et de générer des rapports et des statistiques.
+** Grafana, dans le contexte de l'application RoomService, est encapsulé dans un conteneur Docker pour faciliter sa gestion, son déploiement et sa portabilité. Ce service nous permet de visualiser les données transmises par les capteurs en temps réel, de consulter l'historique des données et de générer des rapports et des statistiques détaillé.
 
 
 ===== Base de données
