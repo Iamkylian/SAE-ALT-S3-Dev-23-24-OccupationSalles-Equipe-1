@@ -48,7 +48,7 @@ image::Images/Use-Case/UseCaseGénéraux.png[]
 
 === Diagramme de d'architecture de la base de données
 
-. Diagramme UML de la base de données de l'application
+.Diagramme UML de la base de données de l'application
 image::/BDD/Diagramme_uml.png[]
 
 == Architecture de l'application
