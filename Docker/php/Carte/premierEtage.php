@@ -11,7 +11,9 @@
 <?php
 include("../connect.inc.php");
 
-$query = $conn->prepare("SELECT room FROM Device");
+$query = $conn->prepare("SELECT d.room, Donnes.activity, Donnes.illumination, Donnes.time FROM Device d, Donnes
+WHERE d.id = Donnes.idDevice ORDER BY Donnes.time;");
+
 $query->execute();
 
 $result = $query->get_result();
@@ -20,7 +22,7 @@ $devices = array();
 
 // Parcourir les résultats et les stocker dans le tableau
 while ($row = $result->fetch_assoc()) {
-    // Ajouter la valeur de la colonne "room" au tableau
+    // Ajouter la ligne complète au tableau
     $devices[] = $row;
 }
 
@@ -29,6 +31,31 @@ $roomNames = array_column($devices, 'room');
 ?>
 
 <style>
+
+    #occupation {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .occupation-level {
+      width: 10px;
+      height: 20px;
+      border: 1px solid #000;
+      position: relative;
+      margin-left: 10px;
+    }
+
+    .occupation-fill {
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    .black { background-color: #000; }
+    .red { background-color: #FF0000; }
+    .yellow {background-color: yellow;}
+    .green { background-color: rgb(106, 254, 0); }
+
     g {
         fill: rgb(183, 232, 247);
         stroke: rgb(0, 26, 255);
@@ -55,13 +82,41 @@ $roomNames = array_column($devices, 'room');
     }
 
 <?php
-// Iterate through room IDs and generate styles
 $roomIDs = ['B101', 'B102', 'B103', 'B104', 'B105', 'B106', 'B107', 'B108', 'B109', 'B110', 'B111', 'B112', 'B113', 'B114', 'B115', 'B116a', 'B116b'];
 
+// Afficher le style pour chaque chambre avec activity et temperature
 foreach ($roomIDs as $roomId) {
-    $style = "fill:" . (in_array(trim($roomId), $roomNames, true) ? 'rgb(106, 254, 0)' : 'red') . ';';
+    $style = "fill:" . (in_array(trim($roomId), $roomNames, true) ? 'rgb(106, 254, 0)' : 'rgb(60, 60, 60)') . ';';
+
+    // Trouver la dernière donnée envoyée par le device
+    $filteredDevices = array_filter($devices, function ($device) use ($roomId) {
+        return $device['room'] == $roomId;
+    });
+
+    // Get the last entry
+    $lastEntry = end($filteredDevices);
+
+    // Si une entrée est trouvée, afficher salle rouge si occupée (activity > 100 & luminosity > 30), sinon vert ou jaune
+    if ($lastEntry) {
+        $activity = $lastEntry['activity'];
+        $illumination = $lastEntry['illumination'];
+
+        if ($activity > 100 && $illumination > 30) {
+            $style = "fill: red;";
+        } elseif (30 < $activity && $activity < 100 && 5 < $illumination && $illumination < 30) {
+            $style = "fill: yellow;";
+        } else {
+            $style = "fill: rgb(76, 204, 0);";
+        }
+
+        echo "#$roomId .activity { content: '$activity'; }";
+        echo "#$roomId .luminosité { content: '$illumination'; }";
+    }
+
     echo "#$roomId { $style }";
 }
+
+
 ?>
 </style>
 
@@ -226,6 +281,28 @@ foreach ($roomIDs as $roomId) {
             </g>
         </a>
     </svg>
+
+    <div id="title">
+            <h2>Occupation</h2>
+        </div>
+        <div id="occupation">
+            <div class="occupation-level">
+                <div class="occupation-fill black" style="width: 100%;"></div>
+            </div>
+            <h2>No Data</h2>
+            <div class="occupation-level">
+                <div class="occupation-fill red" style="width: 100%;"></div>
+            </div>
+            <h2>Occupée</h2>
+            <div class="occupation-level">
+                <div class="occupation-fill yellow" style="width: 100%;"></div>
+            </div>
+            <h2>Possiblement occupée</h2>
+            <div class="occupation-level">
+                <div class="occupation-fill green" style="width: 100%;"></div>
+            </div>
+            <h2>Libre</h2>
+        </div>
 
     <?php
     ini_set('display_errors', 1);

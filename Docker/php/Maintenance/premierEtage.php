@@ -7,6 +7,59 @@
     <title>Document</title>
     <link rel="stylesheet" href="../Css/Maintenance/style.css">
 </head>
+<style>
+    #levels {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .battery-level {
+      width: 100px;
+      height: 20px;
+      border: 1px solid #000;
+      position: relative;
+      margin-left: 10px;
+    }
+
+    .battery-fill {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .black { background-color: #000; }
+    .red { background-color: #FF0000; }
+    .light-yellow { background-color: #FFFF00; }
+    .light-green { background-color: #00FF00; }
+    .green { background-color: #008000; }
+
+    g {
+        fill: rgb(183, 232, 247);
+        stroke: rgb(0, 26, 255);
+        fill-opacity: 1;
+        stroke-width: 1px;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-opacity: 1;
+        transition: fill 1.2s, stroke 1s;
+    }
+
+    .changeColor path {
+        fill-opacity: 1;
+        stroke-width: 1px;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-opacity: 1;
+        transition: fill 0.5s, stroke 0.5s; /* Adjust the duration as needed */
+    }
+
+    .changeColor:hover path {
+        fill: rgb(0, 240, 255);
+        stroke: rgb(51, 102, 204);
+    }
+  </style>
+
 <body>
 
 <header id='head'>
@@ -124,6 +177,27 @@
             <path id="path956" d="m 373.46248,172.609 38.51786,-2.94496"/>
         </g>
     </svg>
+
+        <div id="title">
+            <h2>Batterie</h2>
+        </div>
+        <div id="levels">
+            <div class="battery-level">
+                <div class="battery-fill black" style="width: 3%;"></div>
+            </div>
+            <div class="battery-level">
+                <div class="battery-fill red" style="width: 20%;"></div>
+            </div>
+            <div class="battery-level">
+                <div class="battery-fill light-yellow" style="width: 40%;"></div>
+            </div>
+            <div class="battery-level">
+                <div class="battery-fill light-green" style="width: 80%;"></div>
+            </div>
+            <div class="battery-level">
+                <div class="battery-fill green" style="width: 100%;"></div>
+            </div>
+        </div>
 
     <?php
     ini_set('display_errors', 1);
