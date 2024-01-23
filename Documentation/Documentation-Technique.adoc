@@ -107,11 +107,11 @@ Battery : Cette table stocke les informations relatives à la batterie des capte
 
 ===== Python
 * Version 3.11.7*
-* ** Python, dans le contexte de l'application RoomService, est encapsulé dans un conteneur Docker pour faciliter sa gestion, son déploiement et sa portabilité. Il est utilisé afin de pouvoir se connecter à au flux MQTT et pouvoir récupérer les données transmises par les capteurs.
+** Python, dans le contexte de l'application RoomService, est encapsulé dans un conteneur Docker pour faciliter sa gestion, son déploiement et sa portabilité. Il est utilisé afin de pouvoir se connecter à au flux MQTT et pouvoir récupérer les données transmises par les capteurs.
 
 ===== Docker
 * v24.0.7*
-* ** Docker est utilisé pour encapsuler l'application RoomService dans un conteneur. Cela permet une gestion efficace des dépendances et des configurations, assurant la portabilité de l'application entre différents environnements. Le fichier Docker-compose fournit une configuration détaillée pour lancer l'application avec ses composants nécessaires.
+** Docker est utilisé pour encapsuler l'application RoomService dans un conteneur. Cela permet une gestion efficace des dépendances et des configurations, assurant la portabilité de l'application entre différents environnements. Le fichier Docker-compose fournit une configuration détaillée pour lancer l'application avec ses composants nécessaires.
 
 
 ===== Grafana
