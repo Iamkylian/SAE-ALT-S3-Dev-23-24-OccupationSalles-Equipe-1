@@ -132,10 +132,6 @@ Battery : Cette table stocke les informations relatives à la batterie des capte
 .Use Case : Visualisation des données transmises par les capteurs
 image::Images/Use-Case/visualiserInformationSalleEnTempsRéel.svg[]
 
-* *Partie du diagramme de classes données nécessaires : en lecture, en mise à jour* : 
-
-.Diagramme de Classe : Visualisation des données transmises par les capteurs
-image::
 
 ==== `*_Utilisateur - Visualisation de l'état des capteurs en temps réel_*`
 
@@ -146,10 +142,6 @@ image::
 .Use Case : 
 image::Images/Use-Case/visualiserInformationEtatCapteurTempsRéel.svg[]
 
-* *Partie du diagramme de classes données nécessaires : en lecture, en mise à jour* : 
-
-.Diagramme de Classe : 
-image::
 
 ==== `*_Utilisateur - Visualisation de l'occupation des salles en temps réel_*`
 
@@ -160,7 +152,3 @@ image::
 .Use Case : 
 image::Images/Use-Case/visualiserOccupationSalleTempsReel.svg[]
 
-* *Partie du diagramme de classes données nécessaires : en lecture, en mise à jour* : 
-
-.Diagramme de Classe : 
-image::
