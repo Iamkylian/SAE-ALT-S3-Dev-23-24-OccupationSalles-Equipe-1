@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/header.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Premier étage | Suivi des salles</title>
 </head>
 <body>
 
