@@ -157,20 +157,20 @@
 
         // Add an event listener to the "Generate PDF" button
         $('#generatePDF').click(function() {
-            alert('Button clicked');
+            //alert('Button clicked');
 
             // Retrieve selected date and time
             var selectedDatetime = $('#datetimePicker').val();
-            alert('Selected Datetime: ' + selectedDatetime);
+            //alert('Selected Datetime: ' + selectedDatetime);
 
             // Retrieve selected room directly from the select element
             var selectedRoom = $('#select-room').val();
-            alert('Selected Room: ' + selectedRoom);
+            //alert('Selected Room: ' + selectedRoom);
 
             // Perform SQL query to fetch sensor data
-            $.ajax({
+            /*$.ajax({
                 type: 'POST',
-                url: 'getData.php',
+                url: 'getDate.php',
                 data: {
                     'select-room': selectedRoom,
                     'datetimePicker': selectedDatetime
@@ -195,10 +195,37 @@
                     console.error('AJAX Error:', status, error);
                     alert('Error generating PDF report. Please try again.');
                 }
-            });
+            });*/
+
+            $.ajax({
+                type: 'POST',
+                url: 'getDate.php',
+                data: {
+                    'select-room': selectedRoom,
+                    'datetimePicker': selectedDatetime
+                },
+            })
+            .done(function(response){
+                // Process the retrieved sensor data
+                console.log(response);
+                var sensorData = JSON.parse(response);
+                    console.log('Sensor data:', sensorData);
+
+                    // Example: Use html2pdf.js to generate PDF
+                    var pdfElement = '<h1>Sensor Data Report</h1>';
+                    sensorData.forEach(function(sensor) {
+                        pdfElement += '<p>' + JSON.stringify(sensor) + '</p>';
+                    });
+
+                    // Generate PDF using html2pdf
+                    html2pdf(pdfElement);
+
+                    alert('PDF report generated for ' + selectedDatetime);
+            })
+            .fail(function(jxQH,error) {
+                alert(error + jxQH);
+            })
         });
     });
 </script>
-
-
 </html>
