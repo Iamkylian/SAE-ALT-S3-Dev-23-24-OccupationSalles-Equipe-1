@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/header.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Premier étage | Suivi des salles</title>
 </head>
 <body>
 
@@ -31,14 +31,14 @@ $roomNames = array_column($devices, 'room');
 ?>
 
 <style>
-
-    h2 { 
-        color: white;
+    .text-level{
+        color:white;
     }
 
     #occupation {
         display: flex;
         flex-direction: row;
+        align-items: center;
     }
 
     .occupation-level {
@@ -47,6 +47,7 @@ $roomNames = array_column($devices, 'room');
       border: 1px solid #000;
       position: relative;
       margin-left: 10px;
+      align-items: center;
     }
 
     .occupation-fill {
@@ -294,19 +295,19 @@ foreach ($roomIDs as $roomId) {
             <div class="occupation-level">
                 <div class="occupation-fill black"></div>
             </div>
-            <h2>No Data</h2>
+            <h2 class="text-level">No Data</h2>
             <div class="occupation-level">
                 <div class="occupation-fill red"></div>
             </div>
-            <h2>Occupée</h2>
+            <h2 class="text-level">Occupée</h2>
             <div class="occupation-level">
                 <div class="occupation-fill yellow"></div>
             </div>
-            <h2>Possiblement occupée</h2>
+            <h2 class="text-level">Possiblement occupée</h2>
             <div class="occupation-level">
                 <div class="occupation-fill green"></div>
             </div>
-            <h2>Libre</h2>
+            <h2 class="text-level">Libre</h2>
         </div>
 
     <?php

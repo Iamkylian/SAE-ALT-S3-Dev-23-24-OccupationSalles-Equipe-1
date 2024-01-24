@@ -76,46 +76,65 @@ Configuration *logicielle* :
 
 == Utilisation
 
-L'application de surveillance des salles fonctionne de manière intuitive et offre plusieurs fonctionnalités permettant une gestion optimale des espaces. Voici les principales étapes pour utiliser l'application :
+Pour pouvoir lancer l'application, l'installation de Docker Desktop est nécessaire.
+Pour ce faire, vous devez  suivre ces étapes : 
 
-=== Connexion à l'Interface Web 
+* Télécharger gratuitement Docker Desktop sur le https://www.docker.com/products/docker-desktop/[site de Docker]
+** Vous pouvez au préalable vérifiez que l'installation de Docker c'est bien réaliser en verifiant sa version, depuis un terminal, en réalisant la commande suivante :
 
-Lancez l'application en accédant à l'interface web via un navigateur compatible (Google Chrome, Mozilla Firefox, etc.).
-Entrez vos identifiants de connexion (le cas échéant) pour accéder à l'espace réservé aux utilisateurs autorisés.
+    $ docker -v
 
-=== Visualisation en Temps Réel 
+Ensuite télécharger l'application et ouvrer le dossier dans un terminal
 
-La page d'accueil affiche en temps réel les informations provenant des capteurs AM107 installés dans chaque salle du 1er étage du bâtiment B.
-La présence, la luminosité et le niveau de CO2 de chaque salle sont présentés de manière claire et intuitive.
+Depuis un terminal, déplacer vous dans le dossier ou se trouve le fichier .jar:
 
-=== Statistiques de Chaque Salle 
+    $ cd '.\Docker\'
 
-Naviguez vers la section "Statistiques" pour obtenir des données détaillées sur chaque salle.
-Vous pouvez sélectionner une salle spécifique pour visualiser son taux d'occupation moyen sur une période définie.
+Ensuite afin de pouvoir lancer l'application, vous devez réaliser la commande suivante :
 
-=== Historique des Données de la Salle 
+    $ docker-compose up
 
-Accédez à la fonction "Historique" pour consulter l'évolution des conditions de chaque salle au fil du temps.
-Choisissez une période précise pour afficher les données historiques, ce qui facilite l'analyse des tendances et des variations.
+Une fois que tout est lancé, vous pouvez accéder à l'application depuis votre navigateur web en tapant l'adresse suivante :
 
-=== Niveau de Batterie des Capteurs 
+    $ http://localhost:8080/
 
-Consultez la section dédiée au "Niveau de Batterie" pour obtenir des informations sur l'état de charge de chaque capteur AM107 dans chaque salle.
-Une indication claire du niveau de batterie vous permet de planifier efficacement la maintenance des capteurs.
-
-=== Alertes et Notifications (le cas échéant) 
-
-En cas de situations particulières, telles que des niveaux de CO2 élevés ou une batterie faible, l'application peut générer des alertes et des notifications pour informer rapidement les responsables.
+Si toutes ces étapes sont bien suivies, alors l'application devrait se lancer correctement et sans problèmes.
 
 == Fonctionnement de l'Application
-Le fonctionnement de l'application est détaillé :
 
+L’application RoomService un seul rôles d’utilisation, celui de l'utilisateur.
+
+L'utilisateur a la possibilité de réaliser plusieurs actions :
+
+* Visualiser les données des salles en temps réel
+* Visualiser l'historique des données de maniére graphique
+* Visualiser l'occupation/l'état des salles en temps réel
+* Visualiser l'état des capteurs en temps réel (batterie...)
 
 
 == Résultats produits avec jeux d'essai commentés
 
+==== _Quitter l’application_
 
+TIP: Un bouton « quitter application » est accessible sur la barre de navigation en haut de la fenêtre. Il permet de quitter l’application.
 
+Cliquer sur le bouton « quitter application ».
+
+.1) Barre de navigation
+image::Images/Etapes/FonctionBase/menuQuitter.png[]
+
+** Alternative :
+
+.2) Bouton "Quitter application"
+image::Images/Etapes/FonctionBase/fenetreCroix.png[]
+
+* Une fenêtre de confirmation s’affiche.
+* Cliquer sur le bouton « ok », si une connexion avec un compte à été établie, celle-ci s’arrete et la fenêtre de l’application se ferme.
+
+.3) Confirmation Quitter
+image::Images/Etapes/FonctionBase/quitterOk.png[]
+
+Au clique du bouton « annuler » l’application continue de fonctionner et la fenêtre de confirmation se ferme.
 
 == Conclusion
 

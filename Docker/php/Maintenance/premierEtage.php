@@ -20,6 +20,7 @@
     }
 
     #levels {
+        padding-left: 1%;
         display: flex;
         flex-direction: row;
         justify-content: left;
@@ -222,7 +223,7 @@
 
     <div id="battery">
         <div id="title">
-            <h2>Batterie</h2>
+            <h2>Battery Level</h2>
         </div>
         <div id="levels">
             <div class="battery-level">
