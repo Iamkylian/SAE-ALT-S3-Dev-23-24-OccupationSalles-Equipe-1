@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/header.css" rel="stylesheet">
-    <title>Document</title>
+    <title>Maintenance | Suivi des salles</title>
     <link rel="stylesheet" href="../Css/Maintenance/style.css">
 </head>
 <style>

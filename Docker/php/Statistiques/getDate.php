@@ -11,7 +11,7 @@ if (isset($_POST['select-room']) && isset($_POST['datetimePicker'])) {
     // Effectuer la requête SQL pour récupérer les données des capteurs
     $query = "SELECT temperature, humidity, activity, co2, tvoc, illumination, time
             FROM Donnes,Device
-            WHERE idDevice IN (SELECT id FROM Device WHERE room = '$selectedRoom') AND time <= '$selectedDatetime' 
+            WHERE idDevice IN (SELECT id FROM Device WHERE room = '$selectedRoom') AND time => '$selectedDatetime' 
             ORDER BY time DESC";
     
     $stmt = $conn->prepare($query);

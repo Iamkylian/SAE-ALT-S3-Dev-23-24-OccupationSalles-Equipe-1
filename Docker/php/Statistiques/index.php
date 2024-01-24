@@ -212,9 +212,10 @@
                     console.log('Sensor data:', sensorData);
 
                     // Example: Use html2pdf.js to generate PDF
-                    var pdfElement = '<h1>Sensor Data Report</h1>';
+                var pdfElement = '<h1>Historique des données capté de la salle' + selectedRoom + '</h1>';
                     sensorData.forEach(function(sensor) {
-                        pdfElement += '<p>' + JSON.stringify(sensor) + '</p>';
+                        pdfElement += '<p><strong>Date and Time:</strong> ' + dateTimeString + '</p>';
+                        pdfElement += '<li>' + JSON.stringify(sensor) + '</li>';
                     });
 
                     // Generate PDF using html2pdf
