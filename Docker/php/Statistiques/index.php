@@ -198,35 +198,49 @@
             });*/
 
             $.ajax({
-                type: 'POST',
-                url: 'getDate.php',
-                data: {
-                    'select-room': selectedRoom,
-                    'datetimePicker': selectedDatetime
-                },
-            })
-            .done(function(response){
-                // Process the retrieved sensor data
-                console.log(response);
-                var sensorData = JSON.parse(response);
+                    type: 'POST',
+                    url: 'getDate.php',
+                    data: {
+                        'select-room': selectedRoom,
+                        'datetimePicker': selectedDatetime
+                    },
+                })
+                .done(function(response) {
+                    // Process the retrieved sensor data
+                    console.log(response);
+                    var sensorData = JSON.parse(response);
                     console.log('Sensor data:', sensorData);
 
                     // Example: Use html2pdf.js to generate PDF
-                var pdfElement = '<h1>Historique des données capté de la salle' + selectedRoom + '</h1>';
+                    var pdfElement = '<h1 style="text-align: center;">Historique des données capté de la salle' + selectedRoom + '</h1>';
                     sensorData.forEach(function(sensor) {
                         pdfElement += '<p><strong>Date and Time:</strong> ' + dateTimeString + '</p>';
                         pdfElement += '<li>' + JSON.stringify(sensor) + '</li>';
                     });
-
                     // Generate PDF using html2pdf
-                    html2pdf(pdfElement);
+                    html2pdf(pdfElement, {
+                        margin: 0.5,
+                        filename: 'RapportDonnees' + selectedRoom + '.pdf',
+                        html2canvas: {
+                            scale: 3,
+                            letterRendering: true,
+                            useCORS: true,
+                        },
+                        jsPDF: {
+                            unit: 'in',
+                            format: 'a4',
+                            orientation: 'portrait',
+                        }
+                        
+                    });
 
-                    alert('PDF report generated for ' + selectedDatetime);
-            })
-            .fail(function(jxQH,error) {
-                alert(error + jxQH);
-            })
+                    alert('Rapport PDF générer pour les données avant le ' + selectedDatetime + ' et pour la salle : ' + selectedRoom);
+                })
+                .fail(function(jxQH, error) {
+                    alert(error + jxQH);
+                })
         });
     });
 </script>
+
 </html>
