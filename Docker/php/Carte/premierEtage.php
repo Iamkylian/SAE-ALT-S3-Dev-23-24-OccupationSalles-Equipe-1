@@ -31,10 +31,14 @@ $roomNames = array_column($devices, 'room');
 ?>
 
 <style>
+    .text-level{
+        color:white;
+    }
 
     #occupation {
         display: flex;
         flex-direction: row;
+        align-items: center;
     }
 
     .occupation-level {
@@ -43,6 +47,7 @@ $roomNames = array_column($devices, 'room');
       border: 1px solid #000;
       position: relative;
       margin-left: 10px;
+      align-items: center;
     }
 
     .occupation-fill {
@@ -284,25 +289,25 @@ foreach ($roomIDs as $roomId) {
     </svg>
 
     <div id="title">
-            <h2>Occupation</h2>
+            <h2></h2>
         </div>
         <div id="occupation">
             <div class="occupation-level">
                 <div class="occupation-fill black" style="width: 100%;"></div>
             </div>
-            <h2>No Data</h2>
+            <h2 class="text-level">No Data</h2>
             <div class="occupation-level">
                 <div class="occupation-fill red" style="width: 100%;"></div>
             </div>
-            <h2>Occupée</h2>
+            <h2 class="text-level">Occupée</h2>
             <div class="occupation-level">
                 <div class="occupation-fill yellow" style="width: 100%;"></div>
             </div>
-            <h2>Possiblement occupée</h2>
+            <h2 class="text-level">Possiblement occupée</h2>
             <div class="occupation-level">
                 <div class="occupation-fill green" style="width: 100%;"></div>
             </div>
-            <h2>Libre</h2>
+            <h2 class="text-level">Libre</h2>
         </div>
 
     <?php

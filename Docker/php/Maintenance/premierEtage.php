@@ -9,9 +9,16 @@
 </head>
 <style>
     #levels {
+        padding-left: 1%;
         display: flex;
         flex-direction: row;
     }
+
+    #title{
+        color: white;
+        padding-left: 2%;
+    }
+
 
     .battery-level {
       width: 100px;
@@ -62,9 +69,7 @@
 
 <body>
 
-<header id='head'>
-    <h1>Premier Etage</h1>
-</header>
+<?php include_once('../Parts/navbar.php') ?>
 
 <svg viewBox="0 0 877.99769 300">
         <g id="san" class="changeColor">
@@ -179,7 +184,7 @@
     </svg>
 
         <div id="title">
-            <h2>Batterie</h2>
+            <h2>Battery Level</h2>
         </div>
         <div id="levels">
             <div class="battery-level">
