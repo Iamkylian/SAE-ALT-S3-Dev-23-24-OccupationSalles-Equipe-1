@@ -289,23 +289,23 @@ foreach ($roomIDs as $roomId) {
     </svg>
 
     <div id="title">
-            <h2></h2>
-        </div>
+        <h2>Occupation</h2>
+    </div>
         <div id="occupation">
             <div class="occupation-level">
-                <div class="occupation-fill black" style="width: 100%;"></div>
+                <div class="occupation-fill black"></div>
             </div>
             <h2 class="text-level">No Data</h2>
             <div class="occupation-level">
-                <div class="occupation-fill red" style="width: 100%;"></div>
+                <div class="occupation-fill red"></div>
             </div>
             <h2 class="text-level">Occupée</h2>
             <div class="occupation-level">
-                <div class="occupation-fill yellow" style="width: 100%;"></div>
+                <div class="occupation-fill yellow"></div>
             </div>
             <h2 class="text-level">Possiblement occupée</h2>
             <div class="occupation-level">
-                <div class="occupation-fill green" style="width: 100%;"></div>
+                <div class="occupation-fill green"></div>
             </div>
             <h2 class="text-level">Libre</h2>
         </div>
