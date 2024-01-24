@@ -18,6 +18,9 @@ header {
 
 .nav_links {
     list-style: none;
+    background-color: white;
+    padding: 10px;
+    border-radius:25px;
 }
 
 .nav_links li {
@@ -26,6 +29,7 @@ header {
 }
 
 .nav_links li a {
+    color:#24252A;
     transition: all 0.3s ease 0s;
 }
 
