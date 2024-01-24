@@ -9,6 +9,10 @@
 </head>
 <style>
 
+    #title {
+        color: white;
+    }
+
     #battery{
         border: 10px solid black;
         padding: 10px;
@@ -36,11 +40,12 @@
       left: 0;
     }
 
-    .black { background-color: #000; }
-    .red { background-color: #FF0000; }
-    .light-yellow { background-color: #FFFF00; }
-    .light-green { background-color: #00FF00; }
-    .green { background-color: #008000; }
+    .black { background-color: black; }
+    .red { background-color: red; }
+    .brown { background-color: brown; }
+    .yellow { background-color: yellow; }
+    .greenyellow { background-color: greenyellow; }
+    .green { background-color: green; }
 
     g {
         fill: rgb(60, 60, 60);
@@ -85,11 +90,11 @@
             if ($battery > 80) {
                 $style = "fill: green;";
             } elseif ($battery >= 60 && $battery <= 80) {
-                $style = "fill: ligth-green;";
+                $style = "fill: greenyellow;";
             } elseif ($battery >= 40 && $battery < 60) {
-                $style = "fill: ligth-yellow;";
+                $style = "fill: yellow;";
             } elseif ($battery >= 20 && $battery < 40) {
-                $style = "fill: ligth-brown;";
+                $style = "fill: brown;";
             } elseif ($battery >= 0 && $battery < 20) {
                 $style = "fill: red;";
             } else {
@@ -227,10 +232,13 @@
                 <div class="battery-fill red" style="width: 20%;"></div>
             </div>
             <div class="battery-level">
-                <div class="battery-fill light-yellow" style="width: 40%;"></div>
+                <div class="battery-fill brown" style="width: 40%;"></div>
             </div>
             <div class="battery-level">
-                <div class="battery-fill light-green" style="width: 80%;"></div>
+                <div class="battery-fill yellow" style="width: 60%;"></div>
+            </div>
+            <div class="battery-level">
+                <div class="battery-fill greenyellow" style="width: 80%;"></div>
             </div>
             <div class="battery-level">
                 <div class="battery-fill green" style="width: 100%;"></div>
