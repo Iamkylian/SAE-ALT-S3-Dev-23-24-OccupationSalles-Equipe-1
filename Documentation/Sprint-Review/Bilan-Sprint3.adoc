@@ -71,4 +71,4 @@ Le Backlog nous parait bien défini avec les détails nécessaires à sa compré
 
 == Remarque(s) indicative(s) du Scrum Master
 
-* Le Développeur - https://github.com/Lyll01[Lylian DERRAMOND] - a été absent du 18/01/2024 à partir de 8h jusqu'au 19/01/2024 à 17h.
+* Le Product Owner - https://github.com/YannRouquie[Yann ROUQUIE] - a été absent le 24/01/2024.
