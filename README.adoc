@@ -103,6 +103,8 @@ Release : Pensez à la commenter, j'ai un lien vers un comparatif mais exprimer 
 
 ==== Sprint 3
 
+- image:https://img.shields.io/badge/Bilan_Sprint_3-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/blob/main/Documentation/Sprint-Review/Bilan-Sprint3.adoc"]
+
 ===== Retour
 
 == Livrables
@@ -116,6 +118,6 @@ Release : Pensez à la commenter, j'ai un lien vers un comparatif mais exprimer 
 | 12 Janvier 2024  | Tests   | image:https://img.shields.io/badge/Tests_Unitaires-RoomService-red.svg[link='https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/blob/main/Test/'] | 
 | 12 Janvier 2024  | Compte rendu Sprint 1 | image:https://img.shields.io/badge/Bilan_Sprint_1_Review-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/blob/main/Documentation/Sprint-Review/Bilan-Sprint1.adoc"] | 
 | 19 Janvier 2024  | Compte rendu Sprint 2 | image:https://img.shields.io/badge/Bilan_Sprint_2_Review-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/blob/main/Documentation/Sprint-Review/Bilan-Sprint2.adoc"] | 
-|  | Compte rendu Sprint 3   | A venir | 
+| 26 Janvier 2024  | Compte rendu Sprint 3 | image:https://img.shields.io/badge/Bilan_Sprint_3-red.svg[link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/blob/main/Documentation/Sprint-Review/Bilan-Sprint3.adoc"] | 
 |===
 

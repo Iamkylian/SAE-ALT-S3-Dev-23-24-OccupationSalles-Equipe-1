@@ -27,9 +27,9 @@
 
 == Objectifs
 
-* Rédiger la documentation technique et utilisateur -> En cours
-* Afficher les informations d'une salle en temps réel -> OK
-* `ADDITIONNEL` : Version 3D de l'application -> En cours
+* `OBLIGATOIRE` : Créer une application de gestion de salles -> Ok
+* Rédiger la documentation technique et utilisateur -> Ok
+* `ADDITIONNEL` : Version 3D de l'application -> Ok
 
 == Demo
 
@@ -38,36 +38,32 @@
 == FeedBack de l'équipe
 
 Toujours une bonne organisation au sein de l'équipe, le travail est correctement réparti et les taches sont bien définies.
-Le travail est bien avancé pour le sprint N°3 et les objectifs principaux sont atteints.
-Au niveau des documentations, les informations principal concernant l'application de maniére général ont été ajouté il reste quelque détails concernant les fonctionnalité à ajouté mais le développement fini de celle-ci est néccessaire pour remplir ces informations.
+Le travail est terminé pour le sprint N°3 et les objectifs principaux sont atteints.
+Au niveau des documentations, tout est finalisé et prêt à être livré.
 Le Backlog nous parait bien défini avec les détails nécessaires à sa compréhension.
 
 == Sujets en progression pour le prochain sprint
 
-* Rédaction de la documentation utilisateur et technique
-* Amélioration graphique de l'interface web
-* Ajout de fonctionnalités dans l'interface web
-* Ajout de fonctionnalités dans l'interface 3D
+* Mise en place d'un serveur web pour l'application afin de rendre possible la tâche : image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1?style=flat&label=Issues_32[Issues #32, link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/issues/32"]
 
 
 == Tâches réalisées
 
-* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1?style=flat&label=Issues_54[Issues #54, link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/issues/54"] +
-* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1?style=flat&label=Issues_38[Issues #38, link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/issues/38"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1?style=flat&label=Issues_29[Issues #29, link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/issues/29"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1?style=flat&label=Issues_30[Issues #30, link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/issues/30"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1?style=flat&label=Issues_33[Issues #33, link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/issues/33"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1?style=flat&label=Issues_34[Issues #34, link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/issues/34"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1?style=flat&label=Issues_35[Issues #35, link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/issues/35"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1?style=flat&label=Issues_41[Issues #41, link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/issues/41"] +
+* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1?style=flat&label=Issues_42[Issues #42, link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/issues/42"] +
 
 == Tâches en cours
 
-* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1?style=flat&label=Issues_50[Issues #50, link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/issues/50"] +
-* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1?style=flat&label=Issues_55[Issues #55, link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/issues/55"] +
-* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1?style=flat&label=Issues_44[Issues #44, link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/issues/44"] +
-* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1?style=flat&label=Issues_42[Issues #42, link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/issues/42"] +
-* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1?style=flat&label=Issues_41[Issues #41, link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/issues/41"] +
-* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1?style=flat&label=Issues_29[Issues #29, link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/issues/29"] +
-* image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1?style=flat&label=Issues_30[Issues #30, link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/issues/30"] +
+* Aucune tâches en cours
 
 == Tâches non achevées
 
-* Aucune tâche non-achevées
+* La tâche image:https://img.shields.io/github/issues/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1?style=flat&label=Issues_32[Issues #32, link="https://github.com/Iamkylian/SAE-ALT-S3-Dev-23-24-OccupationSalles-Equipe-1/issues/32"] est inachevée car il n'et pas possible de la réaliser à cause d'incapacité technique.
 
 == Remarque(s) indicative(s) du Scrum Master
 
