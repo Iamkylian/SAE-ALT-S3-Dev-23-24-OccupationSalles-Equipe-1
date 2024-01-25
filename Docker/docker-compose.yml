@@ -38,18 +38,28 @@ services:
     ports:
       - 8081:80
 
-  python:
+  python-device:
+    image: python:3.9  
+    volumes:
+      - ../Python/device.py:/app/device.py
+      - ../Test/Test-Device.py:/app/Test-Device.py
+    command: >
+      /bin/sh -c "
+        python3 -m pip install paho-mqtt &&
+        pip install cryptography &&
+        pip install pymysql &&
+        python -u app/device.py 
+      "
+
+  python-battery:
     image: python:3.9  
     volumes:
       - ../Python/battery.py:/app/battery.py
-      - ../Python/device.py:/app/device.py
       - ../Test/Test-Battery.py:/app/Test-Battery.py
-      - ../Test/Test-Device.py:/app/Test-Device.py
-      - ./start.sh:/app/start.sh 
-    working_dir: /app
-    command: /app/start.sh 
-
-  grafana:
-    image: grafana/grafana:9.1.7
-    ports:
-      - 8082:3666
+    command: >
+      /bin/sh -c "
+        python3 -m pip install paho-mqtt &&
+        pip install cryptography &&
+        pip install pymysql &&
+        python -u app/battery.py 
+      "
