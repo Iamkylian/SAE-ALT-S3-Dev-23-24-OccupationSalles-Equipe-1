@@ -1,8 +1,6 @@
 = Tests de l'application Room Service
 
-
-
-= Cahier De Recette V2 - RoomSerivce
+= Cahier De Recette - RoomSerivce
 :toc:
 :toc-title: Sommaire
 :toclevels: 5
@@ -16,7 +14,7 @@
 [cols="5"]
 |===
 |Version | Date | Équipe | Projet | Destinataire
-|2.0 | 26 Janvier 2024 | Groupe 1 : Yann, Mathéo, Kylian, Lylian | RoomService
+|3.0 | 26 Janvier 2024 | Groupe 1 : Yann, Mathéo, Kylian, Lylian | RoomService
 |===  
 
 
