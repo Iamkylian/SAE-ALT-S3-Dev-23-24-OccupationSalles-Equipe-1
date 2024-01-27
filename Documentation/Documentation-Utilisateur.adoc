@@ -224,5 +224,7 @@ Vous pouvez revenir en arriére en cliquant sur "Carte" ou "Statistique" dans la
 
 == Conclusion
 
-
-En conclusion, l'application 
+En conclusion, l'application RoomService représente une avancée significative dans l'optimisation de l'utilisation des espaces du 1er étage du bâtiment B. +
+Elle offre une interface conviviale permettant aux utilisateurs de visualiser en temps réel les conditions des salles, de consulter un historique complet des données collectées et d'analyser des statistiques approfondies. En centralisant les informations sur l'humidité, la luminosité et le niveau de CO2 à l'aide de capteurs AM107, l'application contribue à garantir le bien-être des occupants et à faciliter la prise de décision pour une gestion plus efficace de l'espace. +
+Grâce à ses fonctionnalités avancées, notamment la génération de rapports PDF, la visualisation graphique des données, et la surveillance de l'état des capteurs, elle répond aux besoins des utilisateurs dans leur mission quotidienne de surveillance des salles. +
+En résumé, cette application joue un rôle essentiel dans la création d'un environnement de travail optimal, en fournissant des données précises et des outils simple d'utilisation pour une gestion efficiente des ressources du 1er étage du bâtiment B.
