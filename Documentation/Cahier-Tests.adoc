@@ -2,14 +2,14 @@
 
 
 
-= Cahier De Recette V2 - DailyBankApp
+= Cahier De Recette V2 - RoomSerivce
 :toc:
 :toc-title: Sommaire
 :toclevels: 5
 :sectnums:
 :sectnumlevels: 5
 
-:Entreprise: DailyBank
+:Entreprise: RoomService
 :Equipe:  
 
 
@@ -112,7 +112,7 @@ Ordinateur sous Windows, Linux (Ubuntu).
 
 >|Cas de test 4+|Test-01-01-04
 >|Titre 4+|Générer un rapport PDF des informations d'une salle spécifiques 
->|Objectif 4+| Generer un rapport PDF des informations d'une salle spécifiques
+>|Objectif 4+| Obtenir un historique des informations d'une salle via un document PDF
 
 5+|
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
@@ -126,77 +126,6 @@ Ordinateur sous Windows, Linux (Ubuntu).
 5+|
 
 |====
-
-
-
-== Introduction
-
-Ce document présente une série complète de tests pour évaluer la robustesse et le bon fonctionnement du programme Python MQTT, ainsi que des scénarios de test détaillés pour les interfaces Web et 3D de l'application Room Service. Les scripts MQTT, tels que Test-Device.py et Test-Battery.py, sont conçus pour traiter les messages MQTT, extraire des données pertinentes, et les intégrer dans une base de données MySQL. Ces tests visent à garantir la fiabilité de l'insertion des données des capteurs et à assurer une gestion efficace des niveaux de batterie des dispositifs.
-
-== Data Script
-
-=== Vue d'ensemble du script
-
-Le script (`Test-Device.py`) s'abonne au sujet MQTT "AM107/by-deviceName/+/data". Il traite les messages de données de l'appareil, extrait des informations telles que la température, l'humidité et les détails de la pièce, et insère les données dans la base de données MySQL.
-
-=== Cas de test
-
-.Cas de test 1 : Insertion réussie
-- Simuler un message MQTT avec les données de l'appareil.
-- Résultat attendu : Le script devrait insérer les informations sur l'appareil et les données du capteur dans la base de données. Vérifier les messages de succès dans la sortie.
-
-.Cas de test 2 : Dispositif déjà inséré
-- Simuler un message MQTT pour un appareil qui existe déjà dans la base de données.
-- Résultat attendu : Le script doit imprimer un message indiquant que l'appareil est déjà inséré sans essayer de l'insérer à nouveau.
-
-== Battery Level Script
-
-=== Vue d'ensemble du script
-
-Le script (`Test-Battery.py`) s'abonne au sujet MQTT "application/1/device/+/event/status". Il traite les messages de niveau de batterie, extrait le nom de l'appareil et le niveau de batterie, et insère ou met à jour les informations de niveau de batterie dans la base de données MySQL.
-
-=== Cas de test
-
-.Cas de test 1 : Insertion réussie
-- Simuler un message MQTT contenant des informations sur le niveau de la batterie d'un nouvel appareil.
-- Résultat attendu : Le script doit insérer l'appareil et le niveau de batterie dans la base de données. Vérifier les messages de succès dans la sortie.
-
-.Cas de test 2 : Mise à jour du niveau de batterie
-- Simulez un message MQTT contenant des informations sur le niveau de batterie d'un appareil existant.
-- Résultat attendu : Le script doit mettre à jour le niveau de batterie de l'appareil existant dans la base de données. Vérifier les messages de succès dans la sortie.
-
-== Interface WEB - Scénarios de test
-
-.Aucune donnée disponible dans une salle :
-- Accéder à l'interface WEB.
-- Sélectionner une salle sans données.
-- Vérifier que le message "Aucune donnée disponible" est affiché.
-- Assurer que le compteur de rafraîchissement est désactivé.
-
-.Affichage des données disponibles dans une salle :
-- Accéder à l'interface WEB.
-- Sélectionner une salle avec des données disponibles.
-- Vérifier que les valeurs de température, humidité, activité, CO2, luminosité, TVOC et l'heure sont affichées.
-- Vérifier que le compteur de 300 secondes avant le rafraîchissement est présent.
-- Attendre que le compteur atteigne 0 et vérifier que la page est actualisée avec les dernières données.
-
-== Interface 3D - Scénarios de test
-
-.Aucune donnée disponible pour une salle :
-- Accéder à l'interface 3D.
-- Sélectionner une salle sans données.
-- Vérifier que la couleur de la salle est noire.
-- Vérifier que le message "*No data available for room *****" est affiché.
-
-.Affichage des données disponibles pour une salle :
-- Accéder à l'interface 3D.
-- Sélectionner une salle avec des données disponibles.
-- Vérifier que la couleur de la salle change en fonction des facteurs (CO2, activité, luminosité).
-- Vérifier que les valeurs de température, humidité, activité, CO2, luminosité, TVOC et l'heure sont affichées lorsque la souris passe sur la salle.
-
-== Conclusion
-
-Les tests effectués sur le programme Python MQTT ainsi que sur les interfaces Web et 3D de l'application Room Service ont permis de valider la fonctionnalité et la robustesse de ces composants clés. Les scripts MQTT ont montré une capacité fiable à traiter les messages, à extraire les informations pertinentes et à les intégrer correctement dans la base de données MySQL. De même, les scénarios de test pour les interfaces ont démontré la capacité à gérer différents cas, que ce soit l'absence de données ou l'affichage détaillé des informations lorsque des données sont disponibles.
 
 == Notes
 
