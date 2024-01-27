@@ -1,5 +1,68 @@
 = Tests de l'application Room Service
 
+
+
+= Cahier De Recette V2 - DailyBankApp
+:toc:
+:toc-title: Sommaire
+:toclevels: 5
+:sectnums:
+:sectnumlevels: 5
+
+:Entreprise: DailyBank
+:Equipe:  
+
+
+[cols="5"]
+|===
+|Version | Date | Équipe | Projet | Destinataire
+|2.0 | 26 Janvier 2024 | Groupe 1 : Yann, Mathéo, Kylian, Lylian | RoomService
+|===  
+
+
+== Introduction
+=== Objet :
+[.text-justify]
+Ce document a été produit dans le cadre d'un projet de visualisation d'occupation des salles du 1er étage du batiment informatique de l'IUT de blagnac. L'objectif principal de ce projet est de développer une interface web permettant de visualiser en temps réel les conditions des salles, mais aussi de stocker ces données de manière sécurisée. En fournissant un historique complet et des outils de statistiques, notre application vise à offrir aux utilisateurs un aperçu détaillé de l'occupation des salles.
+
+
+== Pre-Requis :
+[.text-justify]
+L'exécution des tests spécifiés au chapitre suivant requiert :
+
+* Une base de données installée (référence document technique).
+* L'environnement de test tel que spécifié dans la partie "Environnement de test" de ce document.
+* Les fiches de tests. *À vérifier*
+
+
+=== Éléments à tester :
+[.text-justify]
+Les éléments testés concernent les Use-Cases spécifiés dans la *documentation technique*.
+
+
+=== Environnement de test :
+[.text-justify]
+Ordinateur sous Windows, Linux (Ubuntu).
+
+
+== Cas de test :
+[.text-justify]
+|====
+
+>|Cas de test 4+|Test-01-01-01
+>|Titre 4+|Visualisation des informations d'une salle
+>|Objectif 4+| Obtenir les informations d'une salle via le capteur AM107
+
+5+|
+^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
+^|All_G_C.1 ^|Cliquer le premier étage du batiment informatique ^|La fenêtre de sélection des salles s'ouvre ^| aucune ^|OK
+^|All_G_C.2 ^|Cliquer sur une salle spécifique ^|Une fenetre d'information détaillé s'ouvre ^|aucune ^|OK
+
+
+5+|
+
+|====
+
 == Introduction
 
 Ce document présente une série complète de tests pour évaluer la robustesse et le bon fonctionnement du programme Python MQTT, ainsi que des scénarios de test détaillés pour les interfaces Web et 3D de l'application Room Service. Les scripts MQTT, tels que Test-Device.py et Test-Battery.py, sont conçus pour traiter les messages MQTT, extraire des données pertinentes, et les intégrer dans une base de données MySQL. Ces tests visent à garantir la fiabilité de l'insertion des données des capteurs et à assurer une gestion efficace des niveaux de batterie des dispositifs.
