@@ -13,7 +13,7 @@
 
 [cols="5"]
 |===
-|Version | Date | Équipe | Projet | Destinataire
+|Version | Date | Équipe | Projet
 |3.0 | 26 Janvier 2024 | Groupe 1 : Yann, Mathéo, Kylian, Lylian | RoomService
 |===  
 
