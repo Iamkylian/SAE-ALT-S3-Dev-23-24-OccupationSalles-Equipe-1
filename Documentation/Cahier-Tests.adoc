@@ -49,6 +49,11 @@ Ordinateur sous Windows, Linux (Ubuntu).
 [.text-justify]
 |====
 
+==== Fonctionnalités utilisateurs
+
+==== Cas de test 1 : Visualisation des informations d'une salle
+[.text-justify]
+
 >|Cas de test 4+|Test-01-01-01
 >|Titre 4+|Visualisation des informations d'une salle
 >|Objectif 4+| Obtenir les informations d'une salle via le capteur AM107
