@@ -118,19 +118,19 @@ L'utilisateur a la possibilité de réaliser plusieurs actions :
 
 TIP: Un bouton « Générer le rapport PDF » est accessible sur la page Statistique. Il permet de générer un rapport PDF contenant l'ensemble des données enregistré par le capteurs avant une date et heure donnée.
 
-Dans le menu principal, cliquer sur « Statistique ».
+Sur la page principale, cliquer sur « Statistique ».
 
 .1) Barre de navigation - Statistique
 image::[]
 
 Selectionner une salle dans la liste déroulante « Salle ».
 
-.2) Selection champs salle - Statistique
+.2) Selectionner une salle dans le menu déroulant "Choisir Salle"- Statistique
 image::[]
 
 Selectionner une date et une heure dans les champs « Date et Heure ».
 
-.3) Selection champs date et heure - Statistique
+.3) Selectionner dans champ  le calendrier la date et l'heure - Statistique
 
 Cliquer sur le bouton « Générer le rapport PDF ».
 
