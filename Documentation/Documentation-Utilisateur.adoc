@@ -197,25 +197,25 @@ image::Images/Doc-Utilisateur/Salle-RevenirEnArriere.png[]
 
 TIP: L'état des capteurs est disponible sur la page « Maintenance ». Ces informations permettent à l'utilisateur d'obtenir des informations en temps réel sur le niveau de batterie des capteurs.
 
-Dans le menu principal, cliquer sur « Maintenance ».
+Dans le menu principal, cliquer sur « Maintenance ». +
 
 .1) Barre de navigation - Maintenance
-image::Images/Doc-Utilisateur/Menu-Maintenance.png[] +
+image::Images/Doc-Utilisateur/Menu-Maintenance.png[]
 
-Vous vous trouvez à présent sur l'interface de maintenance.
+Vous vous trouvez à présent sur l'interface de maintenance. +
 
 .2) Barre de navigation - Maintenance
-image::Images/Doc-Utilisateur/Menu-MaintenanceChoisit.png[] +
+image::Images/Doc-Utilisateur/Menu-MaintenanceChoisit.png[]
 
-Sélectionnez le 1er étage du bâtiment B - Maintenance
+Sélectionnez le 1er étage du bâtiment B - Maintenance +
 
 .3) Bâtiment B, 1er étage - Maintenance
-image::Images/Doc-Utilisateur/Maintenance-PremierEtage.png[] +
+image::Images/Doc-Utilisateur/Maintenance-PremierEtage.png[]
 
-Vous vous trouvez à présent sur l'interface de maintenance du 1er étage du bâtiment B.
+Vous vous trouvez à présent sur l'interface de maintenance du 1er étage du bâtiment B. +
 
 .4) 1er étage - Maintenance
-image::Images/Doc-Utilisateur/Maintenance-PremierEtage.png[] +
+image::Images/Doc-Utilisateur/Maintenance-PremierEtage.png[]
 
 Vous pouvez visualiser l'etat de batterie des capteurs de chaque salles du premier étage du bâtiment B.
 
