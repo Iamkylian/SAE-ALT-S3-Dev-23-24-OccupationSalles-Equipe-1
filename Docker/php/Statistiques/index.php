@@ -170,7 +170,7 @@
             // Perform SQL query to fetch sensor data
             /*$.ajax({
                 type: 'POST',
-                url: 'getDate.php',
+                url: 'getData.php',
                 data: {
                     'select-room': selectedRoom,
                     'datetimePicker': selectedDatetime
@@ -199,7 +199,7 @@
 
             $.ajax({
                     type: 'POST',
-                    url: 'getDate.php',
+                    url: 'getData.php',
                     data: {
                         'select-room': selectedRoom,
                         'datetimePicker': selectedDatetime
@@ -212,33 +212,61 @@
                     console.log('Sensor data:', sensorData);
 
                     // Example: Use html2pdf.js to generate PDF
-                    var pdfElement = '<h1 style="text-align: center;">Historique des données capté de la salle' + selectedRoom + '</h1>';
-                    sensorData.forEach(function(sensor) {
-                        pdfElement += '<p><strong>Date and Time:</strong> ' + toString(selectedDatetime) + '</p>';
-                        pdfElement += '<li>' + JSON.stringify(sensor) + '</li>';
-                    });
-                    // Generate PDF using html2pdf
-                    html2pdf(pdfElement, {
-                        margin: 0.5,
-                        filename: 'RapportDonnees' + selectedRoom + '.pdf',
-                        html2canvas: {
-                            scale: 3,
-                            letterRendering: true,
-                            useCORS: true,
-                        },
-                        jsPDF: {
-                            unit: 'in',
-                            format: 'a4',
-                            orientation: 'portrait',
-                        }
-                        
-                    });
+                    var pdfElement = '<h1 style="text-align: center;">Historique des données captées de la salle<strong> ' + selectedRoom + '</strong></h1><br>';
+                    pdfElement += '<br><h6> Données captées avant le <strong>' + selectedDatetime + '</strong></h6>';
 
-                    alert('Rapport PDF générer pour les données avant le ' + selectedDatetime + ' et pour la salle : ' + selectedRoom);
+                    if (sensorData.length > 0) {
+                        pdfElement += '<h6><strong>' + sensorData.length + '</strong> données enregistrées</h6><br>';
+                        pdfElement += '<table style="width:100%; border-collapse: collapse;">';
+                        pdfElement += '<tr><th>Date and Time</th><th>Temperature</th><th>Humidity</th><th>Activity</th><th>CO2</th><th>TVOC</th><th>Illumination</th></tr>';
+
+                        sensorData.forEach(function(sensor) {
+                            pdfElement += '<tr>';
+                            pdfElement += '<td>' + sensor.time + '</td>';
+                            pdfElement += '<td>' + sensor.temperature + '</td>';
+                            pdfElement += '<td>' + sensor.humidity + '</td>';
+                            pdfElement += '<td>' + sensor.activity + '</td>';
+                            pdfElement += '<td>' + sensor.co2 + '</td>';
+                            pdfElement += '<td>' + sensor.tvoc + '</td>';
+                            pdfElement += '<td>' + sensor.illumination + '</td>';
+                            pdfElement += '</tr>';
+                        });
+
+                        pdfElement += '</table>';
+                    } else {
+                        pdfElement += '<p>Aucune donnée disponible pour la salle ' + selectedRoom + ' avant le ' + selectedDatetime + '. La génération du PDF n\'est pas possible.</p>';
+                    }
+
+                    // Generate PDF using html2pdf
+                    var confirmResult = true; // Default to true for the case where there are no data
+                    if (sensorData.length > 0) {
+                        confirmResult = confirm('Voulez-vous générer le rapport PDF ?');
+                    }
+
+                    if (confirmResult) {
+                        html2pdf(pdfElement, {
+                            margin: 0.5,
+                            filename: 'RapportDonnees' + selectedRoom + '.pdf',
+                            html2canvas: {
+                                scale: 3,
+                                letterRendering: true,
+                                useCORS: true,
+                            },
+                            jsPDF: {
+                                unit: 'in',
+                                format: 'a4',
+                                orientation: 'portrait',
+                            }
+                        });
+
+                        alert('Rapport PDF généré pour les données avant le ' + selectedDatetime + ' et pour la salle : ' + selectedRoom);
+                    } else {
+                        alert('Génération du rapport PDF annulée.');
+                    }
                 })
-                .fail(function(jxQH, error) {
-                    alert(error + jxQH);
-                })
+                .fail(function(jqXHR, textStatus, errorThrown) {
+                    alert(textStatus + ': ' + errorThrown);
+                });
         });
     });
 </script>
