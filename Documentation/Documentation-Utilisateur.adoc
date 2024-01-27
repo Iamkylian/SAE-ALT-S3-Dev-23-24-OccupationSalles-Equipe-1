@@ -189,6 +189,19 @@ TIP: L'état des capteurs est disponible sur la page « Maintenance ». Ces info
 
 Dans le menu principal, cliquer sur « Maintenance ».
 
+.1) Barre de navigation - Maintenance
+image::[]
+
+Sélectionnez le 1er étage du bâtiment B - Maintenance
+
+.2) Bâtiment B, 1er étage - Maintenance
+image::[]
+
+Deplacer vous sur la salle souhaité - Maintenance
+Vous pouvez visualiser l'etat de batterie des capteurs en passant votre souris sur les salles.
+
+Vous pouvez revenir en arriére en cliquant sur la fléche en haut a gauche de l'écran, ou en cliquant sur "Carte" ou "Statistique" dans la barre de navigation.
+
 
 == Conclusion
 
