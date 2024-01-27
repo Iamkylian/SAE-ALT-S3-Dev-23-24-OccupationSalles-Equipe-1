@@ -121,16 +121,16 @@ TIP: Un bouton « Générer le rapport PDF » est accessible sur la page Statist
 Sur la page principale, cliquer sur « Statistique ».
 
 .1) Barre de navigation - Statistique
-image::[]
+image::Images/Doc-Utilisateur/Menu-Statistique.png[]
 
 Selectionner une salle dans la liste déroulante « Salle ».
 
-.2) Selectionner une salle dans le menu déroulant "Choisir Salle"- Statistique
-image::[]
+.2) Statistique - Choix salle
+image::Images/Doc-Utilisateur/Statistique-ChoixSalle.png[]
 
 Selectionner une date et une heure dans les champs « Date et Heure ».
 
-.3) Selectionner dans champ  le calendrier la date et l'heure - Statistique
+.3) Statistique - Choix de la date et heure
 
 Cliquer sur le bouton « Générer le rapport PDF ».
 
@@ -147,12 +147,17 @@ TIP: Divers graphqique sont disponible suur la page Statistique. Ils permettent 
 Dans le menu principal, cliquer sur « Statistique ».
 
 .1) Barre de navigation - Statistique
+image::Images/Doc-Utilisateur/Menu-Statistique.png[]
+
+Selectionner une salle dans la liste déroulante « Salle ».
+
+.2) Statistique - Choix salle
+image::Images/Doc-Utilisateur/Statistique-ChoixSalle.png[]
+
+.3) Graphique des données - Statistique
 image::[]
 
 Les graphique sont ainsi disponible sur la page pour utilisateur, afin de pouvoir réaliser des analyses sur les données enregistré par les capteurs.
-
-.2) Graphique des données - Statistique
-image::[]
 
 ==== _Visualiser informations salles_
 
@@ -161,27 +166,32 @@ TIP: Diverse données enregistré par les capteurs sont disponible dans chaque s
 Dans le menu principal, cliquer sur « Carte ». Si c'est déja vus vous trouvez déja sur la page « Carte », ne rien faire.
 
 .1) Barre de navigation - Carte
-image::[]
+image::Images/Doc-Utilisateur/Menu-Carte.png[]
 
 Selectionner le premier étage sur le shéma du bâtiment B.
 
 .2) Bâtiment B - Carte
-image::[]
+image::Images/Doc-Utilisateur/Carte-PremierEtage.png[]
 
 Selectionner une salle spécifique sur le shéma du premier étage du bâtiment B.
 
 .3) Premier étage - Carte
-image::[]
+image::Images/Doc-Utilisateur/Carte-PremierEtageZoom.png[]
 
 Les informations en temps réel de la salle sélectionner s'affiche sur la page. 
 
 .4) Salle - Carte
-image::[]
+image::Images/Doc-Utilisateur/Carte-ChoixSalle.png[]
+
+Vous avez maintenant accès aux informations en temps réel de la salle sélectionner.
+
+.5) Salle - Visualisation des informations
+image::Images/Doc-Utilisateur/Carte-ZoomSalle.png[]
 
 Vous pouvez revenir en arriére en cliquant sur la fléche en haut a gauche de l'écran.
 
 .5) Bouton fleche - Carte
-image::[]
+image::Images/Doc-Utilisateur/Salle-RevenirEnArriere.png[]
 
 ==== _Visualiser état capteurs_
 
@@ -190,17 +200,26 @@ TIP: L'état des capteurs est disponible sur la page « Maintenance ». Ces info
 Dans le menu principal, cliquer sur « Maintenance ».
 
 .1) Barre de navigation - Maintenance
-image::[]
+image::Images/Doc-Utilisateur/Menu-Maintenance.png[]
+
+Vous vous trouvez à présent sur l'interface de maintenance.
+
+.2) Barre de navigation - Maintenance
+image::Images/Doc-Utilisateur/Menu-MaintenanceChoisit.png[]
 
 Sélectionnez le 1er étage du bâtiment B - Maintenance
 
-.2) Bâtiment B, 1er étage - Maintenance
-image::[]
+.3) Bâtiment B, 1er étage - Maintenance
+image::Images/Doc-Utilisateur/Maintenance-PremierEtage.png[]
 
-Deplacer vous sur la salle souhaité - Maintenance
-Vous pouvez visualiser l'etat de batterie des capteurs en passant votre souris sur les salles.
+Vous vous trouvez à présent sur l'interface de maintenance du 1er étage du bâtiment B.
 
-Vous pouvez revenir en arriére en cliquant sur la fléche en haut a gauche de l'écran, ou en cliquant sur "Carte" ou "Statistique" dans la barre de navigation.
+.4) 1er étage - Maintenance
+image::Images/Doc-Utilisateur/Maintenance-PremierEtage.png[]
+
+Vous pouvez visualiser l'etat de batterie des capteurs de chaque salles du premier étage du bâtiment B.
+
+Vous pouvez revenir en arriére en cliquant sur "Carte" ou "Statistique" dans la barre de navigation.
 
 
 == Conclusion
