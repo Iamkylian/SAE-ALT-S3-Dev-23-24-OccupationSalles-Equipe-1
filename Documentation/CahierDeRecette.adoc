@@ -61,7 +61,7 @@ Ordinateur sous Windows, Linux (Ubuntu).
 5+|
 ^|ID ^|Action ^|Comportement attendu ^|Pré-conditions ^|Résultat
 ^|All_G_C.1 ^|Cliquer le premier étage du batiment informatique ^|La fenêtre de sélection des salles s'ouvre ^| Etre connecté à l'interface web (localhost:8000) ^|OK
-^|All_G_C.2 ^|Cliquer sur une salle spécifique ^|Une fenetre d'information détaillé s'ouvre ^| Etre précédement sur la page d'acceuil  ^|OK
+^|All_G_C.2 ^|Cliquer sur une salle spécifique ^|Une fenetre d'information détaillé s'ouvre ^| Etre précédement sur la page d'acceuil ^|OK
 ^|All_G_C.3 ^|Cliquer sur le bouton "Retour" ^|La fenêtre de sélection des salles s'ouvre ^|aucune ^|OK
 
 
