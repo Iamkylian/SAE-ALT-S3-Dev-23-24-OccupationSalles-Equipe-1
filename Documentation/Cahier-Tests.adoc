@@ -47,6 +47,13 @@ Ordinateur sous Windows, Linux (Ubuntu).
 
 == Cas de test :
 [.text-justify]
+
+
+==== Fonctionnalités utilisateurs
+
+==== Cas de test 1 : Visualisation des informations d'une salle
+[.text-justify]
+
 |====
 
 >|Cas de test 4+|Test-01-01-01
