@@ -17,12 +17,12 @@
 
 == Présentation et objectifs de l'application
 
-Le projet de surveillance des salles du 1er étage du département d'informatique a pout objectif d'optimiser l'utilisation des espaces et à garantir le bien-être des occupants. Grâce à l'installation de capteurs AM107 dans chaque salle, notre objectif est de collecter des données telles que l'humidité, la luminosité et le niveau de CO2. 
+Le projet de surveillance des salles du bâtiment B de l'IUT de Blagnac a pour objectif d'optimiser l'utilisation des espaces et à garantir le bien-être des occupants. Grâce à l'installation de capteurs AM107 dans chaque salle, notre objectif est de collecter des données telles que l'humidité, la luminosité et le niveau de CO2. 
 Pour exploiter au mieux ces informations, nous développons une interface web qui permet non seulement de visualiser en temps réel les conditions des salles, mais aussi de stocker ces données de manière sécurisée. En fournissant un historique complet et des outils de statistiques, notre application vise à offrir aux utilisateurs un aperçu détaillé de l'occupation des salles et à faciliter la prise de décision pour une gestion plus efficace de l'espace et des ressources.
 
 === Rôle de l'application
 
-L'application de surveillance des salles du 1er étage du batiment B joue un rôle essentiel dans l'optimisation de l'utilisation des espaces et la garantie du bien-être des occupants. Son principal objectif est de collecter des données précises, telles que l'humidité, la luminosité et le niveau de CO2, à l'aide de capteurs AM107 installés dans chaque salle.
+L'application de surveillance des salles du bâtiment B de l'IUT de Blagnac joue un rôle essentiel dans l'optimisation de l'utilisation des espaces et la garantie du bien-être des occupants. Son principal objectif est de collecter des données précises, telles que l'humidité, la luminosité et le niveau de CO2, à l'aide de capteurs AM107 installés dans chaque salle.
 
 Le rôle de l'application se décline en plusieurs aspects :
 
@@ -36,12 +36,12 @@ Le rôle de l'application se décline en plusieurs aspects :
 
 * ``Facilitation de la prise de décision`` : En fournissant des informations complètes et des analyses approfondies, l'application facilite la prise de décision pour une gestion plus efficace de l'espace et des ressources. Les responsables peuvent prendre des mesures proactives pour optimiser l'utilisation des salles.
 
-En résumé, l'application de surveillance des salles contribue à créer un environnement de travail optimal en fournissant des données précises et une interface conviviale pour une gestion efficace des salles du 1er étage du bâtiment B.
+En résumé, l'application de surveillance des salles contribue à créer un environnement de travail optimal en fournissant des données précises et une interface conviviale pour une gestion efficace des salles du bâtiment B de l'IUT de Blagnac.
 
 === Fonctionnalités principales de l'application
 
 * Visualisation en Temps Réel des donnéées récolté +
-L'interface de l'application offre une visualisation en temps réel des données remontées par les capteurs. Vous pouvez observer instantanément la présence, la luminosité et le niveau de CO2 dans chaque salle du 1er étage.
+L'interface de l'application offre une visualisation en temps réel des données remontées par les capteurs. Vous pouvez observer instantanément la présence, la luminosité et le niveau de CO2 dans chaque salle du bâtiment B de l'IUT de Blagnac.
 
 * Historique des Données +
 L'application enregistre toutes les données collectées, permettant aux utilisateurs d'accéder à un historique complet. Cette fonctionnalité offre la possibilité de suivre l'évolution des conditions des salles au fil du temps.
@@ -222,12 +222,12 @@ image::Images/Doc-Utilisateur/Menu-Maintenance.png[]
 .2) Barre de navigation - Maintenance
 image::Images/Doc-Utilisateur/Menu-MaintenanceChoisit.png[]
 
-* Sélectionnez le 1er étage du bâtiment B - Maintenance
+* Sélectionnez le 1er étage du bâtiment B sur l'interface de maintenance.
 
 .3) Bâtiment B, 1er étage - Maintenance
 image::Images/Doc-Utilisateur/Maintenance-PremierEtage.png[]
 
-* Vous vous trouvez à présent sur l'interface de maintenance du 1er étage du bâtiment B.
+* Vous vous trouvez à présent sur l'interface de maintenance du 1er étage du bâtiment B de l'IUT de Blagnac (possible également pour le rez-de-chaussée et le 2éme étage du bâtiment B).
 
 .4) 1er étage - Maintenance
 image::Images/Doc-Utilisateur/Maintenance-EtatsBatteries.png[]
@@ -238,7 +238,7 @@ image::Images/Doc-Utilisateur/Maintenance-EtatsBatteries.png[]
 
 == Conclusion
 
-En conclusion, l'application RoomService représente une avancée significative dans l'optimisation de l'utilisation des espaces du 1er étage du bâtiment B. +
+En conclusion, l'application RoomService représente une avancée significative dans l'optimisation de l'utilisation des espaces du bâtiment B de l'IUT de Blagnac. +
 Elle offre une interface conviviale permettant aux utilisateurs de visualiser en temps réel les conditions des salles, de consulter un historique complet des données collectées et d'analyser des statistiques approfondies. En centralisant les informations sur l'humidité, la luminosité et le niveau de CO2 à l'aide de capteurs AM107, l'application contribue à garantir le bien-être des occupants et à faciliter la prise de décision pour une gestion plus efficace de l'espace. +
 Grâce à ses fonctionnalités avancées, notamment la génération de rapports PDF, la visualisation graphique des données, et la surveillance de l'état des capteurs, elle répond aux besoins des utilisateurs dans leur mission quotidienne de surveillance des salles. +
-En résumé, cette application joue un rôle essentiel dans la création d'un environnement de travail optimal, en fournissant des données précises et des outils simple d'utilisation pour une gestion efficiente des ressources du 1er étage du bâtiment B.
+En résumé, cette application joue un rôle essentiel dans la création d'un environnement de travail optimal, en fournissant des données précises et des outils simple d'utilisation pour une gestion efficiente des ressources du bâtiment B de l'IUT de Blagnac.
