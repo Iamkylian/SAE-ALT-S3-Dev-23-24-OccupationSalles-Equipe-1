@@ -32,6 +32,8 @@ Cette application, RoomService, permettra également de visualiser les informati
 
 === Installation de l'application
 
+==== Version 2D
+
 Afin de pouvoir utiliser l'application de manière efficace et fonctionnelle, il est nécessaire de suivre les étapes suivantes :
 
 - 1. Installer https://www.docker.com/products/docker-desktop/[Docker Desktop] et le lancer
@@ -56,6 +58,22 @@ Afin de pouvoir utiliser l'application de manière efficace et fonctionnelle, il
     $ docker-compose up -d
 
 - 6. Se rendre sur l'addresse  http://localhost:8000/ pour visualiser l'interface
+
+==== Version 3D
+
+Afin de pouvoir lancer l'application RoomService en version 3D, vous devez suivre les étapes suivantes :
+
+Pour pouvoir avoir accés à la version 3D de l'application, vous devez au préalable avoir lancer l'application RoomService en version 2D. Puis effectuer ces étapes :
+
+Deplacez vous dans le dossier /Prototype :
+
+    $ cd '.\Prototype\'
+
+Ensuite afin de pouvoir lancer l'application, vous devez réaliser la commande suivante :
+
+    $ python -m http.server 4848
+
+Vous avez maintenant accés à la version 3D de l'application RoomService en vous rendant sur l'addresse http://localhost:4848/
 
 === Localisation des fichiers
 
