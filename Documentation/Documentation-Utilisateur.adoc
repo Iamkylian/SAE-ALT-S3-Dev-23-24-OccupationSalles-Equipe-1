@@ -275,9 +275,13 @@ image::Images/Doc-Utilisateur/3D-PremierEtage.png[]
 image::Images/Doc-Utilisateur/3D-PremierEtageZoom.png[]
 
 * Selectionner une salle spécifique sur le shéma du premier étage du bâtiment B.
+
+.4) Selection Salle - Version 3D
 image::Images/Doc-Utilisateur/PremierEtage-SelectionSalle.png[]
 
 * Les informations en temps réel de la salle sélectionner s'affiche sur la page.
+
+.5) Informations salle - Version 3D
 image::Images/Doc-Utilisateur/PremierEtage-3D-VisuInfo.png[]
 
 * Vous avez maintenant accès aux informations en temps réel de la salle sélectionner.
