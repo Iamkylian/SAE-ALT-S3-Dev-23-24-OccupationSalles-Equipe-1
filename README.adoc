@@ -73,6 +73,8 @@ Ensuite afin de pouvoir lancer l'application, vous devez réaliser la commande s
 
     $ python -m http.server 4848
 
+Vous avez maintenant accés à la version 3D de l'application RoomService en vous rendant sur l'addresse http://localhost:4848/
+
 === Localisation des fichiers
 
 Le dépot Github est séparé en plusieurs dossiers, chacun ayant un rôle bien précis :
