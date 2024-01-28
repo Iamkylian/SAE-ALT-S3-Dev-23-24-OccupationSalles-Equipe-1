@@ -230,7 +230,7 @@ image::Images/Doc-Utilisateur/Maintenance-PremierEtage.png[]
 * Vous vous trouvez à présent sur l'interface de maintenance du 1er étage du bâtiment B.
 
 .4) 1er étage - Maintenance
-image::Images/Doc-Utilisateur/Maintenance-PremierEtage.png[]
+image::Images/Doc-Utilisateur/Maintenance-EtatsBatteries.png[]
 
 * Vous pouvez visualiser l'etat de batterie des capteurs de chaque salles du premier étage du bâtiment B.
 * Vous pouvez revenir en arriére en cliquant sur "Carte" ou "Statistique" dans la barre de navigation.
