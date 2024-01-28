@@ -17,12 +17,12 @@
 
 == Présentation et objectifs de l'application
 
-Le projet de surveillance des salles du 1er étage du département d'informatique a pout objectif d'optimiser l'utilisation des espaces et à garantir le bien-être des occupants. Grâce à l'installation de capteurs AM107 dans chaque salle, notre objectif est de collecter des données telles que l'humidité, la luminosité et le niveau de CO2. 
+Le projet de surveillance des salles du bâtiment B de l'IUT de Blagnac a pour objectif d'optimiser l'utilisation des espaces et à garantir le bien-être des occupants. Grâce à l'installation de capteurs AM107 dans chaque salle, notre objectif est de collecter des données telles que l'humidité, la luminosité et le niveau de CO2. 
 Pour exploiter au mieux ces informations, nous développons une interface web qui permet non seulement de visualiser en temps réel les conditions des salles, mais aussi de stocker ces données de manière sécurisée. En fournissant un historique complet et des outils de statistiques, notre application vise à offrir aux utilisateurs un aperçu détaillé de l'occupation des salles et à faciliter la prise de décision pour une gestion plus efficace de l'espace et des ressources.
 
 === Rôle de l'application
 
-L'application de surveillance des salles du 1er étage du batiment B joue un rôle essentiel dans l'optimisation de l'utilisation des espaces et la garantie du bien-être des occupants. Son principal objectif est de collecter des données précises, telles que l'humidité, la luminosité et le niveau de CO2, à l'aide de capteurs AM107 installés dans chaque salle.
+L'application de surveillance des salles du bâtiment B de l'IUT de Blagnac joue un rôle essentiel dans l'optimisation de l'utilisation des espaces et la garantie du bien-être des occupants. Son principal objectif est de collecter des données précises, telles que l'humidité, la luminosité et le niveau de CO2, à l'aide de capteurs AM107 installés dans chaque salle.
 
 Le rôle de l'application se décline en plusieurs aspects :
 
@@ -36,12 +36,12 @@ Le rôle de l'application se décline en plusieurs aspects :
 
 * ``Facilitation de la prise de décision`` : En fournissant des informations complètes et des analyses approfondies, l'application facilite la prise de décision pour une gestion plus efficace de l'espace et des ressources. Les responsables peuvent prendre des mesures proactives pour optimiser l'utilisation des salles.
 
-En résumé, l'application de surveillance des salles contribue à créer un environnement de travail optimal en fournissant des données précises et une interface conviviale pour une gestion efficace des salles du 1er étage du bâtiment B.
+En résumé, l'application de surveillance des salles contribue à créer un environnement de travail optimal en fournissant des données précises et une interface conviviale pour une gestion efficace des salles du bâtiment B de l'IUT de Blagnac.
 
 === Fonctionnalités principales de l'application
 
 * Visualisation en Temps Réel des donnéées récolté +
-L'interface de l'application offre une visualisation en temps réel des données remontées par les capteurs. Vous pouvez observer instantanément la présence, la luminosité et le niveau de CO2 dans chaque salle du 1er étage.
+L'interface de l'application offre une visualisation en temps réel des données remontées par les capteurs. Vous pouvez observer instantanément la présence, la luminosité et le niveau de CO2 dans chaque salle du bâtiment B de l'IUT de Blagnac.
 
 * Historique des Données +
 L'application enregistre toutes les données collectées, permettant aux utilisateurs d'accéder à un historique complet. Cette fonctionnalité offre la possibilité de suivre l'évolution des conditions des salles au fil du temps.
@@ -113,117 +113,132 @@ L'utilisateur a la possibilité de réaliser plusieurs actions :
 
 == Résultats produits avec jeux d'essai commentés
 
-==== _Générer fichier PDF_
+==== _Générer rapport PDF_
 
 TIP: Un bouton « Générer le rapport PDF » est accessible sur la page Statistique. Il permet de générer un rapport PDF contenant l'ensemble des données enregistré par le capteurs avant une date et heure donnée.
 
-Sur la page principale, cliquer sur « Statistique ».
+* Sur la page principale, cliquer sur « Statistique ».
 
 .1) Barre de navigation - Statistique
 image::Images/Doc-Utilisateur/Menu-Statistique.png[]
 
-Selectionner une salle dans la liste déroulante « Salle ».
+* Selectionner une salle dans la liste déroulante « Salle ».
 
 .2) Statistique - Choix salle
 image::Images/Doc-Utilisateur/Statistique-ChoixSalle.png[]
 
-Selectionner une date et une heure dans les champs « Date et Heure ».
+* Selectionner une date et une heure dans les champs « Date et Heure ».
 
 .3) Statistique - Choix de la date et heure
+image::Images/Doc-Utilisateur/Statistique-ChoixDateHeure.png[]
 
-Cliquer sur le bouton « Générer le rapport PDF ».
+* Cliquer sur le bouton « Générer le rapport PDF ».
 
 .4) Generer rapport PDF - Statistique
-image::[]
+image::Images/Doc-Utilisateur/Statistique-GenererPDF.png[]
 
-* Une fenêtre d'alert s’affiche.
+* Une fenêtre de confirmation pour la génération du rapport PDF s'affiche. Cliquez sur le bouton « OK » afin de générer le rapport PDF, sinon « Annuler »
+
+.5) Confirmation - Generer rapport PDF
+image::Images/Doc-Utilisateur/Statistique-ConfirmerGeneration.png[]
+
+* Une fenêtre d'alert s’affiche, informant l'utilisateur des détail concernant le rapport PDF.
 * Cliquer sur le bouton « ok » afin de générer le rapport PDF.
+
+.6) Alert - Generer rapport PDF
+image::Images/Doc-Utilisateur/Statistique-ConfirmerFinal.png[]
+
+* Une fenêtre s'affiche selectionner l'emplacement ou vous souhaitez enregistrer le rapport PDF sur votre PC.
+* Une fois l'emplacement selectionner le rapport PDF est télécharger sur votre PC.
 
 ==== _Visualiser graphique des données_
 
 TIP: Divers graphqique sont disponible suur la page Statistique. Ils permettent de visualiser l'évolution des données enregistré par les capteurs.
 
-Dans le menu principal, cliquer sur « Statistique ».
+* Dans le menu principal, cliquer sur « Statistique ».
 
 .1) Barre de navigation - Statistique
 image::Images/Doc-Utilisateur/Menu-Statistique.png[]
 
-Selectionner une salle dans la liste déroulante « Salle ».
+* Selectionner une salle dans la liste déroulante « Salle ».
 
 .2) Statistique - Choix salle
 image::Images/Doc-Utilisateur/Statistique-ChoixSalle.png[]
 
-.3) Graphique des données - Statistique
-image::[]
+* Les graphique sont ainsi disponible sur la page pour utilisateur, afin de pouvoir réaliser des analyses sur les données enregistré par les capteurs.
 
-Les graphique sont ainsi disponible sur la page pour utilisateur, afin de pouvoir réaliser des analyses sur les données enregistré par les capteurs.
+.3) Graphique des données - Statistique
+image::Images/Doc-Utilisateur/Statistique-AffichageGraphique.png[]
+
+.4) Graphique des données Suite - Statistique
+image::Images/Doc-Utilisateur/Statistique-AffichageGraphiqueSuite.png[]
+
 
 ==== _Visualiser informations salles_
 
 TIP: Diverse données enregistré par les capteurs sont disponible dans chaque salle. Ces informations permettent à l'utilisateur d'obtenir des informations en temps réel pour une salle spécifique.
 
-Dans le menu principal, cliquer sur « Carte ». Si c'est déja vus vous trouvez déja sur la page « Carte », ne rien faire.
+* Dans le menu principal, cliquer sur « Carte ». Si c'est déja vus vous trouvez déja sur la page « Carte », ne rien faire.
 
 .1) Barre de navigation - Carte
 image::Images/Doc-Utilisateur/Menu-Carte.png[]
 
-Selectionner le premier étage sur le shéma du bâtiment B.
+* Selectionner le premier étage sur le shéma du bâtiment B.
 
 .2) Bâtiment B - Carte
 image::Images/Doc-Utilisateur/Carte-PremierEtage.png[]
 
-Selectionner une salle spécifique sur le shéma du premier étage du bâtiment B.
+* Selectionner une salle spécifique sur le shéma du premier étage du bâtiment B.
 
 .3) Premier étage - Carte
 image::Images/Doc-Utilisateur/Carte-PremierEtageZoom.png[]
 
-Les informations en temps réel de la salle sélectionner s'affiche sur la page. 
+* Les informations en temps réel de la salle sélectionner s'affiche sur la page. 
 
 .4) Salle - Carte
 image::Images/Doc-Utilisateur/Carte-ChoixSalle.png[]
 
-Vous avez maintenant accès aux informations en temps réel de la salle sélectionner.
+* Vous avez maintenant accès aux informations en temps réel de la salle sélectionner.
 
 .5) Salle - Visualisation des informations
 image::Images/Doc-Utilisateur/Carte-ZoomSalle.png[]
 
-Vous pouvez revenir en arriére en cliquant sur la fléche en haut a gauche de l'écran.
+* Vous pouvez revenir en arriére en cliquant sur la fléche en haut a gauche de l'écran.
 
-.5) Bouton fleche - Carte
+.6) Bouton fleche - Carte
 image::Images/Doc-Utilisateur/Salle-RevenirEnArriere.png[]
 
 ==== _Visualiser état capteurs_
 
 TIP: L'état des capteurs est disponible sur la page « Maintenance ». Ces informations permettent à l'utilisateur d'obtenir des informations en temps réel sur le niveau de batterie des capteurs.
 
-Dans le menu principal, cliquer sur « Maintenance ».
+* Dans le menu principal, cliquer sur « Maintenance ».
 
 .1) Barre de navigation - Maintenance
 image::Images/Doc-Utilisateur/Menu-Maintenance.png[]
 
-Vous vous trouvez à présent sur l'interface de maintenance.
+* Vous vous trouvez à présent sur l'interface de maintenance.
 
 .2) Barre de navigation - Maintenance
 image::Images/Doc-Utilisateur/Menu-MaintenanceChoisit.png[]
 
-Sélectionnez le 1er étage du bâtiment B - Maintenance
+* Sélectionnez le 1er étage du bâtiment B sur l'interface de maintenance.
 
 .3) Bâtiment B, 1er étage - Maintenance
 image::Images/Doc-Utilisateur/Maintenance-PremierEtage.png[]
 
-Vous vous trouvez à présent sur l'interface de maintenance du 1er étage du bâtiment B.
+* Vous vous trouvez à présent sur l'interface de maintenance du 1er étage du bâtiment B de l'IUT de Blagnac (possible également pour le rez-de-chaussée et le 2éme étage du bâtiment B).
 
 .4) 1er étage - Maintenance
-image::Images/Doc-Utilisateur/Maintenance-PremierEtage.png[]
+image::Images/Doc-Utilisateur/Maintenance-EtatsBatteries.png[]
 
-Vous pouvez visualiser l'etat de batterie des capteurs de chaque salles du premier étage du bâtiment B.
-
-Vous pouvez revenir en arriére en cliquant sur "Carte" ou "Statistique" dans la barre de navigation.
+* Vous pouvez visualiser l'etat de batterie des capteurs de chaque salles du premier étage du bâtiment B.
+* Vous pouvez revenir en arriére en cliquant sur "Carte" ou "Statistique" dans la barre de navigation.
 
 
 == Conclusion
 
-En conclusion, l'application RoomService représente une avancée significative dans l'optimisation de l'utilisation des espaces du 1er étage du bâtiment B. +
+En conclusion, l'application RoomService représente une avancée significative dans l'optimisation de l'utilisation des espaces du bâtiment B de l'IUT de Blagnac. +
 Elle offre une interface conviviale permettant aux utilisateurs de visualiser en temps réel les conditions des salles, de consulter un historique complet des données collectées et d'analyser des statistiques approfondies. En centralisant les informations sur l'humidité, la luminosité et le niveau de CO2 à l'aide de capteurs AM107, l'application contribue à garantir le bien-être des occupants et à faciliter la prise de décision pour une gestion plus efficace de l'espace. +
 Grâce à ses fonctionnalités avancées, notamment la génération de rapports PDF, la visualisation graphique des données, et la surveillance de l'état des capteurs, elle répond aux besoins des utilisateurs dans leur mission quotidienne de surveillance des salles. +
-En résumé, cette application joue un rôle essentiel dans la création d'un environnement de travail optimal, en fournissant des données précises et des outils simple d'utilisation pour une gestion efficiente des ressources du 1er étage du bâtiment B.
+En résumé, cette application joue un rôle essentiel dans la création d'un environnement de travail optimal, en fournissant des données précises et des outils simple d'utilisation pour une gestion efficiente des ressources du bâtiment B de l'IUT de Blagnac.
