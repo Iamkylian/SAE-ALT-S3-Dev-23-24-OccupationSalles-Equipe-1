@@ -78,6 +78,8 @@ Configuration *logicielle* :
 Pour pouvoir lancer l'application, l'installation de Docker Desktop est nécessaire.
 Pour ce faire, vous devez  suivre ces étapes : 
 
+=== Version 2D
+
 * Télécharger gratuitement Docker Desktop sur le https://www.docker.com/products/docker-desktop/[site de Docker]
 ** Vous pouvez au préalable vérifiez que l'installation de Docker c'est bien réaliser en verifiant sa version, depuis un terminal, en réalisant la commande suivante :
 
@@ -99,6 +101,20 @@ Une fois que tout est lancé, vous pouvez accéder à l'application depuis votre
 
 Si toutes ces étapes sont bien suivies, alors l'application devrait se lancer correctement et sans problèmes.
 
+=== Version 3D
+
+Afin de pouvoir lancer l'application RoomService en version 3D, vous devez suivre les étapes suivantes :
+
+Pour pouvoir avoir accés à la version 3D de l'application, vous devez au préalable avoir lancer l'application RoomService en version 2D. Puis effectuer ces étapes :
+
+Deplacez vous dans le dossier /Prototype :
+
+    $ cd '.\Prototype\'
+
+Ensuite afin de pouvoir lancer l'application, vous devez réaliser la commande suivante :
+
+    $ python -m http.server 4848
+
 == Fonctionnement de l'Application
 
 L’application RoomService un seul rôles d’utilisation, celui de l'utilisateur.
@@ -110,8 +126,9 @@ L'utilisateur a la possibilité de réaliser plusieurs actions :
 * Visualiser l'occupation/l'état des salles en temps réel
 * Visualiser l'état des capteurs en temps réel (batterie...)
 
-
 == Résultats produits avec jeux d'essai commentés
+
+=== Version 2D
 
 ==== _Générer rapport PDF_
 
@@ -233,6 +250,37 @@ image::Images/Doc-Utilisateur/Maintenance-EtatsBatteries.png[]
 
 * Vous pouvez visualiser l'etat de batterie des capteurs de chaque salles du premier étage du bâtiment B.
 * Vous pouvez revenir en arriére en cliquant sur "Carte" ou "Statistique" dans la barre de navigation.
+
+=== Version 3D
+
+==== _Visualiser informations salles_
+
+TIP: Diverse données enregistré par les capteurs sont disponible dans chaque salle. Ces informations permettent à l'utilisateur d'obtenir des informations en temps réel pour une salle spécifique.
+
+* Tout d'abord réaliser les étapes mentionnés dans la partie « Utilisation ».
+
+* Ensuite, dans le menu de l'interface 2D, cliquer sur « Version 3 ». Si c'est déja vus vous trouvez déja sur la page « Carte », ne rien faire.
+
+.1) Barre de navigation - Version 3D
+image::Images/Doc-Utilisateur/Menu-Version3D.png[]
+
+* Selectionner le premier étage.
+
+.2) Premier Etage - Version 3D
+image::Images/Doc-Utilisateur/3D-PremierEtage.png[]
+
+* Vous vous trouvez à présent sur l'interface 3D du premier étage du bâtiment B de l'IUT de Blagnac.
+
+.3) Premier Etage - Version 3D
+image::Images/Doc-Utilisateur/3D-PremierEtageZoom.png[]
+
+* Selectionner une salle spécifique sur le shéma du premier étage du bâtiment B.
+image::Images/Doc-Utilisateur/PremierEtage-SelectionSalle.png[]
+
+* Les informations en temps réel de la salle sélectionner s'affiche sur la page.
+image::Images/Doc-Utilisateur/PremierEtage-3D-VisuInfo.png[]
+
+* Vous avez maintenant accès aux informations en temps réel de la salle sélectionner.
 
 
 == Conclusion
