@@ -52,7 +52,16 @@
     <?php
     include("../connect.inc.php");
 
-    echo '<a id="return_button" href="../Carte/premierEtage.php"><i class="bi bi-arrow-left h3"></i></a>';
+    if (substr($vsalle, 0, 2) === 'B0') {
+        $link = '../Carte/rdc.php';
+    } elseif (substr($vsalle, 0, 2) === 'B1') {
+        $link = '../Carte/premierEtage.php';
+    } else {
+        $link = '../Carte/deuxiemeEtage.php';
+    }
+    
+    echo '<a id="return_button" href="' . $link . '"><i class="bi bi-arrow-left h3"></i></a>';
+    
     echo "<h1 id='room_name'>" . $vsalle . "</h1>";
 
     ini_set('display_errors', 1);
