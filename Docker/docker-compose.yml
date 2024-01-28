@@ -40,6 +40,7 @@ services:
 
   python-device:
     image: python:3.9  
+    restart: always
     volumes:
       - ../Python/device.py:/app/device.py
       - ../Test/Test-Device.py:/app/Test-Device.py
@@ -53,6 +54,7 @@ services:
 
   python-battery:
     image: python:3.9  
+    restart: always
     volumes:
       - ../Python/battery.py:/app/battery.py
       - ../Test/Test-Battery.py:/app/Test-Battery.py

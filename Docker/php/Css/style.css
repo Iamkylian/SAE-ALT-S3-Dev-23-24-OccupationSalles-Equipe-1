@@ -3,6 +3,14 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.main-content{
+    text-align: center !important;
+}
+
+.select-button {
+    padding-left: 17% !important;
+}
+
 .navbar {
     position: fixed;
     top: 0;

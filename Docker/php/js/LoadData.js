@@ -52,6 +52,18 @@ $('#select-room').on('change', function() {
                     }]
                 },
                 options: {
+                    animations: {
+                        radius: {
+                          duration: 400,
+                          easing: 'linear',
+                          loop: (context) => context.active
+                        }
+                      },
+                    scales: {
+                        x: {
+                            display:false
+                        }
+                    },
                     responsive: true,
                     maintainAspectRatio: false,
                     aspectRatio: 1,
@@ -71,6 +83,18 @@ $('#select-room').on('change', function() {
                     }]
                 },
                 options: {
+                    animations: {
+                        radius: {
+                          duration: 400,
+                          easing: 'linear',
+                          loop: (context) => context.active
+                        }
+                      },
+                    scales: {
+                        x: {
+                            display:false
+                        }
+                    },
                     responsive: true,
                     maintainAspectRatio: false,
                     aspectRatio: 1,
@@ -92,6 +116,18 @@ $('#select-room').on('change', function() {
                     }]
                 },
                 options: {
+                    animations: {
+                        radius: {
+                          duration: 400,
+                          easing: 'linear',
+                          loop: (context) => context.active
+                        }
+                      },
+                    scales: {
+                        x: {
+                            display:false
+                        }
+                    },
                     responsive: true,
                     maintainAspectRatio: false,
                     aspectRatio: 1,
@@ -113,6 +149,18 @@ $('#select-room').on('change', function() {
                     }]
                 },
                 options: {
+                    animations: {
+                        radius: {
+                          duration: 400,
+                          easing: 'linear',
+                          loop: (context) => context.active
+                        }
+                      },
+                    scales: {
+                        x: {
+                            display:false
+                        }
+                    },
                     responsive: true,
                     maintainAspectRatio: false,
                     aspectRatio: 1,
@@ -134,6 +182,18 @@ $('#select-room').on('change', function() {
                     }]
                 },
                 options: {
+                    animations: {
+                        radius: {
+                          duration: 400,
+                          easing: 'linear',
+                          loop: (context) => context.active
+                        }
+                      },
+                    scales: {
+                        x: {
+                            display:false
+                        }
+                    },
                     responsive: true,
                     maintainAspectRatio: false,
                     aspectRatio: 1,
@@ -156,6 +216,18 @@ $('#select-room').on('change', function() {
                     }]
                 },
                 options: {
+                    animations: {
+                        radius: {
+                          duration: 400,
+                          easing: 'linear',
+                          loop: (context) => context.active
+                        }
+                      },
+                    scales: {
+                        x: {
+                            display:false
+                        }
+                    },
                     responsive: true,
                     maintainAspectRatio: false,
                     aspectRatio: 1,

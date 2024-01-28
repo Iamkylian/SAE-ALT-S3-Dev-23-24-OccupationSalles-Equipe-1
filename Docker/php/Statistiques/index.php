@@ -259,13 +259,10 @@
                             }
                         });
 
-                        alert('Rapport PDF généré pour les données avant le ' + selectedDatetime + ' et pour la salle : ' + selectedRoom);
-                    } else {
-                        alert('Génération du rapport PDF annulée.');
-                    }
+                    } 
                 })
                 .fail(function(jqXHR, textStatus, errorThrown) {
-                    alert(textStatus + ': ' + errorThrown);
+                    console.log(textStatus + ': ' + errorThrown);
                 });
         });
     });
