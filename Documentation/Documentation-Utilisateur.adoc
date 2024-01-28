@@ -113,7 +113,7 @@ L'utilisateur a la possibilité de réaliser plusieurs actions :
 
 == Résultats produits avec jeux d'essai commentés
 
-==== _Générer fichier PDF_
+==== _Générer rapport PDF_
 
 TIP: Un bouton « Générer le rapport PDF » est accessible sur la page Statistique. Il permet de générer un rapport PDF contenant l'ensemble des données enregistré par le capteurs avant une date et heure donnée.
 
