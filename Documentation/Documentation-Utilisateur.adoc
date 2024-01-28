@@ -142,12 +142,6 @@ image::Images/Doc-Utilisateur/Statistique-GenererPDF.png[]
 .5) Confirmation - Generer rapport PDF
 image::Images/Doc-Utilisateur/Statistique-ConfirmerGeneration.png[]
 
-* Une fenêtre d'alert s’affiche, informant l'utilisateur des détail concernant le rapport PDF.
-* Cliquer sur le bouton « ok » afin de générer le rapport PDF.
-
-.6) Alert - Generer rapport PDF
-image::Images/Doc-Utilisateur/Statistique-ConfirmerFinal.png[]
-
 * Une fenêtre s'affiche selectionner l'emplacement ou vous souhaitez enregistrer le rapport PDF sur votre PC.
 * Une fois l'emplacement selectionner le rapport PDF est télécharger sur votre PC.
 
@@ -164,6 +158,11 @@ image::Images/Doc-Utilisateur/Menu-Statistique.png[]
 
 .2) Statistique - Choix salle
 image::Images/Doc-Utilisateur/Statistique-ChoixSalle.png[]
+
+* Selectionner une date et une heure dans les champs « Date et Heure ».
+
+.3) Statistique - Choix de la date et heure
+image::Images/Doc-Utilisateur/Statistique-ChoixDateHeure.png[]
 
 * Les graphique sont ainsi disponible sur la page pour utilisateur, afin de pouvoir réaliser des analyses sur les données enregistré par les capteurs.
 
