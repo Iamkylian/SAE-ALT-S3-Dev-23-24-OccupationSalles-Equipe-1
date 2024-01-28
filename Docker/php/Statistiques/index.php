@@ -161,41 +161,9 @@
 
             // Retrieve selected date and time
             var selectedDatetime = $('#datetimePicker').val();
-            //alert('Selected Datetime: ' + selectedDatetime);
 
             // Retrieve selected room directly from the select element
             var selectedRoom = $('#select-room').val();
-            //alert('Selected Room: ' + selectedRoom);
-
-            // Perform SQL query to fetch sensor data
-            /*$.ajax({
-                type: 'POST',
-                url: 'getData.php',
-                data: {
-                    'select-room': selectedRoom,
-                    'datetimePicker': selectedDatetime
-                },
-                success: function(response) {
-                    // Process the retrieved sensor data
-                    var sensorData = JSON.parse(response);
-                    console.log('Sensor data:', sensorData);
-
-                    // Example: Use html2pdf.js to generate PDF
-                    var pdfElement = '<h1>Sensor Data Report</h1>';
-                    sensorData.forEach(function(sensor) {
-                        pdfElement += '<p>' + JSON.stringify(sensor) + '</p>';
-                    });
-
-                    // Generate PDF using html2pdf
-                    html2pdf(pdfElement);
-
-                    alert('PDF report generated for ' + selectedDatetime);
-                },
-                error: function(xhr, status, error) {
-                    console.error('AJAX Error:', status, error);
-                    alert('Error generating PDF report. Please try again.');
-                }
-            });*/
 
             $.ajax({
                     type: 'POST',
@@ -233,6 +201,7 @@
                         });
 
                         pdfElement += '</table>';
+
                     } else {
                         pdfElement += '<p>Aucune donnée disponible pour la salle ' + selectedRoom + ' avant le ' + selectedDatetime + '. La génération du PDF n\'est pas possible.</p>';
                     }
