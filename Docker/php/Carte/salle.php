@@ -91,7 +91,7 @@
             <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
             <label class="btn btn-outline-light" for="btnradio2">Average</label>
         </div>
-        <div class="row my-4" style="justify-content: center;">
+        <div class="row my-2" style="justify-content: center;">
             <div class="col-2">
                     <div class="p-5 mx-1 my-4 shadow" id="chart1">
                         <div class="d-flex justify-content-center align-items-center spinner">
@@ -119,7 +119,7 @@
             </div>
         </div>
         <div class="row my-4" style="justify-content: center;">
-            <div class="col-2">
+            <div class="col-4">
                     <div class="p-5 mx-1 my-4 shadow" id="chart4">
                         <div class="d-flex justify-content-center align-items-center spinner">
                             <div class="spinner-border text-light me-2" style="width: 1.3rem; height: 1.3rem;" role="status"></div>
@@ -137,14 +137,6 @@
             </div>
             <div class="col-2">
                     <div class="p-5 mx-1 my-4 shadow" id="chart6">
-                        <div class="d-flex justify-content-center align-items-center spinner">
-                            <div class="spinner-border text-light me-2" style="width: 1.3rem; height: 1.3rem;" role="status"></div>
-                            <p class="m-0 fs-4 my-5 ds-title"></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-2">
-                    <div class="p-5 mx-1 my-4 shadow" id="chart7">
                         <div class="d-flex justify-content-center align-items-center spinner">
                             <div class="spinner-border text-light me-2" style="width: 1.3rem; height: 1.3rem;" role="status"></div>
                             <p class="m-0 fs-4 my-5 ds-title"></p>

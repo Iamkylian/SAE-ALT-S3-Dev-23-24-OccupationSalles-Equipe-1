@@ -39,7 +39,7 @@ function isCurrentPage($currentPage, $currentPath) {
             <li><a href="../Carte/">Carte</a></li>
             <li><a href="../Maintenance/">Maintenance</a></li>
             <li><a href="../Statistiques/">Statistiques</a></li>
-            <li><a href="#" target="_blank">Version 3D</a></li>
+            <li><a href="http://localhost:4848" target="_blank">Version 3D</a></li>
             <!--<li><button id="closeTabBtn" class="btn btn-danger">Quitter application</button></li>-->
         </ul>
     </nav>
