@@ -1,6 +1,8 @@
 $(document).ready(function () {
+    // Récupère la salle sélectionnée
     var roomSelected = $('#room_name').html();
 
+    // Envoie une requête ajax vers le controlleur RoomController.php
     $.ajax({
         type: 'POST',
         url: '../Carte/RoomController.php',
@@ -11,8 +13,10 @@ $(document).ready(function () {
         encode: true,
     })
     .done(function(data){
+        // Affiche les données reçues dans la console
         console.log(data);
         console.log("data received");
+        // Création de chaque graphique et suppresion du spinner
         $('#chart1').html('<canvas id="chartTemperature"></canvas>');
         $('#chart2').html('<canvas id="chartHumidity"></canvas>');
         $('#chart3').html('<canvas id="chartActivity"></canvas>');
@@ -229,13 +233,14 @@ $(document).ready(function () {
         $('#chart6').html('<div class="d-flex justify-content-center align-items-center spinner"><div class="spinner-border text-light me-2" style="width: 1.3rem; height: 1.3rem;" role="status"></div><p class="m-0 fs-4 my-5 ds-title"></p></div>');
         $('#chart7').html('<div class="d-flex justify-content-center align-items-center spinner"><div class="spinner-border text-light me-2" style="width: 1.3rem; height: 1.3rem;" role="status"></div><p class="m-0 fs-4 my-5 ds-title"></p></div>');
 
+        // Lorsqu'on clique sur le bouton "Average"
         if(this.id == "btnradio2"){
             $.ajax({
                 type: 'POST',
                 url: '../Carte/RoomController.php',
                 dataType: 'json',
                 data: {
-                    average: false,
+                    average: true,
                     room: roomSelected
                 },
                 encode: true,
@@ -449,6 +454,7 @@ $(document).ready(function () {
                 )
 
             })
+        // Lorsqu'on clique sur le bouton "Last data"
         } else if(this.id == "btnradio1"){
             
             $.ajax({

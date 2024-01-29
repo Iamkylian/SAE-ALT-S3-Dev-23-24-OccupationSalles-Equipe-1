@@ -1,6 +1,7 @@
 <?php
     include_once('../connect.inc.php');
 
+    # Rentre dans ce if si on veux la moyenne 
     if(isset($_POST['average']) && $_POST['average'] == true && isset($_POST['room'])){
         $roomSelected = htmlentities($_POST['room']);
         $data = [];
@@ -29,6 +30,7 @@
 
         $data['time'][] = $row['time'];
 
+        // Rentre dans ce if si on ne veux pas la moyenne
     } else if(isset($_POST['room'])){
         $data = [];
         $roomSelected = htmlentities($_POST['room']);

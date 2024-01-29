@@ -19,43 +19,8 @@
         <div>
             <select class="select-picker" name="select-room" id="select-room" data-live-search="true" data-selected-text-format="selected" data-style="btn-light" data-width="10%" data-dropup-auto="false" data-size="6" title="Choisir Salle">
                 <?php
-                $query = "SELECT DISTINCT room FROM Device WHERE building = 'A' ORDER BY room ASC;";
-                $stmt = $conn->prepare($query);
-                $stmt->execute();
-
-                $result = $stmt->get_result();
-
-                while ($row = $result->fetch_assoc()) {
-                    echo "<option value=" . $row['room'] . ">" . $row['room'] . "</option>";
-                }
-                ?>
-                <div class="dropdown-divider"></div>
-                <?php
-                $query = "SELECT DISTINCT room FROM Device WHERE building = 'B' ORDER BY room ASC;";
-                $stmt = $conn->prepare($query);
-                $stmt->execute();
-
-                $result = $stmt->get_result();
-
-                while ($row = $result->fetch_assoc()) {
-                    echo "<option value=" . $row['room'] . ">" . $row['room'] . "</option>";
-                }
-                ?>
-                <div class="dropdown-divider"></div>
-                <?php
-                $query = "SELECT DISTINCT room FROM Device WHERE building = 'C' ORDER BY room ASC;";
-                $stmt = $conn->prepare($query);
-                $stmt->execute();
-
-                $result = $stmt->get_result();
-
-                while ($row = $result->fetch_assoc()) {
-                    echo "<option value=" . $row['room'] . ">" . $row['room'] . "</option>";
-                }
-                ?>
-                <div class="dropdown-divider"></div>
-                <?php
-                $query = "SELECT DISTINCT room FROM Device WHERE building = 'E' ORDER BY room ASC;";
+                # Récuềre toutes les salles de la base de données et les affiche dans le select
+                $query = "SELECT DISTINCT room FROM Device ORDER BY room ASC;";
                 $stmt = $conn->prepare($query);
                 $stmt->execute();
 

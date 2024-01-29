@@ -38,6 +38,7 @@
         $link = '../Carte/deuxiemeEtage.php';
     }
     
+    // Affiche le nom de la salle
     echo "<h1 id='room_name'>" . $vsalle . "</h1>";
     echo '<a id="return_button" href="' . $link . '"><i class="bi bi-arrow-left h3"></i></a>';
 

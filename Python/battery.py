@@ -32,6 +32,7 @@ def get_batteryLevel(mqttc, obj, msg):
     pass
 
 def insertBatteryLevel(deviceName,level):
+    # Fait une requete pour savoir si le device existe deja
     query = "SELECT COUNT(*) FROM Battery,Device WHERE Device.id = Battery.deviceId AND Device.deviceName = '" + deviceName + "';"
     cursor.execute(query)
     rows = cursor.fetchall()
@@ -40,11 +41,13 @@ def insertBatteryLevel(deviceName,level):
         count = row[0]
         #print(count)
 
+    # Si le device n'existe pas, on l'ajoute
     if count == 0:
         query = "INSERT INTO Battery (deviceId,batteryLevel) VALUES ((SELECT id FROM Device WHERE deviceName = '" + deviceName + "')," + str(level) + ");"
         cursor.execute(query)
         connection.commit()
         print("\033[94m BATTERY INSERTED \033[0m")
+    # Sinon on update le device
     else:
         query = "UPDATE Battery SET batteryLevel = " + str(level) + " WHERE deviceId = (SELECT id FROM Device WHERE deviceName = '" + deviceName + "');"
         cursor.execute(query)

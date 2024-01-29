@@ -1,7 +1,6 @@
-version: '3'
+version: "3"
 services:
-
-  php-environment:
+  php-environment: # Création du service php-environment
     container_name: php-apache
     build:
       context: ./php
@@ -11,13 +10,13 @@ services:
     volumes:
       - ./php:/var/www/html/
     ports:
-      - 8000:80  
-      
-  db:
+      - 8000:80
+
+  db: # Création du service db
     container_name: db
     image: mysql
-    restart: always
-    environment:
+    restart: always # Redémarrage du service en cas d'erreur
+    environment: # Création des variables d'environnement
       MYSQL_ROOT_PASSWORD: ROOT_PASSWORD
       MYSQL_DATABASE: php-app
       MYSQL_USER: USER
@@ -26,8 +25,8 @@ services:
       - "9906:3306"
     volumes:
       - "../BDD/db.sql:/docker-entrypoint-initdb.d/1.sql"
-      
-  phpmyadmin:
+
+  phpmyadmin: # Création du service phpmyadmin
     image: phpmyadmin
     container_name: phpmyadmin
     links:
@@ -38,13 +37,13 @@ services:
     ports:
       - 8081:80
 
-  python-device:
-    image: python:3.9  
-    restart: always
-    volumes:
+  python-device: # Création du service python-device
+    image: python:3.9
+    restart: always # Redémarrage du service en cas d'erreur
+    volumes: # Récupération des fichiers locaux pour les mettres dans le container
       - ../Python/device.py:/app/device.py
       - ../Test/Test-Device.py:/app/Test-Device.py
-    command: >
+    command: > # Execution du script device.py
       /bin/sh -c "
         python3 -m pip install paho-mqtt &&
         pip install cryptography &&
@@ -52,13 +51,13 @@ services:
         python -u app/device.py 
       "
 
-  python-battery:
-    image: python:3.9  
-    restart: always
-    volumes:
+  python-battery: # Création du service python-battery
+    image: python:3.9
+    restart: always # Redémarrage du service en cas d'erreur
+    volumes: # Récupération des fichiers locaux pour les mettres dans le container
       - ../Python/battery.py:/app/battery.py
       - ../Test/Test-Battery.py:/app/Test-Battery.py
-    command: >
+    command: > # Execution du script battery.py
       /bin/sh -c "
         python3 -m pip install paho-mqtt &&
         pip install cryptography &&

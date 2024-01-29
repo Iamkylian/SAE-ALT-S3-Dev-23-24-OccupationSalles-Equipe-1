@@ -1,6 +1,8 @@
 $(document).ready(function () {
+    // Lors de l'arrivée sur la page, on affiche un spinner et on cache les graphiques
     $('#select-room').selectpicker();
 
+    // A la fin du chargement on affiche "No room selected" si le select n'a pas de valeur
     $('#chart1').html('<p class="text-center text-danger fs-5 my-5">No room selected</p>');
     $('#chart2').html('<p class="text-center text-danger fs-5 my-5">No room selected</p>');
     $('#chart3').html('<p class="text-center text-danger fs-5 my-5">No room selected</p>');
@@ -10,6 +12,7 @@ $(document).ready(function () {
 })
 
 $('#select-room').on('change', function() {
+    // Lors du changement de valeur du select, on affiche un spinner et on cache les graphiques
     $('#chart1').html('<div class="d-flex justify-content-center align-items-center spinner"><div class="spinner-border text-light me-2" style="width: 1.3rem; height: 1.3rem;" role="status"></div><span class="visually hidden">Loading</span><p class="m-0 fs-4 my-5 ds-title"></p></div>');
     $('#chart2').html('<div class="d-flex justify-content-center align-items-center spinner"><div class="spinner-border text-light me-2" style="width: 1.3rem; height: 1.3rem;" role="status"></div><span class="visually hidden">Loading</span><p class="m-0 fs-4 my-5 ds-title"></p></div>');
     $('#chart3').html('<div class="d-flex justify-content-center align-items-center spinner"><div class="spinner-border text-light me-2" style="width: 1.3rem; height: 1.3rem;" role="status"></div><span class="visually hidden">Loading</span><p class="m-0 fs-4 my-5 ds-title"></p></div>');
@@ -19,6 +22,7 @@ $('#select-room').on('change', function() {
 
     var roomSelected = $('#select-room').find(":selected").val();
 
+    // On envoie la valeur du select au fichier DataController.php qui va nous renvoyer les données de la pièce sélectionnée
     $.ajax({
         type: 'POST',
         url: '../Statistiques/DataController.php',
@@ -31,6 +35,7 @@ $('#select-room').on('change', function() {
     .done(function(data){
         console.log(data);
 
+        // On affiche les graphiques et on cache le spinner
         $('#chart1').html('<canvas id="chartTemperature"></canvas>');
         $('#chart2').html('<canvas id="chartHumidity"></canvas>');
         $('#chart3').html('<canvas id="chartActivity"></canvas>');
@@ -39,6 +44,7 @@ $('#select-room').on('change', function() {
         $('#chart6').html('<canvas id="chartIllumination"></canvas>');
 
 
+        // On crée les graphiques avec les données reçues
         const temperature = new Chart(
             document.getElementById('chartTemperature'), {
                 type:'line',

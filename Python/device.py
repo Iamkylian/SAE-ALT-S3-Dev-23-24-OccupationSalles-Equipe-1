@@ -29,6 +29,7 @@ def get_deviceData(mqttc, obj, msg):
     data = json.loads(msg.payload)
     #print(data)
     
+    #
     if 'floor' in data[1]:
         insertDevice(data[1]['deviceName'],data[1]['room'],data[1]['floor'],data[1]['Building'])
     else: 
@@ -39,6 +40,7 @@ def get_deviceData(mqttc, obj, msg):
     pass
 
 def insertDevice(deviceName,room,floor,building):
+    # Fait une requete pour savoir si le device existe deja
     query = "SELECT COUNT(*) FROM Device WHERE deviceName = '" + deviceName + "';"
     cursor.execute(query)
     rows = cursor.fetchall()
@@ -47,6 +49,7 @@ def insertDevice(deviceName,room,floor,building):
         count = row[0]
         #print(count)
 
+    # Si le device n'existe pas, on l'ajoute
     if count == 0:
         query = "INSERT INTO Device (id,deviceName,room,floor,building) VALUES (NULL,'" + str(deviceName) + "','" + str(room) + "'," + str(floor) + ",'" + str(building) + "');"
         #print(query)
@@ -57,6 +60,7 @@ def insertDevice(deviceName,room,floor,building):
         pass
 
 def insertData(deviceName, temperature,humidity,activity,co2,tvoc,illumination):
+    # Fait une requête pour récupérer l'id du device
     query = "SELECT id FROM Device WHERE deviceName = '" +  deviceName + "';"
     cursor.execute(query)
     rows = cursor.fetchall()
@@ -67,6 +71,7 @@ def insertData(deviceName, temperature,humidity,activity,co2,tvoc,illumination):
 
     currentDate = time.strftime('%Y-%m-%d %H:%M:%S')
 
+    # Insertion des données
     query = "INSERT INTO Donnes (idDevice,temperature,humidity,activity,co2,tvoc,illumination,time) VALUES (" + str(deviceId) + "," + str(temperature) + "," + str(humidity) + "," + str(activity) + "," + str(co2) + "," + str(tvoc) + "," + str(illumination) + ",'" + currentDate +"');"
     #print(query)
     print("\033[92m DATA INSERTED \033[0m")
@@ -75,6 +80,7 @@ def insertData(deviceName, temperature,humidity,activity,co2,tvoc,illumination):
 
 # creation du client
 mqttc = mqtt.Client()
+# Csonnection au broker
 mqttc.connect(mqttServer, port=1883, keepalive=60)
 
 mqttc.on_message = get_deviceData
