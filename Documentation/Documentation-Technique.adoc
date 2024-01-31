@@ -215,17 +215,23 @@ image::Images/Use-Case/visualiserInformationSalleTempsRéel.png[]
 ** Si le niveau de batterie est `compris entre 60 (exclus) et 80 (inclus)`, la couleur est *verte claire*.
 ** Si le niveau de batterie est `compris entre 80 (exclus) et 100 (inclus)`, la couleur est *verte foncée*.
 
-Code php qui applique le style correspondant aux données de la salle:
+Code php qui applique le style correspondant aux données de batterie de la salle:
 
 [source,php]
 ----
-if ($activity > 100 && $illumination > 30) {
-            $style = "fill: red;";
-        } elseif (30 < $activity && $activity < 100 && 5 < $illumination && $illumination < 30) {
-            $style = "fill: yellow;";
-        } else {
-            $style = "fill: rgb(76, 204, 0);";
-        }
+ if ($battery > 80) {
+                $style = "fill: green;";
+            } elseif ($battery >= 60 && $battery <= 80) {
+                $style = "fill: greenyellow;";
+            } elseif ($battery >= 40 && $battery < 60) {
+                $style = "fill: yellow;";
+            } elseif ($battery >= 20 && $battery < 40) {
+                $style = "fill: brown;";
+            } elseif ($battery >= 0 && $battery < 20) {
+                $style = "fill: red;";
+            } else {
+                $style = "fill: reg(60,60,60);";
+            }
 ----
 
 * *Partie de use case réalisé - scénarios éventuels* : 
@@ -244,6 +250,19 @@ Cette occupation se présente sous la forme suivante :
 ** Si `l'activité est inférieure à 30` et la `luminosité est inférieure à 5`, la salle est considérée comme *non occupée*.
 ** Si `l'activité est comprise entre 30 et 100`, et la `luminosité est entre 5 et 30`, la salle est considérée comme *partiellement occupée*.
 ** Si `l'activité est supérieure à 100` et la `luminosité est supérieure à 30`, la salle est considérée comme *occupée*.
+
+Code php qui applique le style correspondant aux données d'occupation de la salle:
+
+[source,php]
+----
+if ($activity > 100 && $illumination > 30) {
+            $style = "fill: red;";
+        } elseif (30 < $activity && $activity < 100 && 5 < $illumination && $illumination < 30) {
+            $style = "fill: yellow;";
+        } else {
+            $style = "fill: rgb(76, 204, 0);";
+        }
+----
 
 * *Partie de use case réalisé - scénarios éventuels* : 
 
