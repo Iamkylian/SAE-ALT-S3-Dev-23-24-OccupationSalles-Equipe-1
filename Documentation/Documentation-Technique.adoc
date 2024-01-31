@@ -112,6 +112,25 @@ mqttc.loop_forever()
 * v24.0.7*
 ** Docker est utilisé pour encapsuler l'application RoomService dans un conteneur. Cela permet une gestion efficace des dépendances et des configurations, assurant la portabilité de l'application entre différents environnements. Le fichier Docker-compose fournit une configuration détaillée pour lancer l'application avec ses composants nécessaires.
 
+Code dans le docker-compose qui permet de paramétrer le server web Apache:
+
+[source,Docker]
+----
+version: "3"
+services:
+  php-environment: # Création du service php-environment
+    container_name: php-apache
+    build:
+      context: ./php
+      dockerfile: Dockerfile
+    depends_on:
+      - db
+    volumes:
+      - ./php:/var/www/html/
+    ports:
+      - 8000:80
+----
+
 ===== Chart.js
 * v3.5.1*
 ** Chart.js est utilisé pour créer des graphiques à partir des données récupérées par les capteurs. Il permet de créer des graphiques simples et intuitifs pour les utilisateurs de l'application RoomService.
