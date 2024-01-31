@@ -135,6 +135,18 @@ services:
 * v3.5.1*
 ** Chart.js est utilisé pour créer des graphiques à partir des données récupérées par les capteurs. Il permet de créer des graphiques simples et intuitifs pour les utilisateurs de l'application RoomService.
 
+[source,html]
+----
+<div class="col-12 col-lg-6">
+    <div class="p-3 mx-1 my-4 border border-1 rounder-1 shadow" id="chart1">
+        <div class="d-flex justify-content-center align-items-center spinner">
+            <div class="spinner-border text-light me-2" style="width: 1.3rem; height: 1.3rem;" role="status"></div><span class="visually hidden">Loading</span>
+            <p class="m-0 fs-4 my-5 ds-title"></p>
+        </div>
+    </div>
+</div>
+----
+
 ===== Unity
 * v2020.3.17f1*
 ** Unity est utilisé pour créer l'interface graphique de l'application RoomService 3D. Il permet de créer une interface interractive pour les utilisateurs de l'application RoomService.
