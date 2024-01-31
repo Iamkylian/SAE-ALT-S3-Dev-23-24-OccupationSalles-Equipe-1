@@ -147,6 +147,11 @@ services:
 </div>
 ----
 
+[source,html]
+----
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+----
+
 ===== Unity
 * v2020.3.17f1*
 ** Unity est utilisé pour créer l'interface graphique de l'application RoomService 3D. Il permet de créer une interface interractive pour les utilisateurs de l'application RoomService.
