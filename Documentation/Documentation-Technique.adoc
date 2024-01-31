@@ -215,6 +215,19 @@ image::Images/Use-Case/visualiserInformationSalleTempsRéel.png[]
 ** Si le niveau de batterie est `compris entre 60 (exclus) et 80 (inclus)`, la couleur est *verte claire*.
 ** Si le niveau de batterie est `compris entre 80 (exclus) et 100 (inclus)`, la couleur est *verte foncée*.
 
+Code php qui applique le style correspondant aux données de la salle:
+
+[source,php]
+----
+if ($activity > 100 && $illumination > 30) {
+            $style = "fill: red;";
+        } elseif (30 < $activity && $activity < 100 && 5 < $illumination && $illumination < 30) {
+            $style = "fill: yellow;";
+        } else {
+            $style = "fill: rgb(76, 204, 0);";
+        }
+----
+
 * *Partie de use case réalisé - scénarios éventuels* : 
 
 .Use Case : 
