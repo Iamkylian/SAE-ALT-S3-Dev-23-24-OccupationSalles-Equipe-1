@@ -143,6 +143,25 @@ services:
 * mySQL
 ** Notre application posséde une base de données mySQL afin de stocker les données transmises par les capteurs allant des données captés par les capteurs telles que le taux de C2, d'humidité... jusqu'au donnée concernant l'état des capteurs telles que le niveau de batterie.
 
+Code du Docker-compose permettant de paramétrer et d'instancier un serveur MySql:
+
+[source,Docker]
+----
+db: # Création du service db
+    container_name: db
+    image: mysql
+    restart: always # Redémarrage du service en cas d'erreur
+    environment: # Création des variables d'environnement
+      MYSQL_ROOT_PASSWORD: ROOT_PASSWORD
+      MYSQL_DATABASE: php-app
+      MYSQL_USER: USER
+      MYSQL_PASSWORD: PASS
+    ports:
+      - "9906:3306"
+    volumes:
+      - "../BDD/db.sql:/docker-entrypoint-initdb.d/1.sql"
+----
+
 === Structuration en packages de l’application
 
 ===== Général
