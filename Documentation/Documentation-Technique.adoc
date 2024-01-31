@@ -139,9 +139,9 @@ image::Images/Use-Case/visualiserInformationSalleTempsRéel.png[]
 
 * *Fonctionnement* : Cette fonctionnalité analyse diverses données pour évaluer l'état des capteurs en temps réel. Plus précisément, elle utilise les critères suivants pour déterminer l'occupation des salles :
 
-** Si l'```activité est inférieure à 30``` et la ```luminosité est inférieure à 5```, la salle est considérée comme *non occupée*.
-** Si l'```activité est comprise entre 30 et 100```, et la ```luminosité est entre 5 et 30```, la salle est considérée comme *partiellement occupée*.
-** Si l'```activité est supérieure à 100``` et la ```luminosité est supérieure à 30```, la salle est considérée comme *occupée*.
+** Si `l'activité est inférieure à 30` et la `luminosité est inférieure à 5`, la salle est considérée comme *non occupée*.
+** Si `l'activité est comprise entre 30 et 100`, et la `luminosité est entre 5 et 30`, la salle est considérée comme *partiellement occupée*.
+** Si `l'activité est supérieure à 100` et la `luminosité est supérieure à 30`, la salle est considérée comme *occupée*.
 
 image::Images/Legendes/legendeBatterie.png[]
 
