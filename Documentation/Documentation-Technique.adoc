@@ -29,6 +29,7 @@ Le contexte de l'application RoomService est le suivant :
 * L'application RoomService est développée pour les utilisateurs de l'IUT de Blagnac qui souhaitent avoir en temps réel différentes informations des salles du premier étage du département informatique de l'IUT de blagnac.
 * L'application RoomService est développée pour les utilisateurs de l'IUT de Blagnac qui souhaitent consulter l'historique des informations des salles du premier étage du département informatique de l'IUT de blagnac.
 
+
 === Use Case global
 
 L'application RoomService permet aux utilisateurs d'avoir en temps réel différentes informations des salles du premier étage du département informatique de l'IUT de blagnac.
@@ -92,65 +93,13 @@ Battery : Cette table stocke les informations relatives à la batterie des capte
 * Version 3.9*
 ** Python, dans le contexte de l'application RoomService, est encapsulé dans un conteneur Docker pour faciliter sa gestion, son déploiement et sa portabilité. Il est utilisé afin de pouvoir se connecter à au flux MQTT et pouvoir récupérer les données transmises par les capteurs.
 
-Code récupération flux MQTT:
-
-[source,python]
-----
-mqttc = mqtt.Client()
-mqttc.connect(mqttServer, port=1883, keepalive=60)
-
-mqttc.on_message = get_batteryLevel
-
-# soucription au device
-mqttc.subscribe("application/1/device/+/event/status",0)
-print("Connected !")
-
-mqttc.loop_forever()
-----
-
 ===== Docker
 * v24.0.7*
 ** Docker est utilisé pour encapsuler l'application RoomService dans un conteneur. Cela permet une gestion efficace des dépendances et des configurations, assurant la portabilité de l'application entre différents environnements. Le fichier Docker-compose fournit une configuration détaillée pour lancer l'application avec ses composants nécessaires.
 
-Code dans le docker-compose qui permet de paramétrer le server web Apache:
-
-[source,yml]
-----
-version: "3"
-services:
-  php-environment: # Création du service php-environment
-    container_name: php-apache
-    build:
-      context: ./php
-      dockerfile: Dockerfile
-    depends_on:
-      - db
-    volumes:
-      - ./php:/var/www/html/
-    ports:
-      - 8000:80
-----
-
 ===== Chart.js
 * v3.5.1*
 ** Chart.js est utilisé pour créer des graphiques à partir des données récupérées par les capteurs. Il permet de créer des graphiques simples et intuitifs pour les utilisateurs de l'application RoomService.
-
-[source,html]
-----
-<div class="col-12 col-lg-6">
-    <div class="p-3 mx-1 my-4 border border-1 rounder-1 shadow" id="chart1">
-        <div class="d-flex justify-content-center align-items-center spinner">
-            <div class="spinner-border text-light me-2" style="width: 1.3rem; height: 1.3rem;" role="status"></div><span class="visually hidden">Loading</span>
-            <p class="m-0 fs-4 my-5 ds-title"></p>
-        </div>
-    </div>
-</div>
-----
-
-[source,html]
-----
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-----
 
 ===== Unity
 * v2020.3.17f1*
@@ -159,22 +108,6 @@ services:
 ===== Base de données
 * mySQL
 ** Notre application posséde une base de données mySQL afin de stocker les données transmises par les capteurs allant des données captés par les capteurs telles que le taux de C2, d'humidité... jusqu'au donnée concernant l'état des capteurs telles que le niveau de batterie.
-
-Code SQL permettant de créer la table qui va stocker les données d'occupations d'une salle:
-
-[source,sql]
-----
-CREATE TABLE `Donnes` (
-  `idDevice` int NOT NULL,
-  `temperature` decimal(10,0) NOT NULL,
-  `humidity` decimal(10,0) NOT NULL,
-  `activity` int NOT NULL,
-  `co2` int NOT NULL,
-  `tvoc` int NOT NULL,
-  `illumination` int NOT NULL,
-  `time` datetime NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
-----
 
 === Structuration en packages de l’application
 
@@ -214,19 +147,6 @@ image::Images/Use-Case/visualiserInformationSalleTempsRéel.png[]
 ** Si le niveau de batterie est `compris entre 40 (exclus) et 60 (inclus)`, la couleur est *jaune clair*.
 ** Si le niveau de batterie est `compris entre 60 (exclus) et 80 (inclus)`, la couleur est *verte claire*.
 ** Si le niveau de batterie est `compris entre 80 (exclus) et 100 (inclus)`, la couleur est *verte foncée*.
-
-Code php qui applique le style correspondant aux données de la salle:
-
-[source,php]
-----
-if ($activity > 100 && $illumination > 30) {
-            $style = "fill: red;";
-        } elseif (30 < $activity && $activity < 100 && 5 < $illumination && $illumination < 30) {
-            $style = "fill: yellow;";
-        } else {
-            $style = "fill: rgb(76, 204, 0);";
-        }
-----
 
 * *Partie de use case réalisé - scénarios éventuels* : 
 
