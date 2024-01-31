@@ -157,7 +157,7 @@ services:
 
 Code du Docker-compose permettant de paramétrer et d'instancier une base de donnée MySql:
 
-[source,Docker]
+[source,yml]
 ----
 db: # Création du service db
     container_name: db
