@@ -243,6 +243,20 @@ image::Images/Use-Case/visualiserInformationEtatCapteurTempsRéel.png[]
 ==== `*_Utilisateur - Visualisation de l'occupation des salles en temps réel_*`
 
 * *Description* : Cette fonctionnalité permet à l'utilisateur de surveiller en temps réel l'occupation des salles du Batiment B du département informatique de l'IUT de Blagnac. L'information sur l'occupation des salles peut être cruciale pour optimiser l'utilisation des salles du département.
+
+Code permettant de faire une requete sql avec php pour récupérer les données de la base MySql:
+
+
+[source,php]
+----
+ include("../connect.inc.php");
+
+        $query = $conn->prepare("SELECT room,batteryLevel FROM Battery, Device WHERE Device.id = Battery.deviceId AND room LIKE 'B1%';");
+    
+        $query->execute();
+
+----
+
 Cette occupation se présente sous la forme suivante :
 
 * *Fonctionnement* : Cette fonctionnalité analyse diverses données pour évaluer les données des capteurs en temps réel. Plus précisément, elle utilise les critères suivants pour déterminer l'occupation des salles :
