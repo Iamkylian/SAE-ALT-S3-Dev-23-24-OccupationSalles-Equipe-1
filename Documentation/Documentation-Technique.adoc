@@ -136,15 +136,12 @@ image::Images/Use-Case/visualiserInformationSalleTempsRéel.png[]
 ==== `*_Utilisateur - Visualisation de l'état des capteurs en temps réel_*`
 
 * *Description* : Cette fonctionnalité permet à l'utilisateur de visualiser l'état actuel des capteurs, y compris le niveau de batterie de chaque capteur. L'information sur l'état des capteurs est cruciale pour assurer le bon fonctionnement continu de l'application RoomService.
-L'affichage du niveau de batterie se présente sous la forme suivante : 
-
-image::Images/Legendes/legendeBatterie.png[]
 
 * *Fonctionnement* : Cette fonctionnalité analyse diverses données pour évaluer l'état des capteurs en temps réel. Plus précisément, elle utilise les critères suivants pour déterminer l'occupation des salles :
 
-** Si *l'activité est inférieure à 30* et la *luminosité est inférieure à 5*, la salle est considérée comme ```non occupée```.
-** Si *l'activité est comprise entre 30 et 100*, et la *luminosité est entre 5 et 30*, la salle est considérée comme ```partiellement occupée```.
-** Si *l'activité est supérieure à 100* et la *luminosité est supérieure à 30*, la salle est considérée comme ```occupée```.
+** Si l'```activité est inférieure à 30``` et la ```luminosité est inférieure à 5```, la salle est considérée comme *non occupée*.
+** Si l'```activité est comprise entre 30 et 100```, et la ```luminosité est entre 5 et 30```, la salle est considérée comme *partiellement occupée*.
+** Si l'```activité est supérieure à 100``` et la ```luminosité est supérieure à 30```, la salle est considérée comme *occupée*.
 
 image::Images/Legendes/legendeBatterie.png[]
 
