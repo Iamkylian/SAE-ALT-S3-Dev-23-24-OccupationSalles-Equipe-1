@@ -29,7 +29,6 @@ Le contexte de l'application RoomService est le suivant :
 * L'application RoomService est développée pour les utilisateurs de l'IUT de Blagnac qui souhaitent avoir en temps réel différentes informations des salles du premier étage du département informatique de l'IUT de blagnac.
 * L'application RoomService est développée pour les utilisateurs de l'IUT de Blagnac qui souhaitent consulter l'historique des informations des salles du premier étage du département informatique de l'IUT de blagnac.
 
-
 === Use Case global
 
 L'application RoomService permet aux utilisateurs d'avoir en temps réel différentes informations des salles du premier étage du département informatique de l'IUT de blagnac.
@@ -169,4 +168,16 @@ Cette occupation se présente sous la forme suivante :
 
 .Use Case : 
 image::Images/Use-Case/visualiserOccupationSalleTempsReel.png[]
+
+[source,python]
+----
+if response.ok:
+    print(response)
+    soup = BeautifulSoup(response.text, 'html.parser')
+    table = soup.find('table')
+    for tr in table:
+        b = tr.find('b')
+        title = b['a']
+        print(title)
+----
 
