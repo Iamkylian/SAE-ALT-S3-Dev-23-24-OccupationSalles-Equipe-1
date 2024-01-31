@@ -293,6 +293,47 @@ image::Images/Use-Case/visualiserOccupationSalleTempsReel.png[]
 ** L'utilisateur doit selectionner une salle puis une date et heure
 ** Celui-ci peut ensuite le télécharger sur son PC
 
+[source,html]
+----
+<script>
+    $(document).ready(function() {
+        // Initialize date and time picker
+        $('#datetimePicker').daterangepicker({
+            singleDatePicker: true,
+            showDropdowns: true,
+            timePicker: true,
+            timePicker24Hour: true,
+            locale: {
+                format: 'YYYY-MM-DD HH:mm:ss'
+            }
+        });
+
+        // Add an event listener to the "Generate PDF" button
+        $('#generatePDF').click(function() {
+            //alert('Button clicked');
+
+            // Retrieve selected date and time
+            var selectedDatetime = $('#datetimePicker').val();
+
+            // Retrieve selected room directly from the select element
+            var selectedRoom = $('#select-room').val();
+
+            $.ajax({
+                    type: 'POST',
+                    url: 'getData.php',
+                    data: {
+                        'select-room': selectedRoom,
+                        'datetimePicker': selectedDatetime
+                    },
+                })
+                .done(function(response) {
+                    // Process the retrieved sensor data
+                    console.log(response);
+                    var sensorData = JSON.parse(response);
+                    console.log('Sensor data:', sensorData);
+...
+----
+
 * *Partie de use case réalisé - scénarios éventuels* :
 
 .Use Case : 
