@@ -137,13 +137,14 @@ image::Images/Use-Case/visualiserInformationSalleTempsRéel.png[]
 
 * *Description* : Cette fonctionnalité permet à l'utilisateur de visualiser l'état actuel des capteurs, y compris le niveau de batterie de chaque capteur. L'information sur l'état des capteurs est cruciale pour assurer le bon fonctionnement continu de l'application RoomService.
 
-* *Fonctionnement* : Cette fonctionnalité analyse diverses données pour évaluer l'état des capteurs en temps réel. Plus précisément, elle utilise les critères suivants pour déterminer l'occupation des salles :
+* *Fonctionnement* : Cette fonctionnalité analyse le niveau de batterie de chaque capteur et attribue une couleur en fonction de sa valeur. Les critères de couleur sont définis comme suit :
 
-** Si `l'activité est inférieure à 30` et la `luminosité est inférieure à 5`, la salle est considérée comme *non occupée*.
-** Si `l'activité est comprise entre 30 et 100`, et la `luminosité est entre 5 et 30`, la salle est considérée comme *partiellement occupée*.
-** Si `l'activité est supérieure à 100` et la `luminosité est supérieure à 30`, la salle est considérée comme *occupée*.
-
-image::Images/Legendes/legendeBatterie.png[]
+** Si le niveau de batterie est `à 0`, la couleur est *noire*.
+** Si le niveau de batterie est `compris entre 0 (exclus) et 20 (inclus)`, la couleur est *rouge*.
+** Si le niveau de batterie est `compris entre 20 (exclus) et 40 (inclus)`, la couleur est *marron*.
+** Si le niveau de batterie est `compris entre 40 (exclus) et 60 (inclus)`, la couleur est *jaune clair*.
+** Si le niveau de batterie est `compris entre 60 (exclus) et 80 (inclus)`, la couleur est *verte claire*.
+** Si le niveau de batterie est `compris entre 80 (exclus) et 100 (inclus)`, la couleur est *verte foncée*.
 
 * *Partie de use case réalisé - scénarios éventuels* : 
 
@@ -156,7 +157,11 @@ image::Images/Use-Case/visualiserInformationEtatCapteurTempsRéel.png[]
 * *Description* : Cette fonctionnalité permet à l'utilisateur de surveiller en temps réel l'occupation des salles du Batiment B du département informatique de l'IUT de Blagnac. L'information sur l'occupation des salles peut être cruciale pour optimiser l'utilisation des salles du département.
 Cette occupation se présente sous la forme suivante :
 
-image::Images/Legendes/legendeOccupation.png[]
+* *Fonctionnement* : Cette fonctionnalité analyse diverses données pour évaluer les données des capteurs en temps réel. Plus précisément, elle utilise les critères suivants pour déterminer l'occupation des salles :
+
+** Si `l'activité est inférieure à 30` et la `luminosité est inférieure à 5`, la salle est considérée comme *non occupée*.
+** Si `l'activité est comprise entre 30 et 100`, et la `luminosité est entre 5 et 30`, la salle est considérée comme *partiellement occupée*.
+** Si `l'activité est supérieure à 100` et la `luminosité est supérieure à 30`, la salle est considérée comme *occupée*.
 
 * *Partie de use case réalisé - scénarios éventuels* : 
 
