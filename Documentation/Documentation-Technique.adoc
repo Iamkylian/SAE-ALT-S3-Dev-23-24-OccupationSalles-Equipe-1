@@ -269,3 +269,17 @@ if ($activity > 100 && $illumination > 30) {
 .Use Case : 
 image::Images/Use-Case/visualiserOccupationSalleTempsReel.png[]
 
+
+==== *_Utilisateur - Générer rapport PDF_*
+
+* *Description* : Cette fonctionnalité permet à l'utilisateur de générer un rapport PDF contenant l'ensemble des données enregistrées par les capteurs avant une date et heure données.
+
+* *Fonctionnement* : Cette fonctionnalité récupère les données enregistrées par les capteurs dans la base de données et les affiche dans un fichier PDF. Le fichier PDF est ensuite téléchargé par l'utilisateur.
+
+** L'utilisateur doit selectionner une salle puis une date et heure
+** Celui-ci peut ensuite le télécharger sur son PC
+
+* *Partie de use case réalisé - scénarios éventuels* :
+
+.Use Case : 
+image::Images/Use-Case/[]
