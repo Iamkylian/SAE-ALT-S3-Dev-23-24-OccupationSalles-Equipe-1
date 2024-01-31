@@ -335,7 +335,7 @@ image::Images/Use-Case/visualiserOccupationSalleTempsReel.png[]
 </script>
 ----
 
-* *Partie de use case réalisé - scénarios éventuels* :
+* *Partie de use case réalisé - scénarios éventuels* : 
 
 .Use Case : 
 image::Images/Use-Case/genererPDF.png[]
