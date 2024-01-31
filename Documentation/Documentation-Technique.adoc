@@ -92,6 +92,22 @@ Battery : Cette table stocke les informations relatives à la batterie des capte
 * Version 3.9*
 ** Python, dans le contexte de l'application RoomService, est encapsulé dans un conteneur Docker pour faciliter sa gestion, son déploiement et sa portabilité. Il est utilisé afin de pouvoir se connecter à au flux MQTT et pouvoir récupérer les données transmises par les capteurs.
 
+Code récupération flux MQTT:
+
+[source,python]
+----
+mqttc = mqtt.Client()
+mqttc.connect(mqttServer, port=1883, keepalive=60)
+
+mqttc.on_message = get_batteryLevel
+
+# soucription au device
+mqttc.subscribe("application/1/device/+/event/status",0)
+print("Connected !")
+
+mqttc.loop_forever()
+----
+
 ===== Docker
 * v24.0.7*
 ** Docker est utilisé pour encapsuler l'application RoomService dans un conteneur. Cela permet une gestion efficace des dépendances et des configurations, assurant la portabilité de l'application entre différents environnements. Le fichier Docker-compose fournit une configuration détaillée pour lancer l'application avec ses composants nécessaires.
@@ -168,16 +184,4 @@ Cette occupation se présente sous la forme suivante :
 
 .Use Case : 
 image::Images/Use-Case/visualiserOccupationSalleTempsReel.png[]
-
-[source,python]
-----
-if response.ok:
-    print(response)
-    soup = BeautifulSoup(response.text, 'html.parser')
-    table = soup.find('table')
-    for tr in table:
-        b = tr.find('b')
-        title = b['a']
-        print(title)
-----
 
