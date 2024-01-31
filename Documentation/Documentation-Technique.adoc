@@ -97,11 +97,13 @@ Battery : Cette table stocke les informations relatives à la batterie des capte
 * v24.0.7*
 ** Docker est utilisé pour encapsuler l'application RoomService dans un conteneur. Cela permet une gestion efficace des dépendances et des configurations, assurant la portabilité de l'application entre différents environnements. Le fichier Docker-compose fournit une configuration détaillée pour lancer l'application avec ses composants nécessaires.
 
+===== Chart.js
+* v3.5.1*
+** Chart.js est utilisé pour créer des graphiques à partir des données récupérées par les capteurs. Il permet de créer des graphiques simples et intuitifs pour les utilisateurs de l'application RoomService.
 
-===== Grafana
-* v9.1.7*
-** Grafana, dans le contexte de l'application RoomService, est encapsulé dans un conteneur Docker pour faciliter sa gestion, son déploiement et sa portabilité. Ce service nous permet de visualiser les données transmises par les capteurs en temps réel, de consulter l'historique des données et de générer des rapports et des statistiques détaillé.
-
+===== Unity
+* v2020.3.17f1*
+** Unity est utilisé pour créer l'interface graphique de l'application RoomService 3D. Il permet de créer une interface interractive pour les utilisateurs de l'application RoomService.
 
 ===== Base de données
 * mySQL
