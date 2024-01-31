@@ -332,6 +332,7 @@ image::Images/Use-Case/visualiserOccupationSalleTempsReel.png[]
                     var sensorData = JSON.parse(response);
                     console.log('Sensor data:', sensorData);
 ...
+</script>
 ----
 
 * *Partie de use case réalisé - scénarios éventuels* :
