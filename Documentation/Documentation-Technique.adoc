@@ -114,7 +114,7 @@ mqttc.loop_forever()
 
 Code dans le docker-compose qui permet de paramétrer le server web Apache:
 
-[source,Docker]
+[source,yml]
 ----
 version: "3"
 services:
