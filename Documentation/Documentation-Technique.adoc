@@ -129,6 +129,19 @@ Battery : Cette table stocke les informations relatives à la batterie des capte
 
 * *Description* : Cette fonctionnalité permet à l'utilisateur de visualiser en temps réel les données transmises par les capteurs des salles du premier étage du département informatique de l'IUT de Blagnac. Les informations affichées comprennent le taux de CO2, la température, l'humidité, l'occupation des salles, le niveau de batterie, l'illumination et le taux de particules fines (tvoc).
 
+Code permettant de faire une requete sql avec php pour récupérer les données de la base MySql:
+
+
+[source,php]
+----
+ include("../connect.inc.php");
+
+        $query = $conn->prepare("SELECT room,batteryLevel FROM Battery, Device WHERE Device.id = Battery.deviceId AND room LIKE 'B1%';");
+    
+        $query->execute();
+
+----
+
 * *Partie de use case réalisé - scénarios éventuels* : 
 
 .Use Case : Visualisation des données transmises par les capteurs
@@ -148,6 +161,25 @@ image::Images/Use-Case/visualiserInformationSalleTempsRéel.png[]
 ** Si le niveau de batterie est `compris entre 60 (exclus) et 80 (inclus)`, la couleur est *verte claire*.
 ** Si le niveau de batterie est `compris entre 80 (exclus) et 100 (inclus)`, la couleur est *verte foncée*.
 
+Code php qui applique le style correspondant aux données de batterie de la salle:
+
+[source,php]
+----
+ if ($battery > 80) {
+                $style = "fill: green;";
+            } elseif ($battery >= 60 && $battery <= 80) {
+                $style = "fill: greenyellow;";
+            } elseif ($battery >= 40 && $battery < 60) {
+                $style = "fill: yellow;";
+            } elseif ($battery >= 20 && $battery < 40) {
+                $style = "fill: brown;";
+            } elseif ($battery >= 0 && $battery < 20) {
+                $style = "fill: red;";
+            } else {
+                $style = "fill: reg(60,60,60);";
+            }
+----
+
 * *Partie de use case réalisé - scénarios éventuels* : 
 
 .Use Case : 
@@ -157,6 +189,7 @@ image::Images/Use-Case/visualiserInformationEtatCapteurTempsRéel.png[]
 ==== `*_Utilisateur - Visualisation de l'occupation des salles en temps réel_*`
 
 * *Description* : Cette fonctionnalité permet à l'utilisateur de surveiller en temps réel l'occupation des salles du Batiment B du département informatique de l'IUT de Blagnac. L'information sur l'occupation des salles peut être cruciale pour optimiser l'utilisation des salles du département.
+
 Cette occupation se présente sous la forme suivante :
 
 * *Fonctionnement* : Cette fonctionnalité analyse diverses données pour évaluer les données des capteurs en temps réel. Plus précisément, elle utilise les critères suivants pour déterminer l'occupation des salles :
@@ -165,8 +198,77 @@ Cette occupation se présente sous la forme suivante :
 ** Si `l'activité est comprise entre 30 et 100`, et la `luminosité est entre 5 et 30`, la salle est considérée comme *partiellement occupée*.
 ** Si `l'activité est supérieure à 100` et la `luminosité est supérieure à 30`, la salle est considérée comme *occupée*.
 
+Code php qui applique le style correspondant aux données d'occupation de la salle:
+
+[source,php]
+----
+if ($activity > 100 && $illumination > 30) {
+            $style = "fill: red;";
+        } elseif (30 < $activity && $activity < 100 && 5 < $illumination && $illumination < 30) {
+            $style = "fill: yellow;";
+        } else {
+            $style = "fill: rgb(76, 204, 0);";
+        }
+----
+
 * *Partie de use case réalisé - scénarios éventuels* : 
 
 .Use Case : 
 image::Images/Use-Case/visualiserOccupationSalleTempsReel.png[]
 
+
+==== `*_Utilisateur - Générer rapport PDF_*`
+
+* *Description* : Cette fonctionnalité permet à l'utilisateur de générer un rapport PDF contenant l'ensemble des données enregistrées par les capteurs avant une date et heure données.
+
+* *Fonctionnement* : Cette fonctionnalité récupère les données enregistrées par les capteurs dans la base de données et les affiche dans un fichier PDF. Le fichier PDF est ensuite téléchargé par l'utilisateur.
+
+** L'utilisateur doit selectionner une salle puis une date et heure.
+** Celui-ci peut ensuite le télécharger sur son PC.
+
+[source,html]
+----
+<script>
+    $(document).ready(function() {
+        // Initialize date and time picker
+        $('#datetimePicker').daterangepicker({
+            singleDatePicker: true,
+            showDropdowns: true,
+            timePicker: true,
+            timePicker24Hour: true,
+            locale: {
+                format: 'YYYY-MM-DD HH:mm:ss'
+            }
+        });
+
+        // Add an event listener to the "Generate PDF" button
+        $('#generatePDF').click(function() {
+            //alert('Button clicked');
+
+            // Retrieve selected date and time
+            var selectedDatetime = $('#datetimePicker').val();
+
+            // Retrieve selected room directly from the select element
+            var selectedRoom = $('#select-room').val();
+
+            $.ajax({
+                    type: 'POST',
+                    url: 'getData.php',
+                    data: {
+                        'select-room': selectedRoom,
+                        'datetimePicker': selectedDatetime
+                    },
+                })
+                .done(function(response) {
+                    // Process the retrieved sensor data
+                    console.log(response);
+                    var sensorData = JSON.parse(response);
+                    console.log('Sensor data:', sensorData);
+...
+</script>
+----
+
+* *Partie de use case réalisé - scénarios éventuels* : 
+
+.Use Case : 
+image::Images/Use-Case/genererPDF.png[]
