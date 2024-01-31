@@ -143,7 +143,7 @@ services:
 * mySQL
 ** Notre application posséde une base de données mySQL afin de stocker les données transmises par les capteurs allant des données captés par les capteurs telles que le taux de C2, d'humidité... jusqu'au donnée concernant l'état des capteurs telles que le niveau de batterie.
 
-Code du Docker-compose permettant de paramétrer et d'instancier un serveur MySql:
+Code du Docker-compose permettant de paramétrer et d'instancier une base de donnée MySql:
 
 [source,Docker]
 ----
