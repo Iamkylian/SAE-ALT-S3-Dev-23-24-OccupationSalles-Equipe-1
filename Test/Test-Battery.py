@@ -22,7 +22,7 @@ class TestBatteryLevelScript(unittest.TestCase):
 
         get_batteryLevel(mqtt_client_instance, None, mock_msg)
 
-        db_cursor_instance.execute.assert_called()
+        db_cursor_instance.execute.assert_called() 
 
 if __name__ == '__main__':
     unittest.main()
