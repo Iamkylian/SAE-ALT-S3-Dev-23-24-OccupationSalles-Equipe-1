@@ -2,9 +2,7 @@ version: "3"
 services:
   php-environment: # Création du service php-environment
     container_name: php-apache
-    build:
-      context: ./php
-      dockerfile: Dockerfile
+    image: php:apache
     depends_on:
       - db
     volumes:
