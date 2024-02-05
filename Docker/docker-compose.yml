@@ -4,13 +4,12 @@ services:
     container_name: php-apache
     build:
       context: ./php
-      dockerfile: Dockerfile
     depends_on:
       - db
     volumes:
       - ./php:/var/www/html/
     ports:
-      - 8088:80
+      - 8000:80
 
   db: # Création du service db
     container_name: db
