@@ -10,7 +10,7 @@ services:
     volumes:
       - ./php:/var/www/html/
     ports:
-      - 8000:80
+      - 8088:80
 
   db: # Création du service db
     container_name: db
